@@ -4,6 +4,9 @@ draft = true
 construction = false
 title = 'Proteins'
 subtitle = ''
+author = ''
+version = ''
+updated = ''
 +++
 
 

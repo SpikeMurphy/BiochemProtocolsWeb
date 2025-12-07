@@ -4,6 +4,9 @@ draft = true
 construction = false
 title = 'Buffers'
 subtitle = ''
+author = ''
+version = ''
+updated = ''
 +++
 
 
