@@ -1,0 +1,10 @@
++++
+date = '2025-12-07T21:00:18+01:00'
+draft = true
+construction = false
+title = 'Western Blotting'
+subtitle = ''
+author = 'Spike Murphy Müller'
+version = 'Version 1.0'
+updated = ''
++++

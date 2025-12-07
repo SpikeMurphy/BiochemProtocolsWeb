@@ -6,8 +6,71 @@
     <description>Recent content in Bacteria on Laboratory</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Dec 2025 13:11:31 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 07 Dec 2025 19:01:01 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/Laboratory/recipes/bacteria/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Triton-X-100 10%</title>
+      <link>http://localhost:1313/Laboratory/recipes/bacteria/triton-x-100/</link>
+      <pubDate>Sun, 07 Dec 2025 19:01:01 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/recipes/bacteria/triton-x-100/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Phenylmethylsulfonylfluorid PMSF Stock 100 mM</title>
+      <link>http://localhost:1313/Laboratory/recipes/bacteria/pmsf/</link>
+      <pubDate>Sun, 07 Dec 2025 19:00:29 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/recipes/bacteria/pmsf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pepstatin A Stock 1 mM</title>
+      <link>http://localhost:1313/Laboratory/recipes/bacteria/pepstatin/</link>
+      <pubDate>Sun, 07 Dec 2025 19:00:06 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/recipes/bacteria/pepstatin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Luria-Bertani Medium</title>
+      <link>http://localhost:1313/Laboratory/recipes/bacteria/lb/</link>
+      <pubDate>Sun, 07 Dec 2025 18:59:37 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/recipes/bacteria/lb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Leupeptin Stock 10 mM</title>
+      <link>http://localhost:1313/Laboratory/recipes/bacteria/leupeptin/</link>
+      <pubDate>Sun, 07 Dec 2025 18:59:07 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/recipes/bacteria/leupeptin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aprotenin Stock 1.54 mM</title>
+      <link>http://localhost:1313/Laboratory/recipes/bacteria/aprotenin/</link>
+      <pubDate>Sun, 07 Dec 2025 18:58:20 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/recipes/bacteria/aprotenin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5-Brom-4-chlor-3-indoxyl-β-D-galactopyranosid (X-Gal) Stock 50 mg/mL</title>
+      <link>http://localhost:1313/Laboratory/recipes/bacteria/xgal/</link>
+      <pubDate>Sun, 07 Dec 2025 18:57:58 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/recipes/bacteria/xgal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1,10-Phenanthrolin Stock 100 mM</title>
+      <link>http://localhost:1313/Laboratory/recipes/bacteria/phenanthrolin/</link>
+      <pubDate>Sun, 07 Dec 2025 18:57:22 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/recipes/bacteria/phenanthrolin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bovine Serum Albumin (BSA) 750 µM (5 %)</title>
+      <link>http://localhost:1313/Laboratory/recipes/bacteria/bsa/</link>
+      <pubDate>Sun, 07 Dec 2025 18:56:26 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/recipes/bacteria/bsa/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ampicillin Stock 100 mg/mL</title>
       <link>http://localhost:1313/Laboratory/recipes/bacteria/ampicillin/</link>

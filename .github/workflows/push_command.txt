@@ -2,4 +2,6 @@ git add .
 git commit -m "update page"
 git push
 
-hugo new recipes/bacteria
+
+hugo new methodes/sds-page_and_western_blotting/
+Agarose Gel Electrophoresis (AGE)

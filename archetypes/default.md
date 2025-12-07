@@ -5,6 +5,6 @@ construction = false
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 subtitle = ''
 author = 'Spike Murphy Müller'
-version = '1.0'
+version = 'Version 1.0'
 updated = ''
 +++

@@ -5,8 +5,8 @@ construction = false
 title = 'Ampicillin Stock 100 mg/mL'
 subtitle = ''
 author = 'Spike Murphy Müller'
-version = '1.0'
-updated = ''
+version = 'Version 1.0'
+updated = '05.09.2025'
 +++
 
 #### for 20 mL
