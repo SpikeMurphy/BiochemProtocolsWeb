@@ -1,5 +1,11 @@
 <header>
     <h1>{{ .Title }}</h1>
-    <h3>{{ .Params.Subtitle}}</h2>
-    <h5>Author: {{ .Params.Author}}</h2>
+
+    {{ with .Params.Subtitle }}
+        <h3>{{ . }}</h3>
+    {{ end }}
+
+    {{ with .Params.Author }}
+        <h5>Author: {{ . }}</h5>
+    {{ end }}
 </header>

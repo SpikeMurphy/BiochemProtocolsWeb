@@ -4,17 +4,17 @@
         <h3>This page will be available soon.</h3>
     {{ else }}
         <ul>
-        {{ range .Pages }}
-            <li>
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </li>
-        {{ end }}
-
-        {{ range .Sections }}
-            <li>
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a> (Subsection)
-            </li>
-        {{ end }}
-        </ul>
+            {{ range .Sections }}
+                <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
+                <ul>
+                    {{ range .RegularPages }}
+                    <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
+                    {{ end }}  
+                </ul> 
             {{ end }}
+            {{ range .RegularPages }}
+                <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    {{ end }}
 {{end}}
