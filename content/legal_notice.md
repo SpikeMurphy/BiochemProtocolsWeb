@@ -1,8 +1,8 @@
 +++
 date = '2025-12-07T21:20:52+01:00'
 draft = true
-construction = false
-title = 'Legal_notice'
+construction = true
+title = 'Legal Notice'
 subtitle = ''
 author = 'Spike Murphy Müller'
 version = 'Version 1.0'

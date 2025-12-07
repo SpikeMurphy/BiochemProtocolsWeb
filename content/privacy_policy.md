@@ -1,8 +1,8 @@
 +++
 date = '2025-12-07T21:25:17+01:00'
 draft = true
-construction = false
-title = 'Privacy_policy'
+construction = true
+title = 'Privacy Policy'
 subtitle = ''
 author = 'Spike Murphy Müller'
 version = 'Version 1.0'
