@@ -2,14 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/Laboratory/methodes/dna/</loc>
+    <lastmod>2025-12-08T15:55:43+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Laboratory/methodes/dna/pcr/</loc>
+    <lastmod>2025-12-08T15:42:59+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/Laboratory/templates/</loc>
     <lastmod>2025-12-08T01:50:35+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Laboratory/methodes/dna/age/</loc>
+    <lastmod>2025-12-07T20:56:58+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Laboratory/templates/recipes/</loc>
     <lastmod>2025-12-07T20:19:41+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Laboratory/templates/methodes/</loc>
     <lastmod>2025-12-07T20:19:30+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Laboratory/recipes/bacteria/leupeptin/</loc>
+    <lastmod>2025-12-07T18:59:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Laboratory/methodes/bacteria/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
@@ -20,13 +32,13 @@
     <loc>http://localhost:1313/Laboratory/recipes/buffers/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/Laboratory/methodes/</loc>
+    <lastmod>2025-12-07T13:35:59+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/Laboratory/methodes/proteins/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Laboratory/recipes/proteins/</loc>
-    <lastmod>2025-12-07T13:35:59+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/Laboratory/methodes/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Laboratory/recipes/</loc>

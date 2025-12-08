@@ -1,0 +1,83 @@
+{{ define "main" }}
+<h2>Materials Inventory</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:left;">Name</th>
+            <th style="text-align:left;">Categories</th>
+            <th style="text-align:left;">Locations</th>
+            <th style="text-align:left;">Total Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {{/* --- 1. Leeres Slice für alle Materialien anlegen --- */}}
+        {{ $materials := slice }}
+
+        {{/* --- 2. Alle TOML Dateien unter data/materials/ durchgehen --- */}}
+        {{ range $fileName, $fileContent := site.Data.materials }}
+            {{ range $key, $val := $fileContent }}
+                {{/* Material-Objekt sammeln */}}
+                {{ $materials = $materials | append (dict "key" $key "value" $val) }}
+            {{ end }}
+        {{ end }}
+
+        {{/* --- 3. Sortieren nach Name --- */}}
+        {{ $materials = sort $materials "value.name" }}
+
+        {{/* --- 4. Tabelle ausgeben --- */}}
+        {{ range $materials }}
+            {{ $key := .key }}
+            {{ $mat := .value }}
+
+            {{/* Total amount absichern & berechnen */}}
+            {{ $total := 0 }}
+            {{ if $mat.locations }}
+                {{ range $mat.locations }}
+                    {{ if .amount }}
+                        {{ $total = add $total .amount }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+
+            <tr>
+                <td>
+                    <a href="/materials/{{ $key | urlize }}/">
+                        {{ $mat.name | default "Unnamed Material" }}
+                    </a>
+                </td>
+
+                <td>
+                    {{ if $mat.category }}
+                        {{ delimit $mat.category ", " }}
+                    {{ else }}
+                        <em>—</em>
+                    {{ end }}
+                </td>
+
+                <td>
+                    {{ if $mat.locations }}
+                        {{ range $i, $loc := $mat.locations }}
+                            {{ $loc.name | default "Unknown Location" }}
+                            {{ if $loc.amount }} ({{ $loc.amount }} {{ $mat.unit }}){{ end }}
+                            {{ if lt $i (sub (len $mat.locations) 1) }} <br> {{ end }}
+                        {{ end }}
+                    {{ else }}
+                        <em>No locations</em>
+                    {{ end }}
+                </td>
+
+                <td>
+                    {{ if gt $total 0 }}
+                        {{ $total }} {{ $mat.unit }}
+                    {{ else }}
+                        <em>—</em>
+                    {{ end }}
+                </td>
+            </tr>
+        {{ end }}
+
+    </tbody>
+</table>
+{{ end }}

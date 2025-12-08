@@ -1,0 +1,12 @@
+[ampicillin]
+name = "Ampicillin"
+category = ["Chemicals", "Solid"]
+unit = "g"
+
+[ampicillin.hazards]
+flammable = false
+toxicity = "low"
+
+[[ampicillin.locations]]
+name = "Fridge 1"
+amount = 20

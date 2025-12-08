@@ -6,7 +6,7 @@ title = 'Ampicillin Stock 100 mg/mL'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
-version = 'Version 1.0'
+version = 'Version 1.0.0'
 updated = '05.09.2025'
 +++
 

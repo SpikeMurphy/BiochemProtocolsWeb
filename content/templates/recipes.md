@@ -10,6 +10,7 @@ version = 'Version 1.0'
 updated = '08.12.2025'
 +++
 
+<!-- -->
 #### for xx mL
 
 {{< infobox type="info" title="" >}}
@@ -28,7 +29,7 @@ updated = '08.12.2025'
 ## Materials
 | Material | Molecular Weight | Specifications | Location |
 | :-- | :-- | :-- | :-- |
-| [Chemical [Chemical <sup>SDB</sup>](https://www.carlroth.com/.../)](https://www.carlroth.com/.../) |  g/mol  |  |  |
+| [Chemical <sup>SDB</sup>](https://www.carlroth.com/.../) |  g/mol  |  |  |
 |  |  g/mol |  |  |
 
 {{< /tab >}}

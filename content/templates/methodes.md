@@ -10,6 +10,7 @@ version = 'Version 1.0'
 updated = '08.12.2025'
 +++
 
+<!-- -->
 {{< infobox type="info" title="" >}}
 ⚠️ Info
 {{< /infobox >}}
