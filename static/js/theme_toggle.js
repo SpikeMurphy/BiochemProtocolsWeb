@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("theme-toggle");
 
-  if (!toggle) return; // Falls kein Toggle da ist
+  if (!toggle) return;
 
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("darkmode");

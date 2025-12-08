@@ -249,7 +249,6 @@ body.darkmode .tab {
     margin: 15px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
-
 body.darkmode .tab:hover {
     background: #263447;
     border-left-color: #93c5fd;
@@ -300,14 +299,6 @@ body.darkmode .infobox.danger {
   background: #5a1f1f;
 }
 /* ========== Infobox (dark) ========== */
-
-
-
-
-
-
-
-
 /* ========== Hyper Links (light) ========== */
 body.darkmode a {
   color: #60a5fa;
