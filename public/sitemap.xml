@@ -85,6 +85,8 @@
   </url><url>
     <loc>http://localhost:1313/Laboratory/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/Laboratory/login/</loc>
+  </url><url>
     <loc>http://localhost:1313/Laboratory/tags/</loc>
   </url>
 </urlset>

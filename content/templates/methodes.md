@@ -12,6 +12,9 @@ updated = '08.12.2025'
 +++
 
 <!-- -->
+
+{{< timer time="0:00:30" >}}
+
 {{< infobox type="info" title="" >}}
 ⚠️ Info
 {{< /infobox >}}
