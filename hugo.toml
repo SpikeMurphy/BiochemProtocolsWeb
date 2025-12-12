@@ -1,8 +1,6 @@
 baseURL = 'https://spikemurphy.github.io/BiochemProtocols/'
 languageCode = 'en-us'
 title = 'BiochemProtocols'
-relativeURLs = true
-canonifyURLs = false
 
 [markup]
   [markup.goldmark]

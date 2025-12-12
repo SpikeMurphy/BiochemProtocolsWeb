@@ -17,3 +17,7 @@ git push
 git add .
 git commit -m "add: public from hugo server"
 git push
+
+git add .
+git commit -m "remove: xxxxx"
+git push
