@@ -137,3 +137,5 @@ Alternatively prepare samples individually by pipetting the following volumes in
 ### Procede with Suitable Protocol:
 - [Agarose Gel Electrophoresis (AGE)]({{< relref "methodes/dna/age.md" >}})
 {{< /tab >}}
+
+{{< comment_box >}}

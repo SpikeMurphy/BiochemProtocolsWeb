@@ -77,3 +77,5 @@ updated = '12.12.2025'
 ### Proceed with the appropriate Plasmid Prep Protocol
 - [NucleoSpin® Plasmid Preparation]({{< relref "/methodes/dna/nucleospin_plasmid_prep.md" >}})
 {{< /tab >}}
+
+{{< comment_box >}}

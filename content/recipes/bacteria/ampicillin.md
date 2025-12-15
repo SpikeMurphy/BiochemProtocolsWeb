@@ -50,3 +50,5 @@ updated = '05.09.2025'
 |@ -20 °C (light-sensitive) | 1 year|
 |@ –80 °C (light-sensitive) | 2 years|
 {{< /tab >}}
+
+{{< comment_box >}}

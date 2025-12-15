@@ -59,3 +59,5 @@ updated = ''
 |@ -20 °C | 12 month |
 |@ –80 °C |  |
 {{< /tab >}}
+
+{{< comment_box >}}

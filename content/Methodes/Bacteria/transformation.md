@@ -101,3 +101,5 @@ updated = '20.12.2025'
 - 	[Bacterial Expression Culture]({{< relref "/methodes/bacteria/expression_culture.md" >}})
 - 	[Bacterial Plasmid Preparation Culture]({{< relref "/methodes/bacteria/plasmid_prep_culture.md" >}})
 {{< /tab >}}
+
+{{< comment_box >}}

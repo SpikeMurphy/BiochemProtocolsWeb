@@ -17,3 +17,5 @@ imaging in general, but add that lanes with samples for gel extraction need to b
 {{< infobox type="info" title="Subsequent Purification" >}}
 ⚠️ For downstream purification, cut away all lanes with samples that are intended for later gel extraction. UV light is mutagenic and can damage or alter DNA, so the band intended for purification should not be exposed to UV light. Instead, determine its position by imaging only the well containing the corresponding sample intended for UV imaging.
 {{< /infobox >}}
+
+{{< comment_box >}}

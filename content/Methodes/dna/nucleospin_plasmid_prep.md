@@ -44,9 +44,15 @@ updated = '12.12.2025'
 ## Procedure:
 ### Preparations:
 1.	<input type="checkbox"> [Prepare a 5 mL culture of transformed bacteria and grow them until an OD<sub>600</sub> ~ 0.4–0.8 (best 0.6) is reached.]({{< relref "/methodes/bacteria/plasmid_prep_culture.md" >}})
-2.	<input type="checkbox"> Pre-heat a heating block to 70 °C.
-3.	<input type="checkbox"> Pre-heat 60 µL of buffer AE (elution buffer) to 70 °C.
+2.	<input type="checkbox"> Optionally, pre-heat a heating block to 70 °C.
+3.	<input type="checkbox"> Optionally, pre-heat 60 µL of buffer AE (elution buffer) per sapmle to 70 °C.
 ### Harvest:
+1.	<input type="checkbox"> Pellet bacteria @ 5,000 g for 10 minutes.
+{{< timer time="0:10:00" >}}
+
+{{< infobox type="info" title="Microfuge" >}}
+⚠️ If no device for centrifuging 15 mL tubes at high enaugh force is available, a microfuge with multiple cycles can be used:
+
 1.	<input type="checkbox"> Transfer 1000 µL of the culture into a sterile 1.5 mL reaction tube.
 2.	<input type="checkbox"> Pellet bacteria @ 11,000 g for 30 seconds.
 {{< timer time="0:00:30" >}}
@@ -71,8 +77,10 @@ updated = '12.12.2025'
 14.	<input type="checkbox"> Pellet bacteria @ 11,000 g for 30 seconds.
 {{< timer time="0:00:30" >}}
 
+{{< /infobox >}}
+
 15.	<input type="checkbox"> Discard supernatant.
-16.	<input type="checkbox"> Remove all access medium with a 100 µL pipette.
+16.	<input type="checkbox"> Remove all access medium with a pipette.
 ### Cell Lysis:
 1.	<input type="checkbox"> Add 250 µL of Buffer A1 to the pellet.
 2.	<input type="checkbox"> Resuspend the pellet completely by pipetting up and down and/or vortexing.
@@ -87,7 +95,8 @@ updated = '12.12.2025'
 {{< timer time="0:10:00" >}}
 
 ### Loading the Column:
-1.	<input type="checkbox"> Place a NucleoSpin Column onto a 2 mL collection tube.
+1.	<input type="checkbox"> Place a NucleoSpin Column onto a 2 mL collection tube per sample.
+1.	<input type="checkbox"> Provide and lable a 1.5 mL reaction tube per sample.
 2.	<input type="checkbox"> Add the supernatant (up to 700 µL) onto the column membrane.
 3.	<input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.
 {{< timer time="0:01:00" >}}
@@ -107,30 +116,43 @@ updated = '12.12.2025'
 {{< timer time="0:02:00" >}}
 
 12.	<input type="checkbox"> Discard the collection tube and place the collum onto a fresh 1.5 mL reaction tube.
-12.	<input type="checkbox"> Optionally incubate the column @ 70 °C for 2 minutes to remove all residual ethanole.
+12.	<input type="checkbox"> Optionally, incubate the column @ 70 °C for 2 minutes to remove all residual ethanole.
 {{< timer time="0:02:00" >}}
 
 ### Eluting the DNA:
 1. <input type="checkbox"> Add 25µL of pre-heated buffer AE (elution buffer) to the column membrane.
-2. <input type="checkbox"> Close the lid and incubate for 5 minutes @ RT.
+2. <input type="checkbox"> Close the lid and incubate @ RT for 5 minutes.
 {{< infobox type="info" title="" >}}
 ⚠️ Optionally, incubate at 70 °C for 5 minutes instead. Note that this may reduce the final volume but can increase the concentration and overall DNA yield.
 {{< /infobox >}}
 {{< timer time="0:05:00" >}}
 
-3. <input type="checkbox"> Centrifuge @ 50 g (or the lowest force possible) for 60 seconds.
+3. <input type="checkbox"> Optionally, Centrifuge @ 50 g (or the lowest force possible) for 60 seconds.
+{{< timer time="0:01:00" >}}
+
+4. <input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.
+{{< timer time="0:01:00" >}}
+
+1. <input type="checkbox"> Add 25µL of pre-heated buffer AE (elution buffer) to the column membrane.
+2. <input type="checkbox"> Close the lid and incubate @ RT for 5 minutes.
+{{< infobox type="info" title="" >}}
+⚠️ Optionally, incubate at 70 °C for 5 minutes instead. Note that this may reduce the final volume but can increase the concentration and overall DNA yield.
+{{< /infobox >}}
+{{< timer time="0:05:00" >}}
+
+3. <input type="checkbox"> Optionally, Centrifuge @ 50 g (or the lowest force possible) for 60 seconds.
 {{< timer time="0:01:00" >}}
 
 4. <input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.
 {{< timer time="0:01:00" >}}
 
 {{< infobox type="info" title="" >}}
-⚠️ You can do an additional elution to obtain more overall DNA mass. If concentration is crutial, use another reaction tube for the additional elution.
+⚠️ You can do an additional third elution to obtain more overall DNA mass. If concentration is crutial, use another reaction tube for the additional elution.
 
-1. <input type="checkbox"> Optionally place the column on another reaction tube.
+1. <input type="checkbox"> Optionally, place the column on another reaction tube.
 2. <input type="checkbox"> Add 10-25µL of pre-heated buffer AE (elution buffer) to the column membrane.
-3. <input type="checkbox"> Close the lid and incubate for 5 minutes @ 70 °C.
-4. <input type="checkbox"> Centrifuge @ 50 g (or the lowest force possible) for 60 seconds.
+3. <input type="checkbox"> Close the lid and incubate @ 70 °C for 5 minutes.
+4. <input type="checkbox"> Optionally, Centrifuge @ 50 g (or the lowest force possible) for 60 seconds.
 {{< timer time="0:01:00" >}}
 
 5. <input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.
@@ -142,3 +164,6 @@ updated = '12.12.2025'
 ### Procede with Suitable Protocol:
 - [Nano Drop DNA concentration determination]().
 {{< /tab >}}
+
+{{< comment_box >}}
+{{< save_page >}}

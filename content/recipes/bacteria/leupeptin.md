@@ -54,3 +54,5 @@ updated = ''
 |@ -20 °C |  |
 |@ –80 °C |  |
 {{< /tab >}}
+
+{{< comment_box >}}

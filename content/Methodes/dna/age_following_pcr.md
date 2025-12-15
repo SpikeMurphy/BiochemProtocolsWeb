@@ -123,3 +123,5 @@ DNA is negatively charged and runs from the cathode (-) to the anode (+).
 - [Imaging following agarose gel electrophoresis (AGE)]({{< relref "methodes/dna/imaging_age.md" >}})
 - [Purification of DNA from agarose gel electrophoresis (AGE)]({{< relref "methodes/dna/purification_age.md" >}})
 {{< /tab >}}
+
+{{< comment_box >}}
