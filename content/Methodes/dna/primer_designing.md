@@ -1,7 +1,7 @@
 +++
 date = '2025-12-10T13:06:02+01:00'
-draft = true
-construction = false
+draft = false
+construction = true
 title = 'Primer Designing'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'

@@ -24,7 +24,7 @@ Please note that all information on this site is intended for trained personnel 
 
 <br>
 
-Those pages were created within the last seven days.
+Those pages were created within the last thirty days.
 {{< /infobox >}}
 
 ### Important Disclaimer
