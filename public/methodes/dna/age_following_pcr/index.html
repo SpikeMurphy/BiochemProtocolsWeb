@@ -1,5 +1,5 @@
 <html lang="en">
-<head><script src="/BiochemProtocols/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=BiochemProtocols/livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
@@ -7,24 +7,22 @@
 </head>
 
 <script src="/BiochemProtocols/js/theme_toggle.js"></script>
-<script src="/BiochemProtocols/js/age_buffer_select.js"></script>
-<script src="/BiochemProtocols/js/age_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/age_sample_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/pcr_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/age_following_pcr_buffer.js"></script>
+<script src="/BiochemProtocols/js/colculators/age_buffer_select.js"></script>
+<script src="/BiochemProtocols/js/colculators/age_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/colculators/age_sample_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/colculators/pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/colculators/age_following_pcr_buffer.js"></script>
 <script src="/BiochemProtocols/js/timer.js"></script>
 <script src="/BiochemProtocols/js/current_time_display.js"></script>
-<script src="/BiochemProtocols/js/transformation_from_pcr_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/transformation_buffer_10x_PIPES_alternative.js"></script>
-<script src="/BiochemProtocols/js/primer_alternative.js"></script>
-
+<script src="/BiochemProtocols/js/colculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
 
 <script src="/BiochemProtocols/js/comment_box.js"></script>
 
 <script src="/BiochemProtocols/js/save_page.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script> 
-<script src="/BiochemProtocols/js/bacterial_growth_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/bacterial_growth_calc.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
@@ -418,6 +416,62 @@
 <button id="save-pdf" type="button">
   Save page as PDF
 </button></p>
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocols</b></div>
+      <br>
+      <div class="line title">Agarose Gel Electrophoresis (AGE) following polymerase chain reaction (PCR)</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.0.0</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"Agarose Gel Electrophoresis (AGE) following polymerase chain reaction (PCR)\"",
+    version: "\"Version 1.0.0\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/methodes/dna/age_following_pcr/\""
+  };
+</script>
+
 
         <div style="text-align: right;">
         <br>

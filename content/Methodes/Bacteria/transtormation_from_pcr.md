@@ -68,10 +68,10 @@ updated = '10.12.2025'
 | <input type="checkbox"> | <span  id="r-buffer-vol" class="t_from_pcr_mm" data-base="2.5">2.5</span> µL| restriction enzyme buffer (default: Tango buffer) | 10x |  |
 | <input type="checkbox"> | <span  id="dtt_atp-vol" class="t_from_pcr_mm" data-base="1">1</span> µL | DTT/ATP | 250 mM/12.5 mM | 10 mM/500 µM |
 | <input type="checkbox"> | <span  id="t4-vol" class="t_from_pcr_mm" data-base="1">1</span> µL | T4 DNA ligase | 1 U/µL |  |
-| <input type="checkbox"> | <span  id="enzyme-vol" class="t_from_pcr_mm" data-base="1">1</span> µL | restriction enzyme(s) of choice | {{< transformation_from_pcr_enzyme_amount_select target="enzyme-vol" >}} |  |
+| <input type="checkbox"> | <span  id="enzyme-vol" class="t_from_pcr_mm" data-base="1">1</span> µL | restriction enzyme(s) of choice | {{< calculators/transformation_from_pcr_enzyme_amount_select target="enzyme-vol" >}} |  |
 |  | = <span  id="sum-vol" class="t_from_pcr_mm" data-base="15">15</span> µL |  |  |  |
 
-{{< transformation_from_pcr_mastermix_prep_calc >}}
+{{< calculators/transformation_from_pcr_mastermix_prep_calc >}}
 
 {{< infobox type="info" title="" >}}
 ℹ️ DTT protects ATP from degradation and can help to form a reducing environment in the reaction which protects enzyme function by inhibiting formation of disulfid bridges.
@@ -139,3 +139,5 @@ updated = '10.12.2025'
 
 {{< comment_box >}}
 {{< save_page >}}
+
+{{< save_journal_label >}}

@@ -91,3 +91,5 @@ updated = '08.12.2025'
 
 {{< comment_box >}}
 {{< save_page >}}
+
+{{< save_journal_label >}}

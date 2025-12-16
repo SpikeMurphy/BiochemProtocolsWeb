@@ -128,3 +128,6 @@ updated = '11.12.2025'
 {{< /tab >}}
 
 {{< comment_box >}}
+{{< save_page >}}
+
+{{< save_journal_label >}}

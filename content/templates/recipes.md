@@ -30,10 +30,11 @@ updated = '08.12.2025'
 ## Materials
 | Material | Molecular Weight | Specifications | Location |
 | :-- | :-- | :-- | :-- |
-| [Chemical <sup>SDB</sup>](https://www.carlroth.com/.../) |  g/mol  |  |  |
-|  |  g/mol |  |  |
-|  |  g/mol |  |  |
-|  |  g/mol |  |  |
+| ChemicalName *ChemicalFormula* [<sup>SDB</sup>](https://www.carlroth.com/.../) | g/mol |  | {{< chemical_location chemical="chemicalname_spec" >}} |
+|  | g/mol |  | {{< chemical_location chemical="chemicalname_spec" >}} |
+|  | g/mol |  | {{< chemical_location chemical="chemicalname_spec" >}} |
+| deionized sterilized Water *dsH<sub>2</sub>O* | 18.015 g/mol | liquid |  |
+| <span id="alt_pagename_m_m_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_m_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_m_mw_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_mw_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_m_specs_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_specs_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_m_l_reagent1">{{< chemical_location chemical="chemicalname_spec" >}}</span>     <span id="alt_pagename_m_l_reagent2" style="display:none">{{< chemical_location chemical="chemicalname_spec" >}}</span> |
 
 {{< /tab >}}
 
@@ -41,7 +42,7 @@ updated = '08.12.2025'
 ## Recipe
 |  | Material/Step | Volume/Mass | molar/%/comment |
 | :-- | :-- | :-- | :-- |
-| <input type="checkbox"> |  |  |  |
+| <input type="checkbox"> | <span id="alt_pagename_r_ms_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_ms_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_r_vm_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_vm_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_r_mol_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_mol_reagent2" style="display:none">XXXXXXXXXX</span> |
 | <input type="checkbox"> |  |  |  |
 | <input type="checkbox"> |  |  |  |
 | <input type="checkbox"> |  |  |  |
@@ -67,3 +68,5 @@ updated = '08.12.2025'
 
 {{< comment_box >}}
 {{< save_page >}}
+
+{{< save_journal_label >}}

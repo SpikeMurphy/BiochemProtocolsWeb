@@ -106,13 +106,13 @@ todo = true
 
 |  | Volume V [µL] | Reagent | Concentration c<sub>1</sub> [ng/µL] <br> Mass m<sub>1</sub> [ng] | Concentration c<sub>2</sub> [ng/µL] <br> Mass m<sub>2</sub> [ng] |
 | :-- | :-- | :-- | :-- | :-- | :-- |
-| <input type="checkbox"> | <span  id="buffer-vol" class="age_mm" data-base="1">1</span> µL | DNA loading buffer | {{< age_mastermix_buffer_select target="buffer-vol" >}} |  |
+| <input type="checkbox"> | <span  id="buffer-vol" class="age_mm" data-base="1">1</span> µL | DNA loading buffer | {{< calculators/age_mastermix_buffer_select target="buffer-vol" >}} |  |
 | <input type="checkbox"> | <span id="h2o-vol" class="age_mm" data-base="3">3</span> µL | dsH<sub>2</sub>O |  |  |
 | <input type="checkbox"> | = <span class="age_mm" data-base="4">4</span> µL |  |  |  |  
 
 {{< infobox type="info" title="Mastermix Preparation Calculator" >}}
 <div id="mastermix-calculator-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
-{{< age_mastermix_prep_calc >}}
+{{< calculators/age_mastermix_prep_calc >}}
 {{< /infobox >}}
 
 2.	<input type="checkbox"> Mix the DNA and the loading buffer to a final volume according to the capacity of the wells:
@@ -124,7 +124,7 @@ todo = true
 | <input type="checkbox"> | = <span class="age_sample" data-base="5">5</span> µL |  |  |  |
 
 {{< infobox type="info" title="Sample Preparation Calculator" >}}
-{{< age_sample_prep_calc >}}
+{{< calculators/age_sample_prep_calc >}}
 default 6-well comb well volume: TBD  
 default 12-well comb well volume: TBD  
 {{< /infobox >}}
@@ -157,3 +157,5 @@ DNA is negatively charged and runs from the cathode (-) to the anode (+).
 
 {{< comment_box >}}
 {{< save_page >}}
+
+{{< save_journal_label >}}

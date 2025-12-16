@@ -95,7 +95,7 @@ updated = '09.12.2025'
 ### Preparing the DNA:
 1.	<input type="checkbox"> Mix the whole PCR reaction mixture with the appropriate amount of DNA loading buffer.
 {{< infobox type="info" title="DNA Loading Buffer Volume Calculator" >}}
-{{< age_following_pcr_buffer >}}
+{{< calculators/age_following_pcr_buffer >}}
 {{< /infobox >}}
 
 ### Running the Gel:
@@ -126,3 +126,5 @@ DNA is negatively charged and runs from the cathode (-) to the anode (+).
 
 {{< comment_box >}}
 {{< save_page >}}
+
+{{< save_journal_label >}}

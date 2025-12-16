@@ -2,7 +2,7 @@
 date = '2025-12-07T13:11:31+01:00'
 draft = true
 construction = false
-title = 'StrepTag Protein Purification'
+title = 'StrepTag Gravity Flow Protein Purification'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'

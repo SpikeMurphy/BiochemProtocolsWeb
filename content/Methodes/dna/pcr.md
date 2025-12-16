@@ -58,7 +58,7 @@ T<sub>m</sub> = 4×(GC-Pairing) + 2×(AT-Pairing)
 T<sub>a</sub> = T<sub>m</sub>– 4
 
 ❗️ Non-functional at the moment.
-{{< tm >}}
+{{< calculators/tm >}}
 ⚠️ Those values are specific for the Phusion HS II DNA polymerase with GC buffer.  
 ❗️ Plese check all values with e.g. NEB Tm calculator or Thermofisher Scientific Tm calculator.
 {{< /infobox >}}
@@ -66,7 +66,7 @@ T<sub>a</sub> = T<sub>m</sub>– 4
 Elongation time for Phusion HS II is 30–60 sec/1kb.
   
 t<sub>e</sub> = bp/1000 × 30 sec
-{{< seqtime >}}
+{{< calculators/seqtime >}}
 {{< /infobox >}}
 
 ### Preparing the Thermocycler:
@@ -105,7 +105,7 @@ t<sub>e</sub> = bp/1000 × 30 sec
 | <input type="checkbox"> | <span class="pcr" data-base="1.5">1.5</span> µL | DMSO | 100 % |  |
 | <input type="checkbox"> | <span class="pcr" data-base="1">1</span> µL | dNTP mix | 10 mM | 200 µM |
 |  | = <span class="pcr" data-base="43">43</span> µL |  |  |  |
-{{< pcr_mastermix_prep_calc >}}
+{{< calculators/pcr_mastermix_prep_calc >}}
 2. <input type="checkbox"> Prepare samples with mastermix by pipetting the following volumes into a 0.5 mL PCR tube:
 
 |  | Volume V [µL] | Reagent | c<sub>1</sub>/m<sub>1</sub> | c<sub>2</sub>/m<sub>2</sub> |
@@ -140,3 +140,5 @@ Alternatively prepare samples individually by pipetting the following volumes in
 
 {{< comment_box >}}
 {{< save_page >}}
+
+{{< save_journal_label >}}

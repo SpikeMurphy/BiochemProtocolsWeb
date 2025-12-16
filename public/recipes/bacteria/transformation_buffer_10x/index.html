@@ -1,5 +1,5 @@
 <html lang="en">
-<head><script src="/BiochemProtocols/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=BiochemProtocols/livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
@@ -7,24 +7,22 @@
 </head>
 
 <script src="/BiochemProtocols/js/theme_toggle.js"></script>
-<script src="/BiochemProtocols/js/age_buffer_select.js"></script>
-<script src="/BiochemProtocols/js/age_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/age_sample_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/pcr_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/age_following_pcr_buffer.js"></script>
+<script src="/BiochemProtocols/js/colculators/age_buffer_select.js"></script>
+<script src="/BiochemProtocols/js/colculators/age_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/colculators/age_sample_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/colculators/pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/colculators/age_following_pcr_buffer.js"></script>
 <script src="/BiochemProtocols/js/timer.js"></script>
 <script src="/BiochemProtocols/js/current_time_display.js"></script>
-<script src="/BiochemProtocols/js/transformation_from_pcr_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/transformation_buffer_10x_PIPES_alternative.js"></script>
-<script src="/BiochemProtocols/js/primer_alternative.js"></script>
-
+<script src="/BiochemProtocols/js/colculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
 
 <script src="/BiochemProtocols/js/comment_box.js"></script>
 
 <script src="/BiochemProtocols/js/save_page.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script> 
-<script src="/BiochemProtocols/js/bacterial_growth_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/bacterial_growth_calc.js"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
@@ -67,7 +65,8 @@
 
             
     
-        <div class="tab">
+        <h4 id="for-1000-ml">for 1000 mL</h4>
+<div class="tab">
   <h2 id="materials">Materials</h2>
 <table>
   <thead>
@@ -80,37 +79,37 @@
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><span id="pipes-material"><a href="https://www.carlroth.com/.../">PIPES <sup>SDB</sup></a></span><span style="display:none" id="mopes-material"><a href="https://www.carlroth.com/.../">MOPES <sup>SDB</sup></a></span> <button button class="alternative" id="pipes_alternative_switch">Use MOPES</button></td>
-          <td style="text-align: left"><span id="pipes-mw">302.37 g/mol</span><span style="display:none" id="mopes-mw">241.26 g/mol</span></td>
-          <td style="text-align: left"><span id="pipes-specs">solid</span><span style="display:none" id="mopes-specs">solid, alternative buffer</span></td>
-          <td style="text-align: left"> <span id="pipes-location"></span><span style="display:none" id="mopes-location"></span></td>
+          <td style="text-align: left"><span id="alt_inouetransformationbufferstock10x_m_m_pipes">PIPES <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></span>     <span id="alt_inouetransformationbufferstock10x_m_m_mopes" style="display:none">MOPES <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></span> <button button class="alternative" id="inouetransformationbufferstock10x_pipes_alternative_switch">Use MOPES</button><script src="/BiochemProtocols/js/alternative_switches/alt_inouetransformationbufferstock10x_pipes.js"></script></td>
+          <td style="text-align: left"><span id="alt_inouetransformationbufferstock10x_m_mw_pipes">302.37 g/mol</span>     <span id="alt_inouetransformationbufferstock10x_m_mw_mopes" style="display:none">241.26 g/mol</span></td>
+          <td style="text-align: left"><span id="alt_inouetransformationbufferstock10x_m_specs_pipes">solid</span>     <span id="alt_inouetransformationbufferstock10x_m_specs_mopes" style="display:none">solid, alternative buffer</span></td>
+          <td style="text-align: left"> <span id="alt_inouetransformationbufferstock10x_m_l_pipes"></span><span id="alt_inouetransformationbufferstock10x_m_l_mopes" style="display:none"></span></td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.carlroth.com/.../">manganese chloride MnCl<sub>2</sub><sup>SDB</sup></a></td>
+          <td style="text-align: left">manganese chloride tetrahydrat <em>MnCl<sub>2</sub> · 4 H<sub>2</sub>O</em> <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></td>
           <td style="text-align: left">197.91 g/mol</td>
           <td style="text-align: left">solid</td>
           <td style="text-align: left"> </td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.carlroth.com/.../">calcium chloride CaCl<sub>2</sub><sup>SDB</sup></a></td>
+          <td style="text-align: left">calcium chloride dihydrate <em>CaCl<sub>2</sub> · 2 H<sub>2</sub>O</em> <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></td>
           <td style="text-align: left">147.01 g/mol</td>
           <td style="text-align: left">solid</td>
           <td style="text-align: left"> </td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.carlroth.com/.../">potassium chloride KCl<sup>SDB</sup></a></td>
+          <td style="text-align: left">potassium chloride <em>KCl</em> <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></td>
           <td style="text-align: left">74.55 g/mol</td>
           <td style="text-align: left">solid</td>
           <td style="text-align: left"> </td>
       </tr>
       <tr>
-          <td style="text-align: left">dsH<sub>2</sub>O</td>
+          <td style="text-align: left">deionized sterilizes Water <em>dsH<sub>2</sub>O</em></td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
           <td style="text-align: left"> </td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.carlroth.com/.../">acetic acid CH<sub>3</sub>COOH<sup>SDB</sup></a></td>
+          <td style="text-align: left">acetic acid <em>CH<sub>3</sub>COOH</em> <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
           <td style="text-align: left"> </td>
@@ -119,6 +118,12 @@
           <td style="text-align: left">bucket of ices</td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
+          <td style="text-align: left"> </td>
+      </tr>
+      <tr>
+          <td style="text-align: left">vakuum filter</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">0.22 µm</td>
           <td style="text-align: left"> </td>
       </tr>
   </tbody>
@@ -139,32 +144,32 @@
   <tbody>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left"> <span id="pipes-r-material">PIPES</span><span style="display:none" id="mopes-r-material">MOPES</span></td>
-          <td style="text-align: left"><span id="pipes-r-vol">3.00 g</span> <span style="display:none" id="mopes-r-vol">2.10 g</span></td>
-          <td style="text-align: left"><span id="pipes-r-mol">100 mM (1x 10 mM)</span> <span style="display:none" id="mopes-r-mol">100 mM (1x 10 mM)</span></td>
+          <td style="text-align: left"> <span id="alt_inouetransformationbufferstock10x_r_ms_pipes">PIPES</span>     <span id="alt_inouetransformationbufferstock10x_r_ms_mopes" style="display:none">MOPES</span></td>
+          <td style="text-align: left"><span id="alt_inouetransformationbufferstock10x_r_vm_pipes">30.0 g</span>     <span id="alt_inouetransformationbufferstock10x_r_vm_mopes" style="display:none">21.0 g</span></td>
+          <td style="text-align: left"><span id="alt_inouetransformationbufferstock10x_r_mol_pipes">100 mM (1x 10 mM)</span>     <span id="alt_inouetransformationbufferstock10x_r_mol_mopes" style="display:none">100 mM (1x 10 mM)</span></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> MnCl<sub>2</sub></td>
-          <td style="text-align: left">10.89 g</td>
+          <td style="text-align: left">108.9 g</td>
           <td style="text-align: left">550 mM (1x 55 mM)</td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> CaCl<sub>2</sub></td>
-          <td style="text-align: left">2.20 g</td>
+          <td style="text-align: left">22.0 g</td>
           <td style="text-align: left">150 mM (1x 15 mM)</td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> KCl</td>
-          <td style="text-align: left">18.65 g</td>
+          <td style="text-align: left">186.5 g</td>
           <td style="text-align: left">2.5 M (1x 250 mM)</td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> dsH<sub>2</sub>O</td>
-          <td style="text-align: left">to 80 mL</td>
+          <td style="text-align: left">to 800 mL</td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
@@ -182,18 +187,18 @@
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> dsH<sub>2</sub>O</td>
-          <td style="text-align: left">to 100 mL</td>
+          <td style="text-align: left">to 1000 mL</td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left"> filter through 0.22 µm syringe filter</td>
+          <td style="text-align: left"> filter through 0.22 µm vakuum filter</td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left"> store in 50 mL aliquots at 4 °C or –20 °C</td>
+          <td style="text-align: left"> store @ 4 °C or in 50 mL aliquots @ –20 °C</td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
@@ -267,10 +272,66 @@
 <button id="save-pdf" type="button">
   Save page as PDF
 </button></p>
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocols</b></div>
+      <br>
+      <div class="line title">Inoue Transformation Buffer Stock 10x</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.0.1</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"Inoue Transformation Buffer Stock 10x\"",
+    version: "\"Version 1.0.1\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/transformation_buffer_10x/\""
+  };
+</script>
+
 
         <div style="text-align: right;">
         <br>
-         Version 1.0.0
+        16.12.2025 Version 1.0.1
         </div>
     
 

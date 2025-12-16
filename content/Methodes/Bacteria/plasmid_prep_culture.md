@@ -72,7 +72,7 @@ updated = '12.12.2025'
 
 {{< current_time_display >}}
 
-{{< bacterial_growth_calc >}}
+{{< calculators/bacterial_growth_calc >}}
 
 ### Proceed with the appropriate Plasmid Prep Protocol
 - [NucleoSpin® Plasmid Preparation]({{< relref "/methodes/dna/nucleospin_plasmid_prep.md" >}})
@@ -80,3 +80,5 @@ updated = '12.12.2025'
 
 {{< comment_box >}}
 {{< save_page >}}
+
+{{< save_journal_label >}}

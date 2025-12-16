@@ -1,0 +1,54 @@
+// steps:
+// 1.: searchfunktion XXXXX replace with reagent 1
+// 2.: searchfunktion YYYYY replace with reagent 2
+// 3.: searchfunktion ZZZZZ replace with pagename (one continuous word, no underscores no spaces)
+// 4.: name .js "alt_pagename_reagent1"
+// 5.: update AAAAA and BBBBB to the button displays
+// 6.: update html (use template recipe) in content
+// 7.: updare html shortcode (use alt_template.html) in content
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btn = document.getElementById("ZZZZZ_XXXXX_alternative_switch"); // enter reagent 1
+
+  const XXXXX = { // enter reagent 1
+    m_material:   document.getElementById("alt_ZZZZZ_m_m_XXXXX"),
+    m_mw:         document.getElementById("alt_ZZZZZ_m_mw_XXXXX"),
+    m_specs:      document.getElementById("alt_ZZZZZ_m_specs_XXXXX"),
+    m_location:   document.getElementById("alt_ZZZZZ_m_l_XXXXX"),
+    r_material: document.getElementById("alt_ZZZZZ_r_ms_XXXXX"),
+    r_vol:      document.getElementById("alt_ZZZZZ_r_vm_XXXXX"),
+    r_mol:      document.getElementById("alt_ZZZZZ_r_mol_XXXXX"),
+  };
+
+  const YYYYY = { // enter reagent 2
+    m_material:   document.getElementById("alt_ZZZZZ_m_m_YYYYY"),
+    m_mw:         document.getElementById("alt_ZZZZZ_m_mw_YYYYY"),
+    m_specs:      document.getElementById("alt_ZZZZZ_m_specs_YYYYY"),
+    m_location:   document.getElementById("alt_ZZZZZ_m_l_YYYYY"),
+    r_material: document.getElementById("alt_ZZZZZ_r_ms_YYYYY"),
+    r_vol:      document.getElementById("alt_ZZZZZ_r_vm_YYYYY"),
+    r_mol:      document.getElementById("alt_ZZZZZ_r_mol_YYYYY"),
+  };
+
+  let usingYYYYY = false; // enter reagent 2
+
+  function toggle() {
+    for (const key in XXXXX) { // enter reagent 1
+      if (!XXXXX[key] || !YYYYY[key]) continue; // enter reagent 1
+        XXXXX[key].style.display = usingYYYYY ? "none" : "";  // enter reagent 1
+        YYYYY[key].style.display = usingYYYYY ? "" : "none";  // enter reagent 2
+    }
+  }
+
+  if (btn) {
+    btn.addEventListener("click", () => {
+      usingYYYYY = !usingYYYYY;  // enter reagent 2
+      toggle();
+
+      btn.innerHTML = usingYYYYY  // enter reagent 2
+        ? "Use AAAAA" // enter reagent 1 display 
+        : "Use BBBBB";  // enter reagent 2 display (same as in button html shortcode)
+    });
+  }
+});

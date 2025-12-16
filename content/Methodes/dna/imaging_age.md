@@ -20,3 +20,5 @@ imaging in general, but add that lanes with samples for gel extraction need to b
 
 {{< comment_box >}}
 {{< save_page >}}
+
+{{< save_journal_label >}}

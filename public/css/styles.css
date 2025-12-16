@@ -1065,7 +1065,7 @@ body.darkmode .language_button a:hover {
 
 
 
-
+/* ========== label (light/dark) ========== */
 .label-preview-wrapper {
   display: inline-block;
 }
@@ -1181,3 +1181,33 @@ body.darkmode .label-controls button:active {
   background: #1e293b;
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.4);
 }
+/* ========== label (light/dark) ========== */
+::view-transition-group.location-comment {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.location-input {
+  flex: 1;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.save-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.save-btn.enabled {
+  opacity: 1;
+}
+
+.save-btn:disabled {
+  cursor: default;
+}
+/* ========== chemical (light/dark) ========== */
