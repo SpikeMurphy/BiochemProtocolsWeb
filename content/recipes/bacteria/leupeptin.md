@@ -42,7 +42,7 @@ to-do= 'uscases -> infofield, storage'
 ## Usecases
 | Usecase | Specifications |
 | :-- | :-- |
-| [Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer 1x]({{< relref "bacterial_lysis_buffer_1x.md" >}}) | Standard concentration of 10 (1–100) µM for inhibition of serine and cystein proteases. <br> Working concentrations are only stable for a few hours. |
+| [Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer]({{< relref "bacterial_lysis_buffer" >}}) | Standard concentration of 10 (1–100) µM for inhibition of serine and cystein proteases. <br> Working concentrations are only stable for a few hours. |
 |  |  |
 {{< /tab >}}
 

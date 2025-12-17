@@ -4,24 +4,16 @@
     "path": "/BiochemProtocols/recipes/dna/primer_reconstitution/"
   },
   {
-    "title": "Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer 1x",
-    "path": "/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer_1x/"
+    "title": "Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer",
+    "path": "/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer/"
   },
   {
-    "title": "Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer Stock 10x",
-    "path": "/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer_10x/"
-  },
-  {
-    "title": "Phosphate-Buffered Saline (PBS) Stock 10x",
+    "title": "Phosphate-Buffered Saline (PBS)",
     "path": "/BiochemProtocols/recipes/general_buffers/pbs/"
   },
   {
     "title": "Inoue Transformation Buffer",
-    "path": "/BiochemProtocols/recipes/bacteria/transformation_buffer_1x/"
-  },
-  {
-    "title": "Inoue Transformation Buffer Stock 10x",
-    "path": "/BiochemProtocols/recipes/bacteria/transformation_buffer_10x/"
+    "path": "/BiochemProtocols/recipes/bacteria/transformation_buffer/"
   },
   {
     "title": "Leupeptin hemisulfate Stock 10 mM",

@@ -2,7 +2,7 @@
 date = '2025-12-07T20:25:53+01:00'
 draft = false
 construction = false
-title = 'Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer 1x'
+title = 'Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
@@ -13,8 +13,6 @@ finished = true
 tested = false
 to-do = 'uscases'
 +++
-
-#### for 1000 mL
 
 {{< tab >}}
 ## Materials
@@ -32,14 +30,16 @@ to-do = 'uscases'
 
 {{< tab >}}
 ## Recipe
+{{< calculators/calc_recipe_x >}}
+
 |  | Material/Step | Volume/Mass | molar/%/comment |
 | :-- | :-- | :-- | :-- |
-| <input type="checkbox"> | tris base | 3.03 g | 50 mM |
-| <input type="checkbox"> | NaCl | 4.38 g | 150 mM |
-| <input type="checkbox"> | MgCl<sub>2</sub> | 0.51 g | 5 mM |
-| <input type="checkbox"> | dsH<sub>2</sub>O | 400 mL |  |
+| <input type="checkbox"> | tris base | <span class="calc_recipe" data-default-mass="6.06">6.06 g</span> | <span class="calc_recipe" data-default-mol="50">50 mM</span> |
+| <input type="checkbox"> | NaCl | <span class="calc_recipe" data-default-mass="8.76">8.76 g</span> | <span class="calc_recipe" data-default-mol="150">150 mM</span> |
+| <input type="checkbox"> | MgCl<sub>2</sub> | <span class="calc_recipe" data-default-mass="1.02">1.02 g</span> | <span class="calc_recipe" data-default-mol="5">5mM</span> |
+| <input type="checkbox"> | dsH<sub>2</sub>O | <span class="calc_recipe" data-default-vol="800">800 mL</span> |  |
 | <input type="checkbox"> | HCl 25% | pH to 8.0 |  |
-| <input type="checkbox"> | dsH<sub>2</sub>O | to 500 mL |  |
+| <input type="checkbox"> | dsH<sub>2</sub>O | to <span class="calc_recipe" data-default-vol="1000">1000 mL</span> |  |
 | <input type="checkbox"> | filter through 0.22 µm vakuum filter |  |  |
 | <input type="checkbox"> | store @ 4 °C or in 50 mL aliquots @ –20 °C |  |  |
 {{< /tab >}}

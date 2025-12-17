@@ -1,5 +1,5 @@
 <html lang="en">
-<head><script src="/BiochemProtocols/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=BiochemProtocols/livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
@@ -7,15 +7,18 @@
 </head>
 
 <script src="/BiochemProtocols/js/theme_toggle.js"></script>
-<script src="/BiochemProtocols/js/colculators/age_buffer_select.js"></script>
-<script src="/BiochemProtocols/js/colculators/age_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/colculators/age_sample_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/colculators/pcr_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/colculators/age_following_pcr_buffer.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_buffer_select.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_sample_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_following_pcr_buffer.js"></script>
 <script src="/BiochemProtocols/js/timer.js"></script>
 <script src="/BiochemProtocols/js/current_time_display.js"></script>
-<script src="/BiochemProtocols/js/colculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
 <script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
+
+<script src="/BiochemProtocols/js/calculators/calc_recipe_x.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_mol.js"></script> 
 
 <script src="/BiochemProtocols/js/comment_box.js"></script>
 
@@ -68,8 +71,7 @@
 
             
     
-        <h4 id="for-1000-ml">for 1000 mL</h4>
-<div class="tab">
+        <div class="tab">
   <h2 id="materials">Materials</h2>
 <table>
   <thead>
@@ -88,13 +90,13 @@
           <td style="text-align: left"> <span id="alt_inouetransformationbufferstock10x_m_l_pipes"></span><span id="alt_inouetransformationbufferstock10x_m_l_mopes" style="display:none"></span></td>
       </tr>
       <tr>
-          <td style="text-align: left">manganese chloride tetrahydrat <em>MnCl <sub>2</sub> · 4 H<sub>2</sub>O</em> <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></td>
+          <td style="text-align: left">manganese chloride tetrahydrat <em>MnCl<sub>2</sub> · 4 H<sub>2</sub>O</em> <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></td>
           <td style="text-align: left">197.91 g/mol</td>
           <td style="text-align: left">solid</td>
           <td style="text-align: left"> </td>
       </tr>
       <tr>
-          <td style="text-align: left">calcium chloride dihydrate <em>CaCl <sub>2</sub> · 2 H<sub>2</sub>O</em> <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></td>
+          <td style="text-align: left">calcium chloride dihydrate <em>CaCl<sub>2</sub> · 2 H<sub>2</sub>O</em> <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></td>
           <td style="text-align: left">147.01 g/mol</td>
           <td style="text-align: left">solid</td>
           <td style="text-align: left"> </td>
@@ -135,6 +137,24 @@
 </div>
 <div class="tab">
   <h2 id="recipe">Recipe</h2>
+<div class="calc-recipe-controls">
+  <label>
+    Concentration:
+    <select class="calc-factor">
+      <option value="1" selected>1×</option>
+      <option value="5">5×</option>
+      <option value="10">10×</option>
+    </select>
+  </label>
+  <label>
+    Final Volume:
+    <select class="calc-volume">
+      <option value="1" selected>1 L</option>
+      <option value="0.5">0.5 L</option>
+      <option value="0.1">0.1 L</option>
+    </select>
+  </label>
+</div>
 <table>
   <thead>
       <tr>
@@ -148,31 +168,31 @@
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> <span id="alt_inouetransformationbufferstock10x_r_ms_pipes">PIPES</span>     <span id="alt_inouetransformationbufferstock10x_r_ms_mopes" style="display:none">MOPES</span></td>
-          <td style="text-align: left"><span id="alt_inouetransformationbufferstock10x_r_vm_pipes">3.00 g</span>     <span id="alt_inouetransformationbufferstock10x_r_vm_mopes" style="display:none">2.10 g</span></td>
-          <td style="text-align: left"><span id="alt_inouetransformationbufferstock10x_r_mol_pipes">10 mM</span>     <span id="alt_inouetransformationbufferstock10x_r_mol_mopes" style="display:none">10 mM</span></td>
+          <td style="text-align: left"><span id="alt_inouetransformationbufferstock10x_r_vm_pipes" class="calc_recipe" data-default-mass="30.0">30.0 g</span>     <span id="alt_inouetransformationbufferstock10x_r_vm_mopes" style="display:none" class="calc_recipe" data-default-mass="21.0">21.0 g</span></td>
+          <td style="text-align: left"><span id="alt_inouetransformationbufferstock10x_r_mol_pipes" class="calc_recipe" data-default-mol="10">10 mM</span>     <span id="alt_inouetransformationbufferstock10x_r_mol_mopes" style="display:none" class="calc_recipe" data-default-mol="10">10 mM</span></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> MnCl<sub>2</sub></td>
-          <td style="text-align: left">10.89 g</td>
-          <td style="text-align: left">55 mM</td>
+          <td style="text-align: left"><span class="calc_recipe" data-default-mass="10.89">10.89 g</span></td>
+          <td style="text-align: left"><span class="calc_recipe" data-default-mol="55">55 mM</span></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> CaCl<sub>2</sub></td>
-          <td style="text-align: left">2.20 g</td>
-          <td style="text-align: left">15 mM</td>
+          <td style="text-align: left"><span class="calc_recipe" data-default-mass="2.20">2.20 g</span></td>
+          <td style="text-align: left"><span class="calc_recipe" data-default-mol="15">15 mM</span></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> KCl</td>
-          <td style="text-align: left">18.65 g</td>
-          <td style="text-align: left">250 mM</td>
+          <td style="text-align: left"><span class="calc_recipe" data-default-mass="18.65">18.65 g</span></td>
+          <td style="text-align: left"><span class="calc_recipe" data-default-mol="250">250 mM</span></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> dsH<sub>2</sub>O</td>
-          <td style="text-align: left">to 800 mL</td>
+          <td style="text-align: left">to <span class="calc_recipe" data-default-vol="800">800 mL</span></td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
@@ -190,7 +210,7 @@
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left"> dsH<sub>2</sub>O</td>
-          <td style="text-align: left">to 1000 mL</td>
+          <td style="text-align: left">to <span class="calc_recipe" data-default-vol="1000">1000 mL</span></td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
@@ -258,7 +278,7 @@
 </table>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/bacteria/transformation_buffer_1x/">
+<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/bacteria/transformation_buffer/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -288,7 +308,7 @@
       <div class="line title">Inoue Transformation Buffer</div>
       <br>
       <div class="line date" id="label-date"></div>
-      <div class="line version">Version 1.0.1</div>
+      <div class="line version">Version 1.0.2</div>
     </div>
   </div>
 
@@ -326,15 +346,15 @@
 <script>
   window.labelPrintData = {
     title: "\"Inoue Transformation Buffer\"",
-    version: "\"Version 1.0.1\"",
-    url: "\"http://localhost:1313/BiochemProtocols/recipes/bacteria/transformation_buffer_1x/\""
+    version: "\"Version 1.0.2\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/transformation_buffer/\""
   };
 </script>
 
 
         <div style="text-align: right;">
         <br>
-        16.12.2025 Version 1.0.1
+        17.12.2025 Version 1.0.2
         </div>
     
 
@@ -342,7 +362,7 @@
     </main>
 
     <footer class="site-footer">
-    <div class="footer-rights">© 2025 Murphy Biochemistry UG (haftungsbeschränkt) · All Rights Reserved</div>
+    <div class="footer-rights">  </div>
     <ul class="footer-nav">
         <li><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>
         <li><a href="/BiochemProtocols/legal/privacy_policy">Privacy Policy</a></li>

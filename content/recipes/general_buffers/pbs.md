@@ -2,7 +2,7 @@
 date = '2025-12-07T20:23:42+01:00'
 draft = false
 construction = true
-title = 'Phosphate-Buffered Saline (PBS) Stock 10x'
+title = 'Phosphate-Buffered Saline (PBS)'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'

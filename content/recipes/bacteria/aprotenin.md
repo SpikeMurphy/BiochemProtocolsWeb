@@ -37,7 +37,7 @@ to-do = ''
 ## Usecases
 | Usecase | Specifications |
 | :-- | :-- |
-| [Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer 1x]({{< relref "bacterial_lysis_buffer_1x.md" >}}) | Standard concentration of 1.54 (0.154-1.54) µM for inhibition of serine proteases. |
+| [Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer]({{< relref "bacterial_lysis_buffer.md" >}}) | Standard concentration of 1.54 (0.154-1.54) µM for inhibition of serine proteases. |
 {{< /tab >}}
 
 {{< tab >}}
