@@ -7,12 +7,12 @@ subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
 version = 'Version 1.0.0'
-version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
+version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = ''
 finished = false
 tested = false
-to-do = ''
 +++
+<!-- NEW: delete when finished = true + tested = true -->
 
 {{< infobox type="info" title="" >}}
 ⚠️ Typically, primers are supplied lyophlized with an indicated volume for initial resuspension to a concentration of 100 pmol/µL.
@@ -33,17 +33,20 @@ to-do = ''
 
 {{< tab >}}
 ## Recipe
+
+<!-- { {< calculators/calc_recipe_x >}} -->
+<!-- { {< calculators/calc_recipe_mol >}} -->
 |  | Material/Step | Volume/Mass | molar/%/comment |
 | :-- | :-- | :-- | :-- |
-| <input type="checkbox"> | <span id="primer_te-r-material">TE buffer</span><span style="display:none" id="primer_h2o-r-material">dsH<sub>2</sub>O</span> | from supplier indicated volume | <span id="primer_te-r-mol"></span><span style="display:none" id="primer_h2o-r-mol"></span> |
-| <input type="checkbox"> | aliquot 10% of the desired final volume |  (e.g. 10µL) | for dilution 1:10 to 10 pmol/µL |
-| <input type="checkbox"> | <span id="primer_te-r-material2">TE buffer</span><span style="display:none" id="primer_h2o-r-material2">dsH<sub>2</sub>O</span> | 90% of the desired final volume (e.g. 90 µL) |  |
-| <input type="checkbox"> |  |  |  |
+| {{< checkbox >}} | <span id="primer_te-r-material">TE buffer</span><span style="display:none" id="primer_h2o-r-material">dsH<sub>2</sub>O</span> | from supplier indicated volume | <span id="primer_te-r-mol"></span><span style="display:none" id="primer_h2o-r-mol"></span> |
+| {{< checkbox >}} | aliquot 10% of the desired final volume |  (e.g. 10µL) | for dilution 1:10 to 10 pmol/µL |
+| {{< checkbox >}} | <span id="primer_te-r-material2">TE buffer</span><span style="display:none" id="primer_h2o-r-material2">dsH<sub>2</sub>O</span> | 90% of the desired final volume (e.g. 90 µL) |  |
+| {{< checkbox >}} |  |  |  |
 {{< /tab >}}
 
 {{< tab >}}
-## Usecases
-| Usecase | Specifications |
+## Use Cases
+| Use Case | Specifications |
 | :-- | :-- |
 | polymerase chain reaction (PCR) |  |
 | DNA sequencing |  |

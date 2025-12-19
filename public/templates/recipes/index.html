@@ -1,8 +1,10 @@
 <html lang="en">
-<head>
+<head><script src="/BiochemProtocols/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=BiochemProtocols/livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/buttons.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/dropdowns.css">
     <title>Document</title>
 </head>
 
@@ -47,14 +49,14 @@
         <li class="nav"><a href="/BiochemProtocols/">Home</a></li>
         <li class="nav"><a href="/BiochemProtocols/materials">Materials</a></li>
         <li class="nav"><a href="/BiochemProtocols/recipes">Recipes</a></li>
-        <li class="nav"><a href="/BiochemProtocols/methodes">Methodes</a></li>
+        <li class="nav"><a href="/BiochemProtocols/methods">Methods</a></li>
         <li class="nav"><a href="/BiochemProtocols/workflows">Workflows</a></li>
         <li class="nav"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
     </ul>
 </nav>
 
     <header>
-    <h1>Recepies Template</h1>
+    <h1>Recipes Template</h1>
 
     
 
@@ -63,16 +65,66 @@
     
     
     
-        <h5>¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer</h3>
-    
 </header>
     
     <main>
 
             
     
-        <!-- -->
-<h4 id="for-xx-ml">for xx mL</h4>
+        <!-- NEW: finished = true, change to DONE; tested = true, delete -->
+<!--_____________________________delete_____________________________-->
+<p>Bookmark: command + option + K
+Comment: command + shift + 7 <!-- --></p>
+<p>anchor (jump to position on site):
+referral: <a href="#name-anchor"></a>
+landing: <div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div></p>
+<!-- Material Table:
+
+for switching alternatives
+into the <span>
+
+add an id="alt_pagename_m_c_reagent1" for the default
+add an id="alt_pagename_m_c_reagent2" for the alternative 
+
+m = methods table
+c = m for material, mw for molecular weight, specs for specifications, l for location
+
+add the shortcode:
+{ {< alternative_switches/alt_pagename_reagent1 >}}
+
+-->
+<!-- Recipe Table:
+
+for switching alternatives 
+into the <span>
+
+add an id="alt_pagename_r_d_reagent1" for the default
+add an id="alt_pagename_r_d_reagent2" for the alternative 
+
+r = recipe table
+d = ms for material/steps, vm for volume/mass and mol for molar/%/comment
+
+-->
+<!-- Calc Recipe x:
+
+for factoring 1x/5x/10x buffers (default volume 1000mL, 1x)
+into the <span>
+
+add class="calc_recipe" 
+
+for masses add data-default-mass"e"
+for volumes add data-default-vol"e"
+for molarities add data-default-mol"e"
+
+e = value
+
+-->
+<!-- Calc Recipe mol:
+
+upcoming
+
+-->
+<!--_____________________________delete_____________________________-->
 <div class="infobox info">
   <strong></strong>
   <div>⚠️ Info</div>
@@ -87,6 +139,7 @@
 </div>
 <div class="tab">
   <h2 id="materials">Materials</h2>
+<!-- markdownlint-disable MD033 -->
 <table>
   <thead>
       <tr>
@@ -101,131 +154,103 @@
           <td style="text-align: left">ChemicalName <em>ChemicalFormula</em> <a href="https://www.carlroth.com/.../"><sup>SDB</sup></a></td>
           <td style="text-align: left">g/mol</td>
           <td style="text-align: left"></td>
-          <td style="text-align: left"> <span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
       </tr>
       <tr>
           <td style="text-align: left"></td>
           <td style="text-align: left">g/mol</td>
           <td style="text-align: left"></td>
-          <td style="text-align: left"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script> </td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
       </tr>
       <tr>
           <td style="text-align: left"></td>
           <td style="text-align: left">g/mol</td>
           <td style="text-align: left"></td>
-          <td style="text-align: left"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script> </td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
       </tr>
       <tr>
           <td style="text-align: left">deionized sterilized Water <em>dsH<sub>2</sub>O</em></td>
           <td style="text-align: left">18.015 g/mol</td>
           <td style="text-align: left">liquid</td>
-          <td style="text-align: left"> </td>
+          <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left"><span id="alt_pagename_m_m_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_m_reagent2" style="display:none">XXXXXXXXXX</span></td>
           <td style="text-align: left"><span id="alt_pagename_m_mw_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_mw_reagent2" style="display:none">XXXXXXXXXX</span></td>
           <td style="text-align: left"><span id="alt_pagename_m_specs_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_specs_reagent2" style="display:none">XXXXXXXXXX</span></td>
-          <td style="text-align: left"><span id="alt_pagename_m_l_reagent1"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span>     <span id="alt_pagename_m_l_reagent2" style="display:none"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span> </td>
+          <td style="text-align: left"><span id="alt_pagename_m_l_reagent1"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span>     <span id="alt_pagename_m_l_reagent2" style="display:none"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span></td>
       </tr>
   </tbody>
 </table>
-<!-- for switching alternatives
-
-into the <span>
-
-add an id="alt_pagename_m_c_reagent1" for the default
-add an id="alt_pagename_m_c_reagent2" for the alternative 
-
-m = methodes table
-c = m for material, mw for molecular weight, specs for specifications, l for location
-
-add the shortcode:
-{ {< alternative_switches/alt_pagename_reagent1 >}}
-
--->
+<!-- markdownlint-enable MD033 -->
 
 </div>
 <div class="tab">
   <h2 id="recipe">Recipe</h2>
 <!-- { {< calculators/calc_recipe_x >}} -->
+<!-- { {< calculators/calc_recipe_mol >}} -->
+<!-- markdownlint-disable MD033 -->
 <table>
   <thead>
       <tr>
           <th style="text-align: left"></th>
           <th style="text-align: left">Material/Step</th>
-          <th style="text-align: left"> Volume/Mass</th>
-          <th style="text-align: left"> molar/%/comment</th>
+          <th style="text-align: left">Volume/Mass</th>
+          <th style="text-align: left">molar/%/comment</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left"> <span id="alt_pagename_r_ms_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_ms_reagent2" style="display:none">XXXXXXXXXX</span></td>
+          <td style="text-align: left"><span id="alt_pagename_r_ms_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_ms_reagent2" style="display:none">XXXXXXXXXX</span></td>
           <td style="text-align: left"><span id="alt_pagename_r_vm_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_vm_reagent2" style="display:none">XXXXXXXXXX</span></td>
           <td style="text-align: left"><span id="alt_pagename_r_mol_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_mol_reagent2" style="display:none">XXXXXXXXXX</span></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left"> </td>
           <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left"> </td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left"> </td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">store in xx µL aliquots @ xx °C</td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
   </tbody>
 </table>
+<!-- markdownlint-enable MD033 -->
 
 </div>
-<!-- for switching alternatives 
-
-into the <span>
-
-add an id="alt_pagename_r_d_reagent1" for the default
-add an id="alt_pagename_r_d_reagent2" for the alternative 
-
-r = recipe table
-d = ms for material/steps, vm for volume/mass and mol for molar/%/comment
-
--->
-<!-- for factoring 1x/5x/10x buffers
-
-into the <span>
-
-add class="calc_recipe" 
-
-for masses add add data-default-mass"e"
-for volumes add add data-default-vol"e"
-for molarities add add data-default-mol"e"
-
-e = value
-
--->
 <div class="tab">
-  <h2 id="usecases">Usecases</h2>
+  <h2 id="use-cases">Use Cases</h2>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Usecase</th>
-          <th style="text-align: left"> Specifications</th>
+          <th style="text-align: left">Use Case</th>
+          <th style="text-align: left">Specifications</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"> </td>
+          <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
-          <td style="text-align: left"> </td>
+          <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
   </tbody>
@@ -237,7 +262,7 @@ e = value
 <table>
   <thead>
       <tr>
-          <th style="text-align: left"> Conditions</th>
+          <th style="text-align: left">Conditions</th>
           <th style="text-align: left">Duration</th>
       </tr>
   </thead>
@@ -289,10 +314,10 @@ e = value
       <div class="line company"><b>Murphy Biochemistry</b></div>
       <div class="line website"><b>BiochemProtocols</b></div>
       <br>
-      <div class="line title">Recepies Template</div>
+      <div class="line title">Recipes Template</div>
       <br>
       <div class="line date" id="label-date"></div>
-      <div class="line version">Version 1.0.1</div>
+      <div class="line version">Version 1.0.2</div>
     </div>
   </div>
 
@@ -329,16 +354,16 @@ e = value
 
 <script>
   window.labelPrintData = {
-    title: "\"Recepies Template\"",
-    version: "\"Version 1.0.1\"",
-    url: "\"https://spikemurphy.github.io/BiochemProtocols/templates/recipes/\""
+    title: "\"Recipes Template\"",
+    version: "\"Version 1.0.2\"",
+    url: "\"http://localhost:1313/BiochemProtocols/templates/recipes/\""
   };
 </script>
 
 
         <div style="text-align: right;">
         <br>
-        08.12.2025 Version 1.0.1
+        18.12.2025 Version 1.0.2
         </div>
     
 

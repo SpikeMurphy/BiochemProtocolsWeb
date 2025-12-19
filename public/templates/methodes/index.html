@@ -1,8 +1,10 @@
 <html lang="en">
-<head>
+<head><script src="/BiochemProtocols/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=BiochemProtocols/livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/buttons.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/dropdowns.css">
     <title>Document</title>
 </head>
 
@@ -47,14 +49,14 @@
         <li class="nav"><a href="/BiochemProtocols/">Home</a></li>
         <li class="nav"><a href="/BiochemProtocols/materials">Materials</a></li>
         <li class="nav"><a href="/BiochemProtocols/recipes">Recipes</a></li>
-        <li class="nav"><a href="/BiochemProtocols/methodes">Methodes</a></li>
+        <li class="nav"><a href="/BiochemProtocols/methods">Methods</a></li>
         <li class="nav"><a href="/BiochemProtocols/workflows">Workflows</a></li>
         <li class="nav"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
     </ul>
 </nav>
 
     <header>
-    <h1>Methodes Template</h1>
+    <h1>methods Template</h1>
 
     
 
@@ -63,16 +65,21 @@
     
     
     
-        <h5>¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer</h3>
-    
 </header>
     
     <main>
 
             
     
-        <!-- -->
+        <!-- NEW: finished = true, change to DONE; tested = true, delete -->
+<!--_____________________________delete_____________________________-->
+<p>Bookmark: command + option + K
+Comment: command + shift + 7 <!-- --></p>
+<p>anchor (jump to position on site):
+referral: <a href="#name-anchor"></a>
+landing: <div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div></p>
 <div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<!--_____________________________delete_____________________________-->
 <div class="infobox info">
   <strong></strong>
   <div>⚠️ Info</div>
@@ -93,12 +100,12 @@
           <th style="text-align: left">Equipment &amp; Devices⠀⠀⠀</th>
           <th style="text-align: left">Amount</th>
           <th style="text-align: left">Specifications</th>
-          <th style="text-align: left"> Location</th>
+          <th style="text-align: left">Location</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><a href="link">Device <sup>manual</sup></a></td>
+          <td style="text-align: left">Device <a href="link"><sup>manual</sup></a></td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
@@ -121,23 +128,23 @@
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
-  </tbody>
-</table>
-<table>
-  <thead>
       <tr>
-          <th style="text-align: left">Commercial Kits⠀⠀⠀⠀⠀⠀</th>
-          <th style="text-align: left">Amount</th>
-          <th style="text-align: left">Specifications</th>
-          <th style="text-align: left"> Location</th>
+          <td style="text-align: left">Commercial Kits⠀⠀⠀⠀⠀⠀</td>
+          <td style="text-align: left">Amount</td>
+          <td style="text-align: left">Specifications</td>
+          <td style="text-align: left">Location</td>
       </tr>
-  </thead>
-  <tbody>
       <tr>
-          <td style="text-align: left"><a href="link">Kit <sup>manual</sup></a></td>
+          <td style="text-align: left">:&ndash;</td>
+          <td style="text-align: left">:&ndash;</td>
+          <td style="text-align: left">:&ndash;</td>
+          <td style="text-align: left">:&ndash;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Kit <a href="link"><sup>manual</sup></a></td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
-          <td></td>
+          <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left"></td>
@@ -165,18 +172,18 @@
           <th style="text-align: left">Containers &amp; Consumables</th>
           <th style="text-align: left">Amount</th>
           <th style="text-align: left">Specifications</th>
-          <th style="text-align: left"> Location</th>
+          <th style="text-align: left">Location</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">pipetmans and sterile pipette tips</td>
+          <td style="text-align: left">micropipettes and sterile pipette tips</td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
-          <td style="text-align: left"></td>
+          <td style="text-align: left">pipetting aid and serological pipettes</td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
           <td style="text-align: left"></td>
@@ -201,7 +208,7 @@
           <th style="text-align: left">Reagents &amp; Solutions⠀⠀⠀⠀</th>
           <th style="text-align: left">Amount</th>
           <th style="text-align: left">Specifications</th>
-          <th style="text-align: left"> Location</th>
+          <th style="text-align: left">Location</th>
       </tr>
   </thead>
   <tbody>
@@ -237,7 +244,7 @@
           <th style="text-align: left">Biological Materials⠀⠀⠀⠀⠀</th>
           <th style="text-align: left">Amount</th>
           <th style="text-align: left">Specifications</th>
-          <th style="text-align: left"> Location</th>
+          <th style="text-align: left">Location</th>
       </tr>
   </thead>
   <tbody>
@@ -270,8 +277,8 @@
 
 </div>
 <div class="tab">
-  <h2 id="procedure">Procedure:</h2>
-<h3 id="heading-1">Heading 1:</h3>
+  <h2 id="procedure">Procedure</h2>
+<h3 id="heading-1">Heading 1</h3>
 <ol>
 <li>
 <input type="checkbox">
@@ -286,10 +293,14 @@
 <input type="checkbox">
 </li>
 </ol>
+<!-- markdownlint-disable MD033 -->
 <div style="display:flex; gap:20px; align-items:center;">
 <div class="countdown-wrapper" data-time="0:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="0:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="0:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div>
-<h3 id="heading-2">Heading 2:</h3>
+<!-- markdownlint-enable MD033 -->
+<h3 id="heading-2">Heading 2</h3>
 <ol>
 <li>
 <input type="checkbox">
@@ -304,7 +315,7 @@
 <input type="checkbox">
 </li>
 </ol>
-<h3 id="heading-3">Heading 3:</h3>
+<h3 id="heading-3">Heading 3</h3>
 <ol>
 <li>
 <input type="checkbox">
@@ -319,9 +330,9 @@
 <input type="checkbox">
 </li>
 </ol>
-<h3 id="procede-with-suitable-protocol">Procede with Suitable Protocol:</h3>
+<h3 id="proceed-with-suitable-protocol">Proceed with Suitable Protocol</h3>
 <ul>
-<li></li>
+<li><a href="Link">Protocol Name</a> <!----></li>
 </ul>
 
 </div>
@@ -352,10 +363,10 @@
       <div class="line company"><b>Murphy Biochemistry</b></div>
       <div class="line website"><b>BiochemProtocols</b></div>
       <br>
-      <div class="line title">Methodes Template</div>
+      <div class="line title">methods Template</div>
       <br>
       <div class="line date" id="label-date"></div>
-      <div class="line version">Version 1.0.1</div>
+      <div class="line version">Version 1.0.2</div>
     </div>
   </div>
 
@@ -392,16 +403,16 @@
 
 <script>
   window.labelPrintData = {
-    title: "\"Methodes Template\"",
-    version: "\"Version 1.0.1\"",
-    url: "\"https://spikemurphy.github.io/BiochemProtocols/templates/methodes/\""
+    title: "\"methods Template\"",
+    version: "\"Version 1.0.2\"",
+    url: "\"http://localhost:1313/BiochemProtocols/templates/methodes/\""
   };
 </script>
 
 
         <div style="text-align: right;">
         <br>
-        08.12.2025 Version 1.0.1
+        18.12.2025 Version 1.0.2
         </div>
     
 

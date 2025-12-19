@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   populateSelect("recipes", recipeSelect);
-  populateSelect("methodes", methodSelect);
+  populateSelect("methods", methodSelect);
 
   /* ================================
      INSERT SELECTED BODY CONTENT

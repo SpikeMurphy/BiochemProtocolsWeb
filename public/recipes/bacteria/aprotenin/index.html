@@ -1,8 +1,10 @@
 <html lang="en">
-<head>
+<head><script src="/BiochemProtocols/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=BiochemProtocols/livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/buttons.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/dropdowns.css">
     <title>Document</title>
 </head>
 
@@ -47,7 +49,7 @@
         <li class="nav"><a href="/BiochemProtocols/">Home</a></li>
         <li class="nav"><a href="/BiochemProtocols/materials">Materials</a></li>
         <li class="nav"><a href="/BiochemProtocols/recipes">Recipes</a></li>
-        <li class="nav"><a href="/BiochemProtocols/methodes">Methodes</a></li>
+        <li class="nav"><a href="/BiochemProtocols/methods">Methods</a></li>
         <li class="nav"><a href="/BiochemProtocols/workflows">Workflows</a></li>
         <li class="nav"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
     </ul>
@@ -71,7 +73,7 @@
 
             
     
-        <h4 id="for-1000-µl">for 1000 µL</h4>
+        <!-- DONE: delete when tested = true -->
 <div class="tab">
   <h2 id="materials">Materials</h2>
 <table>
@@ -85,16 +87,28 @@
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Aprotenin <a href="https://www.carlroth.com/medias/SDB-A162-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyMzk1OTF8YXBwbGljYXRpb24vcGRmfGFERTVMMmd5TWk4NU1qQTJPRFExT1RZME16RTRMMU5FUWw5Qk1UWXlYMFJGWDBWT0xuQmtaZ3w3MGY1MDRiNjA4OWRkMGZmNzNlNTVkMDk5YmMxNGQ0M2YzOTJmNmFiOWUzZTdjNGU2YWM1YjFmYWZkODIxZTFh"><sup>SDB</sup></a></td>
+          <td style="text-align: left">aprotenin <a href="https://www.carlroth.com/medias/SDB-A162-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyMzk1OTF8YXBwbGljYXRpb24vcGRmfGFERTVMMmd5TWk4NU1qQTJPRFExT1RZME16RTRMMU5FUWw5Qk1UWXlYMFJGWDBWT0xuQmtaZ3w3MGY1MDRiNjA4OWRkMGZmNzNlNTVkMDk5YmMxNGQ0M2YzOTJmNmFiOWUzZTdjNGU2YWM1YjFmYWZkODIxZTFh"><sup>SDB</sup></a></td>
           <td style="text-align: left">6511.44 g/mol</td>
           <td style="text-align: left"></td>
-          <td style="text-align: left"> <span class="chemical_location" data-chemical="aprotenin_solid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="aprotenin_solid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">filter through 0.22 µm syringe filter</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left">deionized sterilized Water <em>dsH<sub>2</sub>O</em></td>
           <td style="text-align: left">18.015 g/mol</td>
           <td style="text-align: left">liquid</td>
-          <td style="text-align: left"> </td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">syringe filter</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">0.22 µm</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="syringe filter"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
       </tr>
   </tbody>
 </table>
@@ -102,26 +116,34 @@
 </div>
 <div class="tab">
   <h2 id="recipe">Recipe</h2>
+<!-- { {< calculators/calc_recipe_x >}} -->
+<!-- { {< calculators/calc_recipe_mol >}} -->
 <table>
   <thead>
       <tr>
           <th style="text-align: left"></th>
           <th style="text-align: left">Material/Step</th>
-          <th style="text-align: left"> Volume/Mass</th>
-          <th style="text-align: left"> molar/%/comment</th>
+          <th style="text-align: left">Volume/Mass</th>
+          <th style="text-align: left">molar/%/comment</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left"> Aprotenin</td>
+          <td style="text-align: left">Aprotenin</td>
           <td style="text-align: left">10 mg</td>
           <td style="text-align: left">1.54 mM</td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left"> dsH<sub>2</sub>O</td>
+          <td style="text-align: left">dsH<sub>2</sub>O</td>
           <td style="text-align: left">1 mL</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">store in 50 µL aliquots @ -20 °C</td>
+          <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
   </tbody>
@@ -129,18 +151,18 @@
 
 </div>
 <div class="tab">
-  <h2 id="usecases">Usecases</h2>
+  <h2 id="use-cases">Use Cases</h2>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Usecase</th>
-          <th style="text-align: left"> Specifications</th>
+          <th style="text-align: left">Use Case</th>
+          <th style="text-align: left">Specifications</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"> <a href="/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer/">Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer</a></td>
-          <td style="text-align: left">Standard concentration of 1.54 (0.154-1.54) µM for inhibition of serine proteases.</td>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer/">Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer</a></td>
+          <td style="text-align: left">Typical concentration of 1.54 (0.154-1.54) µM for inhibition of serine proteases.</td>
       </tr>
   </tbody>
 </table>
@@ -151,7 +173,7 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left"> Conditions</th>
+          <th style="text-align: left">Conditions</th>
           <th style="text-align: left">Duration</th>
       </tr>
   </thead>
@@ -245,7 +267,7 @@
   window.labelPrintData = {
     title: "\"Aprotenin Stock 1.54 mM\"",
     version: "\"Version 1.0.0\"",
-    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/aprotenin/\""
+    url: "\"http://localhost:1313/BiochemProtocols/recipes/bacteria/aprotenin/\""
   };
 </script>
 

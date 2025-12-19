@@ -185,7 +185,7 @@ function saveGrowthData() {
         data[`m${i}`] = document.getElementById(`gc-m${i}`).value;
         data[`od${i}`] = document.getElementById(`gc-od${i}`).value;
 
-        // NEW — save doubling times for ALL rows
+    // save doubling times for ALL rows
         const dtEl = document.getElementById(`gc-dt${i}`);
         if (dtEl.tagName === "INPUT") {
             data[`dt${i}`] = dtEl.value;
@@ -216,7 +216,7 @@ function loadGrowthData() {
         document.getElementById(`gc-m${i}`).value = data[`m${i}`] || "";
         document.getElementById(`gc-od${i}`).value = data[`od${i}`] || "";
 
-        // NEW — restore DT
+        //  restore DT
         const dtEl = document.getElementById(`gc-dt${i}`);
         if (dtEl.tagName === "INPUT") {
             dtEl.value = data[`dt${i}`] || "";

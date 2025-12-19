@@ -1,12 +1,3 @@
-// steps:
-// 1.: searchfunktion XXXXX replace with reagent 1
-// 2.: searchfunktion YYYYY replace with reagent 2
-// 3.: searchfunktion ZZZZZ replace with pagename (one continuous word, no underscores no spaces)
-// 4.: name .js "alt_pagename_reagent1"
-// 5.: update AAAAA and BBBBB to the button displays
-// 6.: update html table in content (use template recipe)
-// 7.: update html shortcode (use alt_template.html) in content
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const btn = document.getElementById("inouetransformationbufferstock10x_pipes_alternative_switch"); // enter reagent 1

@@ -7,10 +7,9 @@ subtitle = ''
 author = ''
 facility = ''
 version = ''
-version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
+version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = ''
 finished = false
-to-do = ''
 +++
 
 {{< labjournal >}}

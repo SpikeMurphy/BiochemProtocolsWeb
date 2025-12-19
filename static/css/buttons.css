@@ -1,0 +1,50 @@
+/* TODO: unify button styles here */
+
+
+/* ========== Global Button Style ========== */
+button {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  background: #e8f0ff;
+  border: 1px solid #b8c8e6;
+  border-radius: 12px;
+  color: #2d4c7f;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background 0.15s ease,
+              border-color 0.15s ease;
+}
+
+button:hover {
+  background: #d9e7ff;
+  border-color: #a7bae0;
+}
+
+button:active {
+  background: #cbdcff;
+}
+
+button:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Dark mode */
+body.darkmode button {
+  background: #1f2937;
+  border: 1px solid #334155;
+  color: #dce9ff;
+}
+
+body.darkmode button:hover {
+  background: #263447;
+  border-color: #60a5fa;
+}
+
+body.darkmode button:active {
+  background: #1e293b;
+}
+
+body.darkmode button:focus {
+  border-color: #60a5fa;
+}

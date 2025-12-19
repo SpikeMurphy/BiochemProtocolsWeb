@@ -6,6 +6,6 @@ title = 'DNA'
 subtitle = ''
 author = ''
 version = ''
-version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
+version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = ''
 +++
