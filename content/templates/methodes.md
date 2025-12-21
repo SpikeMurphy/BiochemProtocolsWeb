@@ -49,6 +49,7 @@ landing: <div id="name-anchor" style="position: relative; top: -80px; visibility
 | | | | |
 | | | | |
 | | | | |
+
 | Commercial Kits⠀⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
 | Kit [<sup>manual</sup>](link) | | | |

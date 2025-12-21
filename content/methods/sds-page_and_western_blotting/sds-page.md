@@ -1,15 +1,211 @@
 +++
 date = '2025-12-07T21:00:04+01:00'
-draft = true
+draft = false
 construction = false
 title = 'SDS-PAGE'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
-version = 'Version 1.0.0'
+version = 'Version 1.1.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = ''
 finished = false
 tested = false
 +++
-<!-- NEW: delete when finished = true + tested = true -->
+<!-- DONE: tested = true, delete -->
+
+{{< infobox type="danger" title="Acrylamide" >}}
+‼️ Acrylamide is toxic and must be handled exclusively in a chemical fume hood. Although gas-stabilized material reduces user exposure, it may still release hazardous gases. Therefore, all handling, preparation, and use must be performed under a chemical fume hood with appropriate personal protective equipment.
+{{< /infobox >}}
+
+{{< tab >}}
+
+## Materials
+
+| Equipment & Devices⠀⠀⠀ | Amount | Specifications | Location |
+| :-- | :-- | :-- | :-- |
+| power source | | | |
+
+| Commercial Kits⠀⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
+| :-- | :-- | :-- | :-- |
+| SDS-PAGE Hoeffer [<sup>manual</sup>](link) | 1/run <br> 1/run <br> 1/run <br> 1/run <br> 2-4/run <br> 2-4/run <br> 2-4/run <br> 2-4/run <br> 1-2/run | casting stand <br> electrophoresis tank <br> electrophoresis chamber <br> glass plates <br> spacers 1.5 mm <br> grey clamps <br> black screws <br> well comb | |
+
+| Containers & Consumables | Amount | Specifications | Location |
+| :-- | :-- | :-- | :-- |
+| micropipettes and sterile pipette tips | | | |
+| pipetting aid and serological pipettes | | | |
+| sterile reaction tubes 1.5 mL | 1/run <br> 1/sample | for mastermix <br> for sample preparation | |
+
+{{< infobox type="info" title="Gel Polymerization" >}}
+⚠️ Both gels may be prepared in advance. However, TEMED and APS must only be added immediately before use, as their addition initiates polymerization.
+{{< /infobox >}}
+
+| Reagents & Solutions⠀⠀⠀⠀ | Amount | Specifications | Location |
+| :-- | :-- | :-- | :-- |
+| deionized sterilized water *dsH<sub>2</sub>O* | | squirt bottle | |
+| ethanol *EtOH* | | 70%, squirt bottle | |
+| propane-2-ol (= isopropanol) | 1 mL/gel | | |
+| separating gel| **15 ml/gel** <br> 4.100 mL/gel <br> 5.640 mL/gel <br> 5.000 mL/gel <br> 0.150 mL/gel <br> 0.010 mL/gel <br> 0.100 mL/gel | <br> | <br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 1 M (pH 8.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium persulfate *APS* 438 mM (10 %) | |
+| collecting gel| **5 ml/gel** <br> 2.520 mL/gel <br> 1.680 mL/gel <br> 0.670 mL/gel <br> 0.050 mL/gel <br> 0.005 mL/gel <br> 0.075 mL/gel | <br> | <br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 0,375 M (pH 6.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium persulfate *APS* 438 mM (10 %) | |
+| SDS-PAGE running buffer | 3000 mL/run | | |
+| SDS-PAGE sample buffer | | e.g. Laemmli sample buffer 2x or 4x | |
+| dithiothreitol DTT 1M | 500 µL <br> ~500 µL | 500 µL for cathode buffer <br> for sample preparation | |
+
+| Biological Materials⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
+| :-- | :-- | :-- | :-- |
+| protein samples | | with known approximate protein concentration <br> refer to [Bradford Assay]({{< relref "bradford_assay.md" >}}) <br> refer to  [Lowry Assay]({{< relref "lowry_assay.md" >}}) | |
+| protein ladder | | e.g. SpectraTM Multicolor Broad Range Protein Ladder, Thermo Scientific #26634 | |
+
+{{< /tab >}}
+
+{{< tab >}}
+
+## Procedure
+
+### Build the Chamber
+
+1. {{< checkbox >}} Degrease glass plates with EtOH 70%.
+2. {{< checkbox >}} Dry glass plates.
+3. {{< checkbox >}} Construct the gel cassette by bring together two glass plates with one black spacer at each of the short ends and fixing the plates and spacers with grey clamps so the long edges of the plates are even with each other and the spacers.
+4. {{< checkbox >}} Insert gel cassette into the casting stand and fix secure them with the black screws.
+5. {{< checkbox >}} Use dsH<sub>2</sub>O to test for leaks.
+6. {{< checkbox >}} Optionally, remove the dsH<sub>2</sub>O with paper towels.
+
+### Separating Gel
+
+1. {{< checkbox >}} Prepare the separating gel and the collecting gel (TEMED and APS catalyze the polymerization).
+
+{{< infobox type="info" title="Gel Polymerization" >}}
+⚠️ Both gels may be prepared in advance. However, TEMED and APS must only be added immediately before use, as their addition initiates polymerization.
+{{< /infobox >}}
+
+2. {{< checkbox >}} Finish preparing the separating gel by adding TEMED and APS.
+
+{{< infobox type="info" title="" >}}
+⚠️ Use immediately.
+{{< /infobox >}}
+
+3. {{< checkbox >}} Pipette the appropriate volume (11 mL) of separating gel between the glass plates.
+
+{{< infobox type="info" title="" >}}
+⚠️ Ensure sufficient space at the top of the gel to accommodate the well comb, leaving a gap of approximately 0.5–1 cm between the comb and the gel surface.
+{{< /infobox >}}
+
+4. {{< checkbox >}} Add 1 mL isopropanol (= 2-propanol) on top of the separating gel to displace bubbles and achieve an even surface.
+5. {{< checkbox >}} Let the gel polymerize @ RT for at least 30–45 minutes.
+
+<!-- markdownlint-disable MD033 -->
+<div style="display:flex; gap:20px; align-items:center;">
+{{< timer time="0:30:00" >}}
+{{< timer time="0:45:00" >}}
+</div>
+<!-- markdownlint-enable MD033 -->
+
+### Collecting Gel
+
+1. {{< checkbox >}} Wash away the isopropanol with dsH<sub>2</sub>O.
+2. {{< checkbox >}} Insert the well comb between the glass plates.
+3. {{< checkbox >}} Finish preparing the collecting gel by adding TEMED and APS.
+
+{{< infobox type="info" title="" >}}
+⚠️ Use immediately.
+{{< /infobox >}}
+
+4. {{< checkbox >}} Fill the collecting gel on top of the separating gel to the brim (surface needs to be even and free of bubbles).
+5. {{< checkbox >}} Let the gel polymerize @ RT for 30–45 minutes.
+
+<!-- markdownlint-disable MD033 -->
+<div style="display:flex; gap:20px; align-items:center;">
+{{< timer time="0:30:00" >}}
+{{< timer time="0:45:00" >}}
+</div>
+<!-- markdownlint-enable MD033 -->
+
+{{< infobox type="info" title="Gel Storage" >}}
+
+1. {{< checkbox >}} For gel storage, leave the combs in place, wrap the top with **dsH<sub>2</sub>O-moistened paper towels, and then seal with cling film to prevent drying.
+2. {{< checkbox >}} Store @ 4 °C for up to a week.
+
+{{< /infobox >}}
+
+### Sample Preparation
+
+1. {{< checkbox >}} Prepare a Stock of SDS-PAGE Sample-Buffer + DTT (see below, e.g. 10 Samples ~ 100µl SDS-PAGE Sample-Buffer + 20µl DTT 1M + 20µl dsH<sub>2</sub>O)
+
+| Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub> |
+| :-- | :-- | :-- | :-- |
+| SDS-PAGE Sample Buffer | 10 µL | 2x | 1x |
+| DTT | 2 µL | 1 M | 100 mM |
+| | = 12 µL | | |
+
+ <!-- TODO: calc and enhance-->
+
+2. {{< checkbox >}} Prepare the samples.
+
+| Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub> |
+| :-- | :-- | :-- | :-- |
+| mastermix | 12 µL | | |
+| Sample | 8 µl | | 100 ng ≤ purified protein ≤2 µg <br> cell lysate ≤ 20 µg |
+| | = 20 µL | | |
+
+ <!-- TODO: calc and enhance-->
+
+| Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub> |
+| :-- | :-- | :-- | :-- |
+| SDS-PAGE Sample Buffer | 10 µL | 2x | 1x |
+| DTT | 2 µL | 1 M | 100 mM |
+| Sample | 8 µl | | 100 ng ≤ purified protein ≤2 µg <br> cell lysate ≤ 20 µg |
+| | = 20 µL | | |
+
+ <!-- TODO: calc and enhance-->
+
+2. {{< checkbox >}} Heat the samples @ 95°C for 5 minutes.
+
+{{< timer time="0:05:00" >}}
+
+2. {{< checkbox >}} Centrifuge @ 11,000 g for 60 seconds.
+
+{{< timer time="0:60:00" >}}
+
+### Running the Gel
+
+1. {{< checkbox >}} Carefully remove the well comb.
+2. {{< checkbox >}} Add cathode buffer on top of the gel.
+3. {{< checkbox >}} Pour out cathode buffer.
+4. {{< checkbox >}} Add cathode buffer on top of the gel.
+5. {{< checkbox >}} Add 10 µL protein ladder in the first and last pocket.
+6. {{< checkbox >}} Add 20 µL prepared sample per pocket.
+7. {{< checkbox >}} Add electrophoresis chamber top on top of the glass plates (to construct the electrophoresis chamber that will be put into the electrophoresis tank).
+8. {{< checkbox >}} Remove the black screws from the casting stand and fix the yellow top to the gel cassette with the black screws.
+9. {{< checkbox >}} Add approximately 2500 mL of the running buffer into the electrophoresis tank.
+10. {{< checkbox >}} Position the electrophoresis chamber in the electrophoresis tank.
+
+<!-- TODO: Polarity / Electrode Orientation Infobox-->
+
+11. {{< checkbox >}} Fill the electrophoresis chamber with approximately 500 mL of cathode buffer until the electrodes are submerged but pay attention to the maximum filling marks.
+12. {{< checkbox >}} Run the gel @ 120V for approximately 30 minutes or until the samples are in the collecting gel.
+
+{{< timer time="0:30:00" >}}
+
+13. {{< checkbox >}} Increase the power to 175V for approximately 1,5h or until the bromphenole blue reaches the end of the gel.
+
+<!-- markdownlint-disable MD033 -->
+<div style="display:flex; gap:20px; align-items:center;">
+{{< timer time="1:00:00" >}}
+{{< timer time="1:30:00" >}}
+{{< timer time="2:00:00" >}}
+</div>
+<!-- markdownlint-enable MD033 -->
+
+### Proceed with Suitable Protocol
+
+- [Protocol Name](Link) <!---->
+
+{{< /tab >}}
+
+{{< comment_box >}}
+{{< save_page >}}
+
+{{< save_journal_label >}}
+
+{{< alignment_test >}}

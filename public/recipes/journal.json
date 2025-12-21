@@ -24,6 +24,18 @@
     "path": "/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer/"
   },
   {
+    "title": "Tris-Buffered Saline with Tween20 (TBST)",
+    "path": "/BiochemProtocols/recipes/general_buffers/tbst/"
+  },
+  {
+    "title": "Tris-Buffered Saline (TBS)",
+    "path": "/BiochemProtocols/recipes/general_buffers/tbs/"
+  },
+  {
+    "title": "Phosphate-Buffered Saline with Tween20 (PBST)",
+    "path": "/BiochemProtocols/recipes/general_buffers/pbst/"
+  },
+  {
     "title": "Phosphate-Buffered Saline (PBS)",
     "path": "/BiochemProtocols/recipes/general_buffers/pbs/"
   },

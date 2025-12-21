@@ -1,7 +1,7 @@
 +++
 date = '2025-12-07T13:11:31+01:00'
-draft = true
-construction = false
+draft = false
+construction = true
 title = 'Gluthatione-Sepharose Protein Purification'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'

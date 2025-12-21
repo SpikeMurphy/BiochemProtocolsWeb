@@ -164,14 +164,14 @@ Isopropyl-β-D-thiogalactopyranosid *IPTG* to a final concentration of 0.5 mM (2
 2. {{< checkbox >}} Pre-cool the ultrasonicator to 4 °C.
 3. {{< checkbox >}} Prepare 20 mL supplemented bacterial lysis buffer per 500 mL bacterial culture volume (stable for approximately 2 h):
 
-- pre-cool 20 mL of ice-cold Tris-HCl-NaCl-MgCl2 bacterial lysis buffer
-- discard 540 µL
-- supplement 20 µL aprotinin 1.54 mM for a final concentration of 1.54 µM
-- supplement 20 µL leupeptin 10 mM for a final concentration of 10 µM
-- supplement 200 µL pepstatin A 1 mM for a final concentration of 10 µM
-- supplement 200 µL PMSF 100 mM for a final concentration of 1 mM
-- supplement 3.423 g sucrose for a final concentration of 500mM (17.1 %)
-- supplement 100 µL Triton-X-100 for a final concentration of 0.5 %
+    - {{< checkbox >}} pre-cool 20 mL of ice-cold Tris-HCl-NaCl-MgCl2 bacterial lysis buffer
+    - {{< checkbox >}} discard 540 µL
+    - {{< checkbox >}} supplement 20 µL aprotinin 1.54 mM for a final concentration of 1.54 µM
+    - {{< checkbox >}} supplement 20 µL leupeptin 10 mM for a final concentration of 10 µM
+    - {{< checkbox >}} supplement 200 µL pepstatin A 1 mM for a final concentration of 10 µM
+    - {{< checkbox >}} supplement 200 µL PMSF 100 mM for a final concentration of 1 mM
+    - {{< checkbox >}} supplement 3.423 g sucrose for a final concentration of 500mM (17.1 %)
+    - {{< checkbox >}} supplement 100 µL Triton-X-100 for a final concentration of 0.5 %
 
 4. {{< checkbox >}} Rotate supplemented bacterial lysis buffer end-over-end @ 4 °C for 5–10 minutes.
 

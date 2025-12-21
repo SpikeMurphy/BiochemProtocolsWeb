@@ -74,6 +74,15 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/legal/legal_notice/</loc>
     <lastmod>2025-12-07T21:20:52+01:00</lastmod>
   </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/</loc>
+    <lastmod>2025-12-07T21:00:04+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/bradford_assay/</loc>
+    <lastmod>2025-12-07T20:59:22+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/lowry_assay/</loc>
+    <lastmod>2025-12-07T20:59:09+01:00</lastmod>
+  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/age/</loc>
     <lastmod>2025-12-07T20:56:58+01:00</lastmod>
   </url><url>
@@ -85,6 +94,15 @@
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer/</loc>
     <lastmod>2025-12-07T20:25:53+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/tbst/</loc>
+    <lastmod>2025-12-07T20:24:01+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/tbs/</loc>
+    <lastmod>2025-12-07T20:23:55+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/pbst/</loc>
+    <lastmod>2025-12-07T20:23:48+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/pbs/</loc>
     <lastmod>2025-12-07T20:23:42+01:00</lastmod>
@@ -161,10 +179,13 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/methods/bacteria/chemically_competent_bacteria/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/gluthatione-sepharose_protein_purification/</loc>
+    <lastmod>2025-12-07T13:11:31+01:00</lastmod>
+  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/lb-agar/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/bacteria/magstrep_beads_protein_purification/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/magstrep_beads_protein_purification/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/streptag_protein_purification/</loc>

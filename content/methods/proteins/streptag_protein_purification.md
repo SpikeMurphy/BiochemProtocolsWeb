@@ -10,7 +10,7 @@ version = 'Version 1.1.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '17.12.2025'
 finished = true
-tested = false
+tested = true
 +++
 <!-- NEW: delete when finished = true + tested = true -->
 
@@ -61,6 +61,11 @@ tested = false
 
 1. {{< checkbox >}} Place the column onto a stand in the cool room @ 2-8 °C.
 2. {{< checkbox >}} Remove the top cap.
+
+{{< infobox type="info" title="" >}}
+⚠️ Keep the top cap for resealing and reuse.
+{{< /infobox >}}
+
 3. {{< checkbox >}} Twist of bottom cap.
 4. {{< checkbox >}} Let the storage buffer flow through.
 5. {{< checkbox >}} Equilibrate the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).
@@ -77,17 +82,22 @@ tested = false
 
 ### First Elution
 
-1. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
-2. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
-3. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
-4. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
-5. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
+1. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+2. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+3. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+4. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+5. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+
+{{< infobox type="info" title="EDTA" >}}
+⚠️ Use buffer without EDTA when metalloproteins are purified or when metal ion activated enzymes are purified and function is to be kept.
+{{< /infobox >}}
 
 ### First Storage
 
 1. {{< checkbox >}} Add 500 µL glycerol 85 % (approximately 615 mg) to a sterile 1.5 mL reaction tube.
+
 {{< infobox type="info" title="" >}}
-⚠️ Pipetting highly viscous glycerol can be challenging and may lead to inaccurate measurements. Weighing is often a more reliable alternative.
+⚠️ Pipetting highly viscous glycerol can be challenging and may lead to inaccurate measurements. Micropipettes with cut of pipette tips can make pipetting easier. Weighing is often a more reliable alternative.
 {{< /infobox >}}
 
 2. {{< checkbox >}} After the final elution add the eluate to the prepared glycerol for a final concentration of 38.6 % (4.93 M).
@@ -116,22 +126,27 @@ tested = false
 
 ### Second Elution
 
-1. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
-2. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
-3. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
-4. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
-5. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of elution buffer (or Buffer BXT). <!-- ues elution butter lacking EDTA -->
+1. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+2. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+3. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+4. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+5. {{< checkbox >}} Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).
+
+{{< infobox type="info" title="EDTA" >}}
+⚠️ Use buffer without EDTA when metalloproteins are purified or when metal ion activated enzymes are purified and function is to be kept.
+{{< /infobox >}}
 
 ### Second Storage
 
 1. {{< checkbox >}} Add 500 µL glycerol 85 % (approximately 615 mg) to a sterile 1.5 mL reaction tube.
+
 {{< infobox type="info" title="" >}}
-⚠️ Pipetting highly viscous glycerol can be challenging and may lead to inaccurate measurements. Weighing is often a more reliable alternative.
+⚠️ Pipetting highly viscous glycerol can be challenging and may lead to inaccurate measurements. Micropipettes with cut of pipette tips can make pipetting easier. Weighing is often a more reliable alternative.
 {{< /infobox >}}
 
 2. {{< checkbox >}} After the final elution add the eluate to the prepared glycerol for a final concentration of 38.6 % (4.93 M).
-3. {{< checkbox >}} Take a 6 µL aliquot and mix with 2 µL dsH2O and 10 µL of 2x Laemmli sample buffer and freeze @ -20 °C for later SDS-PAGE analysis.
-4. {{< checkbox >}} Optionally aliquot the rest in 50–100 µL fractions.
+3. {{< checkbox >}} Take a 8 µL aliquot and mix with 10 µL of 2x Laemmli sample buffer and freeze @ -20 °C for later SDS-PAGE analysis.
+4. {{< checkbox >}} Optionally, aliquot the rest in 50–100 µL fractions.
 5. {{< checkbox >}} Store @ –20 °C for middle term storage or –80 °C for long term storage.
 
 ### Column storage
@@ -140,7 +155,7 @@ tested = false
 2. {{< checkbox >}} Close column with top lid.
 3. {{< checkbox >}} Close column with bottom cap.
 
-### Procede with Suitable Protocol
+### Precede with Suitable Protocol
 
 - 
 

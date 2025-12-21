@@ -1,7 +1,7 @@
 +++
 date = '2025-12-07T20:59:22+01:00'
-draft = true
-construction = false
+draft = false
+construction = true
 title = 'Bradford Assay'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'

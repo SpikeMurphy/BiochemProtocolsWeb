@@ -20,6 +20,18 @@
     "path": "/BiochemProtocols/methods/dna/pcr/"
   },
   {
+    "title": "SDS-PAGE",
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/"
+  },
+  {
+    "title": "Bradford Assay",
+    "path": "/BiochemProtocols/methods/proteins/bradford_assay/"
+  },
+  {
+    "title": "Lowry Assay",
+    "path": "/BiochemProtocols/methods/proteins/lowry_assay/"
+  },
+  {
     "title": "Agarose Gel Electrophoresis (AGE)",
     "path": "/BiochemProtocols/methods/dna/age/"
   },
@@ -48,8 +60,12 @@
     "path": "/BiochemProtocols/methods/bacteria/chemically_competent_bacteria/"
   },
   {
+    "title": "Gluthatione-Sepharose Protein Purification",
+    "path": "/BiochemProtocols/methods/proteins/gluthatione-sepharose_protein_purification/"
+  },
+  {
     "title": "MagStrep® Strep-Tactin®XT Beads Protein Purification",
-    "path": "/BiochemProtocols/methods/bacteria/magstrep_beads_protein_purification/"
+    "path": "/BiochemProtocols/methods/proteins/magstrep_beads_protein_purification/"
   },
   {
     "title": "StrepTag Gravity Flow Protein Purification",
