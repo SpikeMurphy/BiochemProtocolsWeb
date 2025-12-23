@@ -19,6 +19,8 @@
 <script src="/BiochemProtocols/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
 <script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
 
+<script src="/BiochemProtocols/js/alternative_switches/alt_methods.js"></script> 
+
 <script src="/BiochemProtocols/js/calculators/calc_recipe_x.js"></script> 
 <script src="/BiochemProtocols/js/calculators/calc_recipe_vol.js"></script> 
 <script src="/BiochemProtocols/js/calculators/calc_recipe_mol.js"></script> 
@@ -26,6 +28,12 @@
 <script src="/BiochemProtocols/js/comment_box.js"></script>
 
 <script src="/BiochemProtocols/js/save_page.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script src="/js/table_sds-page_gels.js"></script>
+
 
 
 
@@ -57,7 +65,7 @@
 </nav>
 
     <header>
-    <h1>Sodium dodecyl sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)</h1>
+    <h1>Sodium Dodecyl Sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)</h1>
 
     
 
@@ -74,8 +82,7 @@
 
             
     
-        <!-- DONE: tested = true, delete -->
-<div class="infobox danger">
+        <div class="infobox danger">
   <strong>Acrylamide</strong>
   <div>‼️ Acrylamide is toxic and must be handled exclusively in a chemical fume hood. Although gas-stabilized material reduces user exposure, it may still release hazardous gases. Therefore, all handling, preparation, and use must be performed under a chemical fume hood with appropriate personal protective equipment.</div>
 </div>
@@ -198,7 +205,7 @@
           <td style="text-align: left"></td>
       </tr>
       <tr>
-          <td style="text-align: left">SDS-PAGE sample buffer</td>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_sample_buffer/">SDS-PAGE sample buffer</a></td>
           <td style="text-align: left"></td>
           <td style="text-align: left">e.g. Laemmli sample buffer 2x or 4x</td>
           <td style="text-align: left"></td>
@@ -526,19 +533,20 @@
 <li><input type="checkbox"> Add cathode buffer on top of the gel.</li>
 <li><input type="checkbox"> Add 10 µL protein ladder in the first and last pocket.</li>
 <li><input type="checkbox"> Add 20 µL prepared sample per pocket.</li>
-<li><input type="checkbox"> Add electrophoresis chamber top on top of the glass plates (to construct the electrophoresis chamber that will be put into the electrophoresis tank).</li>
-<li><input type="checkbox"> Remove the black screws from the casting stand and fix the yellow top to the gel cassette with the black screws.</li>
+<li><input type="checkbox"> <a href="#table_sds-page_gels-anchor">Document the loading scheme.</a></li>
+<li><input type="checkbox"> Add electrophoresis chamber top on top of the glass plates.</li>
+<li><input type="checkbox"> Remove the black screws from the casting stand and fix electrophoresis chamber top to the gel cassette with the black screws.</li>
 <li><input type="checkbox"> Add approximately 2500 mL of the running buffer into the electrophoresis tank.</li>
 <li><input type="checkbox"> Position the electrophoresis chamber in the electrophoresis tank.</li>
 </ol>
 <!-- TODO: Polarity / Electrode Orientation Infobox-->
 <ol start="11">
 <li><input type="checkbox"> Fill the electrophoresis chamber with approximately 500 mL of cathode buffer until the electrodes are submerged but pay attention to the maximum filling marks.</li>
-<li><input type="checkbox"> Run the gel @ 120V for approximately 30 minutes or until the samples are in the collecting gel.</li>
+<li><input type="checkbox"> Run the gel @ 120V for approximately 40 minutes or until the samples are in the collecting gel.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="0:40:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:40:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="13">
-<li><input type="checkbox"> Increase the power to 175V for approximately 1,5h or until the bromphenole blue reaches the end of the gel.</li>
+<li><input type="checkbox"> Increase the power to 175V for approximately 1h or until the bromphenole blue reaches the end of the gel.</li>
 </ol>
 <!-- markdownlint-disable MD033 -->
 <div style="display:flex; gap:20px; align-items:center;">
@@ -549,10 +557,737 @@
 <!-- markdownlint-enable MD033 -->
 <h3 id="proceed-with-suitable-protocol">Proceed with Suitable Protocol</h3>
 <ul>
-<li><a href="Link">Protocol Name</a> <!----></li>
+<li><a href="/BiochemProtocols/methods/sds-page_and_western_blotting/coomassie_from_sds-page/">Coomassie Staining following SDS-PAGE</a></li>
+<li><a href="/BiochemProtocols/methods/sds-page_and_western_blotting/western_blotting/">Western Blotting following SDS-PAGE</a></li>
 </ul>
 
 </div>
+<!-- markdownlint-disable MD033 -->
+<div id="table_sds-page_gels-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
+<!-- markdownlint-enable MD033 -->
+<p><div class="gel-table-wrapper">
+  <table id="gelTable">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Gel 1</th>
+        <th>Gel 2</th>
+        <th>Gel 3</th>
+        <th>Gel 4</th>
+        <th>Gel 5</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td>1</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>2</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>3</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>4</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>5</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>6</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>7</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>8</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>9</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>10</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>11</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>12</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>13</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>14</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>15</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>16</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>17</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>18</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>19</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="">
+        </td>
+        
+      </tr>
+      
+      <tr>
+        <td>20</td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+        <td>
+          <input type="text"
+                 class="gel-input"
+                 value="ladder">
+        </td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <div class="gel-buttons">
+    <button onclick="downloadExcel()">Download Excel</button>
+    <button onclick="downloadPDF()">Download PDF</button>
+  </div>
+</div>
+ <!-- TODO: downloads do not work, enhance styling and move to seperate css--></p>
 <p><div class="local-comment" data-comment-id="/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/">
 
   <label><strong>Personal Comments</strong></label><br>
@@ -580,7 +1315,7 @@
       <div class="line company"><b>Murphy Biochemistry</b></div>
       <div class="line website"><b>BiochemProtocols</b></div>
       <br>
-      <div class="line title">Sodium dodecyl sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)</div>
+      <div class="line title">Sodium Dodecyl Sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)</div>
       <br>
       <div class="line date" id="label-date"></div>
       <div class="line version">Version 1.1.0</div>
@@ -620,17 +1355,12 @@
 
 <script>
   window.labelPrintData = {
-    title: "\"Sodium dodecyl sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)\"",
+    title: "\"Sodium Dodecyl Sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)\"",
     version: "\"Version 1.1.0\"",
     url: "\"https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/\""
   };
 </script>
 
-<button class="time-btn" id="label-alignment-test">
-  Print alignment test for HERMA 4390 labels.
-</button>
-
-<script src="/BiochemProtocols/js/alignment_test.js"></script>
 
         <div style="text-align: right;">
         <br>

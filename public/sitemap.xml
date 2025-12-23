@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/single_antibody_following_wb/</loc>
+    <lastmod>2025-12-23T16:17:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/ponceau_s_following_wb/</loc>
+    <lastmod>2025-12-23T16:03:28+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/primary_and_secondary_antibody_following_wb/</loc>
+    <lastmod>2025-12-23T15:38:48+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/imaging_following_wb/</loc>
+    <lastmod>2025-12-23T14:54:35+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/coomassie_from_sds-page/</loc>
+    <lastmod>2025-12-21T14:34:29+01:00</lastmod>
+  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/iptg/</loc>
     <lastmod>2025-12-19T16:44:18+01:00</lastmod>
   </url><url>
@@ -74,6 +89,9 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/legal/legal_notice/</loc>
     <lastmod>2025-12-07T21:20:52+01:00</lastmod>
   </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/western_blotting/</loc>
+    <lastmod>2025-12-07T21:00:18+01:00</lastmod>
+  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/</loc>
     <lastmod>2025-12-07T21:00:04+01:00</lastmod>
   </url><url>
@@ -89,10 +107,13 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/age_following_pcr/</loc>
     <lastmod>2025-12-07T20:56:58+01:00</lastmod>
   </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/western_blot_transfer_buffer/</loc>
+    <lastmod>2025-12-07T20:29:58+01:00</lastmod>
+  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_running_buffer/</loc>
     <lastmod>2025-12-07T20:29:48+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/sample_buffer/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_sample_buffer/</loc>
     <lastmod>2025-12-07T20:29:16+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/bromphenol_blue/</loc>

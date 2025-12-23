@@ -19,6 +19,8 @@
 <script src="{{ "js/calculators/transformation_from_pcr_mastermix_prep_calc.js" | relURL }}"></script>
 <script src="{{ "js/alternative_switches/primer_alternative.js" | relURL }}"></script>
 
+<script src="{{ "js/alternative_switches/alt_methods.js" | relURL }}"></script> <!-- baseof is correct -->
+
 <script src="{{ "js/calculators/calc_recipe_x.js" | relURL }}"></script> <!-- baseof is correct -->
 <script src="{{ "js/calculators/calc_recipe_vol.js" | relURL }}"></script> <!-- baseof is correct -->
 <script src="{{ "js/calculators/calc_recipe_mol.js" | relURL }}"></script> <!-- baseof is correct -->
@@ -26,6 +28,12 @@
 <script src="{{ "js/comment_box.js" | relURL }}"></script>
 
 <script src="{{ "js/save_page.js" | relURL }}"></script>
+
+{{ if .HasShortcode "table_sds-page_gels" }}
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script src="/js/table_sds-page_gels.js"></script>
+{{ end }}
 
 {{ if .HasShortcode "calculators/calc_bacterial_growth" }}
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>  <!-- save as excel -->

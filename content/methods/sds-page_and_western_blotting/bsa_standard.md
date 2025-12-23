@@ -2,7 +2,7 @@
 date = '2025-12-07T20:59:53+01:00'
 draft = true
 construction = false
-title = 'Bsa Standard'
+title = 'Bsa Standard Preparation for SDS-PAGE'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'

@@ -16,12 +16,16 @@
     "path": "/BiochemProtocols/recipes/dna/primer_reconstitution/"
   },
   {
+    "title": "Western Blot Tris-Glycine(-SDS)-MeOH Towbin Transfer Buffer",
+    "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/western_blot_transfer_buffer/"
+  },
+  {
     "title": "SDS-PAGE Tris-Glycin-SDS Running Buffer",
     "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_running_buffer/"
   },
   {
     "title": "SDS-PAGE Laemmli Sample Buffer",
-    "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/sample_buffer/"
+    "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_sample_buffer/"
   },
   {
     "title": "Bromphenol Blue Stock 1.49 mM (0.1%) ",

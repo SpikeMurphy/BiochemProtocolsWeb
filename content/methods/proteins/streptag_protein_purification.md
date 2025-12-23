@@ -20,7 +20,7 @@ tested = true
 
 | Equipment & Devices⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
-| cool room | | | |
+| cold room | | | |
 | bucket of ice | | | |
 
 | Commercial Kits⠀⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
@@ -39,7 +39,7 @@ tested = true
 | [biotin elution buffer]({{< relref "biotin_elution_buffer.md" >}}) (or buffer BXT) | 1 mL/5 mL culture | | |
 | glycerol 85 % | 1000 µL/5 mL culture | for storage buffer | |
 | deionized sterilized Water *dsH<sub>2</sub>O* | 4 µL/5 mL culture | for SDS-PAGE aliquots | |
-| [Laemmli SDS-PAGE sample buffer]({{< relref "sample_buffer.md" >}}) 2x | 20 µL/5 mL culture | for SDS-PAGE aliquots | |
+| [Laemmli SDS-PAGE sample buffer]({{< relref "sds-page_sample_buffer.md" >}}) 2x | 20 µL/5 mL culture | for SDS-PAGE aliquots | |
 | sodium hydroxide *NaOH* 10 mM | **6 ml/5 mL lysate**: <br> 2x 30 CV (3000 µL) | <br> for column regeneration | |
 
 | Biological Materials⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
@@ -59,7 +59,7 @@ tested = true
 
 ### Equilibrating the Column
 
-1. {{< checkbox >}} Place the column onto a stand in the cool room @ 2-8 °C.
+1. {{< checkbox >}} Place the column onto a stand in the cold room @ 2-8 °C.
 2. {{< checkbox >}} Remove the top cap.
 
 {{< infobox type="info" title="" >}}
@@ -245,5 +245,3 @@ Washing usually takes 5-10 minutes.
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}

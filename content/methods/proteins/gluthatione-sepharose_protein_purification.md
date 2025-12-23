@@ -127,5 +127,3 @@ anchor (jump to position on site):
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}

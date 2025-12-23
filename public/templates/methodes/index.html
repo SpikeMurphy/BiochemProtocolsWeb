@@ -19,6 +19,8 @@
 <script src="/BiochemProtocols/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
 <script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
 
+<script src="/BiochemProtocols/js/alternative_switches/alt_methods.js"></script> 
+
 <script src="/BiochemProtocols/js/calculators/calc_recipe_x.js"></script> 
 <script src="/BiochemProtocols/js/calculators/calc_recipe_vol.js"></script> 
 <script src="/BiochemProtocols/js/calculators/calc_recipe_mol.js"></script> 
@@ -26,6 +28,8 @@
 <script src="/BiochemProtocols/js/comment_box.js"></script>
 
 <script src="/BiochemProtocols/js/save_page.js"></script>
+
+
 
 
 
@@ -84,6 +88,28 @@ landing:</p>
 <div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
 <!-- markdownlint-enable MD033 -->
 <div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<!-- 
+
+for switching alternatives
+
+1: chose group that should change together
+2: chose primary
+3: chose secondary
+
+multiple groups can be chosen
+
+4: add a <span></span> to the primaries and secondaries:
+<!-- markdownlint-disable MD033 -- >
+<span data-alt-group="group" data-alt="primary">default</span>
+<span data-alt-group="group" data-alt="secondary" style="display:none">alternative</span>
+<!-- markdownlint-enable MD033 -- >
+
+5: add alternative-switch behind first mention:
+{ {< alt_methods group="group" primary="Use default" secondary="Use alternative" >}}
+
+remove " " form "-- >" and "{ {"
+
+-->
 <!--_____________________________delete_____________________________-->
 <div class="infobox info">
   <strong></strong>
@@ -337,7 +363,7 @@ landing:</p>
 </ol>
 <h3 id="proceed-with-suitable-protocol">Proceed with Suitable Protocol</h3>
 <ul>
-<li><a href="Link">Protocol Name</a> <!----></li>
+<li><a href="/BiochemProtocols/methods/">Protocol Name</a> <!----></li>
 </ul>
 
 </div>
@@ -414,11 +440,6 @@ landing:</p>
   };
 </script>
 
-<button class="time-btn" id="label-alignment-test">
-  Print alignment test for HERMA 4390 labels.
-</button>
-
-<script src="/BiochemProtocols/js/alignment_test.js"></script>
 
         <div style="text-align: right;">
         <br>

@@ -10,9 +10,8 @@ version = 'Version 1.0.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '22.12.2025'
 finished = true
-tested = false
+tested = true
 +++
-<!-- DONE: tested = true, delete -->
 
 {{< tab >}}
 
@@ -22,8 +21,8 @@ tested = false
 | Material | Molecular Weight | Specifications | Location |
 | :-- | :-- | :-- | :-- |
 | tris base [<sup>SDS</sup>](https://www.carlroth.com/medias/SDS-4855-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNDg5MDd8YXBwbGljYXRpb24vcGRmfGFEaG1MMmd4T1M4NU1qQTJOekV3TVRRd09UVTRMMU5FUWw4ME9EVTFYMFJGWDBWT0xuQmtaZ3xhMDM2MzQ2ZGYxZTg3NDk1MTZjNmFiOTEyZDYzOTUyMjU4MWFkNDhhZTY1NDY1YTUyNDFhMjk3Y2UxYjkyYjVm) | 121.14 g/mol | solid | {{< chemical_location chemical="trisbase_solid" >}} |
-| glycine | 75.07 g/mol | solid | {{< chemical_location chemical="glycine_solid" >}} |
-| sodium dodecyl sulfate *SDS* | 288.38 g/mol | solid | {{< chemical_location chemical="sds_solid" >}} |
+| glycine [<sup>SDS</sup>](https://www.carlroth.com/medias/SDB-3790-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNDUwNDh8YXBwbGljYXRpb24vcGRmfGFHSTBMMmcxWXk4NU1qQTJOamM1T1RZeE5qTXdMMU5FUWw4ek56a3dYMFJGWDBWT0xuQmtaZ3w4MDE2NTJmZTgwMjRmNjlmZWQyYThkNGZhNmIxNDk3ZjA1NWI2MTEwNGQxMGI1YTFiNmJmNzNkYTUzMDY2MGI1) | 75.07 g/mol | solid | {{< chemical_location chemical="glycine_solid" >}} |
+| sodium dodecyl sulfate *SDS* [<sup>SDS</sup>](https://www.carlroth.com/medias/SDB-8029-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNjk1MzV8YXBwbGljYXRpb24vcGRmfGFHWmxMMmhpWXk4NU1qQTJOemsxTnpNd09UYzBMMU5FUWw4NE1ESTVYMFJGWDBWT0xuQmtaZ3w4MjQwNjRjYzA2MjE1NzhmOWFmN2ZmMzBkODM1YmEwMDRhZDRkOGFjY2VjZjk4ZjU5ZTRkMDQ2OWU0ZDFlMjFi) | 288.38 g/mol | solid | {{< chemical_location chemical="sds_solid" >}} |
 | deionized sterilized Water *dsH<sub>2</sub>O* | 18.015 g/mol | liquid | |
 <!-- markdownlint-enable MD033 -->
 
@@ -65,7 +64,7 @@ tested = false
 
 | Conditions | Duration |
 | :-- | :-- |
-| @ 25 °C | 1 month |
+| @ 25 °C | **1x buffer:** 1 month <br> **10x buffer:** 6-12 month |
 | @ 4 °C | |
 | @ -20 °C | |
 | @ –80 °C | |
@@ -76,5 +75,3 @@ tested = false
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}

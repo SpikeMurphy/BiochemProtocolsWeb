@@ -1,5 +1,25 @@
 [
   {
+    "title": "Single Antibody Incubation Following Western Blotting",
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/single_antibody_following_wb/"
+  },
+  {
+    "title": "Ponceau S Staining Following Western Blotting",
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/ponceau_s_following_wb/"
+  },
+  {
+    "title": "Primary and Secondary Antibody Incubation Following Western Blotting",
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/primary_and_secondary_antibody_following_wb/"
+  },
+  {
+    "title": "Chemiluminescence Imaging Following Western Blotting",
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/imaging_following_wb/"
+  },
+  {
+    "title": "Coomassie Brilliant Blue Staining Following SDS-PAGE",
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/coomassie_from_sds-page/"
+  },
+  {
     "title": "Nucleospin® Plasmid Preperation",
     "path": "/BiochemProtocols/methods/dna/nucleospin_plasmid_prep/"
   },
@@ -20,7 +40,11 @@
     "path": "/BiochemProtocols/methods/dna/pcr/"
   },
   {
-    "title": "Sodium dodecyl sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)",
+    "title": "Western Blotting",
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/western_blotting/"
+  },
+  {
+    "title": "Sodium Dodecyl Sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)",
     "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/"
   },
   {

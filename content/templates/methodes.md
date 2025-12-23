@@ -29,6 +29,29 @@ landing:
 
 {{< timer time="0:00:30" >}}
 
+<!-- 
+
+for switching alternatives
+
+1: chose group that should change together
+2: chose primary
+3: chose secondary
+
+multiple groups can be chosen
+
+4: add a <span></span> to the primaries and secondaries:
+<!-- markdownlint-disable MD033 -- >
+<span data-alt-group="group" data-alt="primary">default</span>
+<span data-alt-group="group" data-alt="secondary" style="display:none">alternative</span>
+<!-- markdownlint-enable MD033 -- >
+
+5: add alternative-switch behind first mention:
+{ {< alt_methods group="group" primary="Use default" secondary="Use alternative" >}}
+
+remove " " form "-- >" and "{ {"
+
+-->
+
 <!--_____________________________delete_____________________________-->
 
 {{< infobox type="info" title="" >}}
@@ -119,7 +142,7 @@ landing:
 
 ### Proceed with Suitable Protocol
 
-- [Protocol Name](Link) <!---->
+- [Protocol Name]({{< relref "methods.md" >}}) <!---->
 
 {{< /tab >}}
 
@@ -127,5 +150,3 @@ landing:
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}

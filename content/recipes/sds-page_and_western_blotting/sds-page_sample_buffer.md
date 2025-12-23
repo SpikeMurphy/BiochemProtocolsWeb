@@ -48,21 +48,6 @@ tested = false
 | {{< checkbox >}} | dsH<sub>2</sub>O | <span class="calc_recipe_x" data-default-vol="530">530 mL (0.002% w/v)</span> <!-- TODO: calculate % as well --> | to <span class="calc_recipe_x" data-default-vol="1000">1000 mL</span> |
 <!-- markdownlint-enable MD033 -->
 
-<!-- Calc Recipe x (only use one x/vol/mol):
-
-for factoring 1x/5x/10x buffers (default 1000mL, 1x)
-into the <span> (new or from alt_switch)
-
-add class="calc_recipe_x" 
-
-for masses add data-default-mass="e"
-for volumes add data-default-vol="e"
-for molarities add data-default-mol="e" //TODO: should be calculated automatically from molecular mass...
-
-e = value
-
--->
-
 {{< /tab >}}
 
 {{< tab >}}
@@ -71,8 +56,7 @@ e = value
 
 | Use Case | Specifications |
 | :-- | :-- |
-| | |
-| | |
+| [SDS-PAGE]({{<relref "sds-page.md" >}}) | Typically ad 2x or 4x sample buffer diluted in the sample to a 1x buffer |
 
 {{< /tab >}}
 
@@ -82,7 +66,7 @@ e = value
 
 | Conditions | Duration |
 | :-- | :-- |
-| @ 25 °C | |
+| @ 25 °C | 6-12 month |
 | @ 4 °C | |
 | @ -20 °C | |
 | @ –80 °C | |
@@ -93,5 +77,3 @@ e = value
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}

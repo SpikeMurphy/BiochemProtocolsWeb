@@ -49,7 +49,7 @@ math = true
 | [Luria-Bertani agar plate]({{< relref "" >}}) <!-- TODO: add recipe, then add link--> | 1/culture | for clone backup | |
 | suitable antibiotic | | stock solution, typically 1000x | |
 | [phosphate-buffered saline *PBS*]({{< relref "pbs.md" >}}) | 50 µL/culture <br> 50 µL/culture <br> 50 µL/culture | for pre-induction aliquot <br> for post-induction aliquot <br> 50mL for precipitate |  |
-| [SDS-PAGE sample buffer 2x]({{< relref "sample_buffer.md" >}}) | 50 µL/culture <br> 50 µL/culture <br> 50 µL/culture | for pre-induction aliquot <br> for post-induction aliquot <br> 50mL for precipitate | |
+| [SDS-PAGE sample buffer 2x]({{< relref "sds-page_sample_buffer.md" >}}) | 50 µL/culture <br> 50 µL/culture <br> 50 µL/culture | for pre-induction aliquot <br> for post-induction aliquot <br> 50mL for precipitate | |
 | suitable induction chemical <br> e.g. [anhydrotetracycline *AHT*]({{< relref "aht.md" >}}) <!-- TODO: add recipe, then add link--> 2 mg/mL <br> e.g. [isopropyl-β-D-thiogalactopyranosid *IPTG*]({{< relref "iptg.md" >}}) <!-- TODO: add recipe, then add link--> 1 M | <br> e.g. 50 µL <br> e.g. 500 µL | <br> for a final concentration of 0.2 µg/mL  <br> for a final concentration of 0.5 mM | |
 | [tris-HCl-NaCl-MgCl<sub>2</sub> bacterial lysis buffer]({{< relref "bacterial_lysis_buffer.md" >}}) | | for 20 mL supplemented lysis buffer | |
 | [phenylmethylsulfonyl fluoride *PMSF*]({{< relref "" >}}) <!-- TODO: add recipe, then add link--> 100 mM | 200 µL | for 20 mL supplemented lysis buffer (1 mM) | |

@@ -25,7 +25,7 @@ landing: <div id="name-anchor" style="position: relative; top: -80px; visibility
 
 <!-- Material Table:
 
-for switching alternatives
+for switching alternatives <!-- TODO: combine switches to one universal switch (see alt methods) -- >
 into the <span>
 
 add an id="alt_pagename_m_c_reagent1" for the default
@@ -153,8 +153,8 @@ e = value
 
 | Use Case | Specifications |
 | :-- | :-- |
-| | |
-| | |
+| [Protocol Name]({{< relref "recipes.md" >}}) | |
+| [Protocol Name]({{< relref "recipes.md" >}}) | |
 
 {{< /tab >}}
 
@@ -175,5 +175,3 @@ e = value
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}

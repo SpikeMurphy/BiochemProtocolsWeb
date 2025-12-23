@@ -23,7 +23,7 @@ tested = false
 | shaker incubator |  | for incubation @ 30 or 37 °C |  |
 | centrifuge |  |  for centrifugation of 50 mL falcons @ 5,000 g |  |
 | photometer |  | for measurement of OD<sub>600</sub> |  |
-| cool room |  | @ 4 °C |  |
+| cold room |  | @ 4 °C |  |
 
 | Commercial Kits⠀⠀⠀⠀⠀⠀ | Amount | Specifications| Location |
 | :-- | :-- | :-- | :-- |
@@ -156,5 +156,3 @@ tested = false
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}

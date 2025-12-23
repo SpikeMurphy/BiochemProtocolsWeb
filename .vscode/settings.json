@@ -22,14 +22,17 @@
     "Dithiothreitol",
     "dodecyl",
     "EDTA",
+    "epiillumination",
     "equibrilation",
     "etoh",
     "hemisulphate",
     "hydroxyphenyl",
+    "Imager",
     "infobox",
     "IPTG",
     "Laemmli",
     "leupeptin",
+    "luminol",
     "lysate",
     "lysates",
     "mastermix",
@@ -40,6 +43,8 @@
     "micropipettes",
     "Müller",
     "nacl",
+    "overstain",
+    "PBST",
     "pepstatin",
     "persulfate",
     "Phenylmethylsulfonyl",
@@ -57,6 +62,7 @@
     "tris",
     "tryptone",
     "ultrasonicate",
-    "ultrasonicator"
+    "ultrasonicator",
+    "unneccicery"
   ]
 }

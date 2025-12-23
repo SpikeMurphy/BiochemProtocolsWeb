@@ -1,43 +1,18 @@
 +++
 date = '2025-12-21T14:34:29+01:00'
-draft = true
-construction = true
-title = 'Coomassie Brilliant Blue Blue Staining following Sodium dodecyl sulfate Polyacrylamide Gel Electrophoresis'
+draft = false
+construction = false
+title = 'Coomassie Brilliant Blue Staining Following SDS-PAGE'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
 version = 'Version 1.0.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
-updated = ''
-finished = false
-tested = false
+updated = '23.12.2025'
+finished = true
+tested = true
 +++
-<!-- NEW: finished = true, change to DONE; tested = true, delete -->
-
-<!--_____________________________delete_____________________________-->
-
-Bookmark: command + option + K
-Comment: command + shift + 7 <!-- -->
-
-anchor (jump to position on site):
-referral: [](#name-anchor)
-landing: <div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
-
-{{< timer time="0:00:30" >}}
-
-<!--_____________________________delete_____________________________-->
-
-{{< infobox type="info" title="" >}}
-⚠️ Info
-{{< /infobox >}}
-
-{{< infobox type="warning" title="" >}}
-❗️ Attention
-{{< /infobox >}}
-
-{{< infobox type="danger" title="" >}}
-‼️ Danger
-{{< /infobox >}}
+<!-- DONE: tested = true, delete -->
 
 {{< tab >}}
 
@@ -46,7 +21,7 @@ landing: <div id="name-anchor" style="position: relative; top: -80px; visibility
 | Equipment & Devices⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
 | tray shaker | | | |
-
+| cold room | | | |
 
 | Commercial Kits⠀⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
@@ -59,7 +34,7 @@ landing: <div id="name-anchor" style="position: relative; top: -80px; visibility
 | Reagents & Solutions⠀⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
 | Coomassie brilliant blue staining solution | 50 mL | e.g. RotiBlue quick | |
-| destaining solution (ethanol *EtOH* 30 %)| | | |
+| destaining solution (ethanol *EtOH* 30 %) | ~200 mL | | |
 | dsH<sub>2</sub>O | | | |
 
 | Biological Materials⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
@@ -72,51 +47,67 @@ landing: <div id="name-anchor" style="position: relative; top: -80px; visibility
 
 ## Procedure
 
+{{< infobox type="info" title="General Remark" >}}
+⚠️ In general, staining a gel is not recommended when downstream processing, such as western blotting, is required, as it can reduce blotting efficiency.
+{{< /infobox >}}
+
 ### Heading 1
 
-1.	Place the gel into ROTI®Blue quick solution.
-2.	Incubate the gel for 1 h @ RT.
-3.	Decant the staining solution (can be used two times).
-4.	Rinse the gel with dsH2O.
-5.	Take pictures at the ImageQuant™.
-a.	Place the gel into a plastic film.
-b.	Roll out the gel to remove all bubbles and access liquids.
-c.	Place the gel in the middle of the white tray (drawer under the LAS4000).
-d.	Place tray with the gel onto the tray of the ImageQuant™.
-e.	Set Methode to Digitization:epi-illumination.
-f.	Set exposure type to precision.
-g.	Set exposure time manually to 1/60s.
-h.	Set sensitivity to standard.
-i.	Take picture.
-j.	Clean the tray with 70% EtOH and place back to its original location.
-6.	For subsequent western blotting, destain the gel in 30% EtOH for at least h or overnight @ RT.
+1. {{< checkbox >}} Place the gel into approximately 50 mL of Coomassie stain, such as ROTI®Blue quick.
+2. {{< checkbox >}} Incubate the gel @ RT for 1 h or overnight @ 4 °C.
 
+{{< infobox type="info" title="Staining Duration" >}}
+⚠️ You may check the gel after 15, 30, and 45 minutes and stop the incubation once the desired band intensity is achieved. Note that overnight incubation often reveals additional bands not visible after 1 hour. However, some Coomassie stains are not suitable for overnight incubation. ROTI®Blue Quick does not overstain and can be used for overnight incubation. Refer to the corresponding manufacturer's manual for further information.
 
 <!-- markdownlint-disable MD033 -->
 <div style="display:flex; gap:20px; align-items:center;">
-{{< timer time="0:00:00" >}}
-{{< timer time="0:00:00" >}}
-{{< timer time="0:00:00" >}}
+{{< timer time="0:15:00" >}}
+{{< timer time="0:30:00" >}}
+{{< timer time="0:45:00" >}}
+{{< timer time="1:00:00" >}}
 </div>
 <!-- markdownlint-enable MD033 -->
 
-### Heading 2
+{{< /infobox >}}
 
-1. {{< checkbox >}}
-2. {{< checkbox >}}
-3. {{< checkbox >}}
-4. {{< checkbox >}}
+3. {{< checkbox >}} Decant the staining solution into a sterile 50 mL falcon tube and store @ 4 °C for reuse.
 
-### Heading 3
+{{< infobox type="info" title="Reuse" >}}
+⚠️ Oftentimes, stains can be reused. ROTI®Blue Quick is reported by the manufacturer to be reusable at least twice, sometimes thrice. Refer to the corresponding manufacturer's manual for further information.
+{{< /infobox >}}
 
-1. {{< checkbox >}}
-2. {{< checkbox >}}
-3. {{< checkbox >}}
-4. {{< checkbox >}}
+{{< infobox type="info" title="Background" >}}
+⚠️ In case of high background staining, destain the gel in 30 % EtOH at RT for at least 1 h.
+
+{{< timer time="1:00:00" >}}
+
+{{< /infobox >}}
+
+4. {{< checkbox >}} Rinse the gel with dsH<sub>2</sub>O.
+
+5. {{< checkbox >}} Take pictures at an appropriate imager, such as the ImageQuant™. <!-- TODO: add alternative button to wchange between the two most used imagers. -->
+
+    - {{< checkbox >}} Place the white insert onto the black tray of the imager.
+    - {{< checkbox >}} Place the gel in the middle of the white board.
+    - {{< checkbox >}} Place tray into the ImageQuant™.
+    - {{< checkbox >}} Set method to Digitization:epi-illumination.
+    - {{< checkbox >}} Set exposure type to precision.
+    - {{< checkbox >}} Set sensitivity to standard.
+    - {{< checkbox >}} Set exposure time manually to 1/100s.
+    - {{< checkbox >}} Take a picture.
+    - {{< checkbox >}} Set exposure time manually to 1/60s.
+    - {{< checkbox >}} Take a picture.
+    - {{< checkbox >}} Set exposure time manually to 1/30s.
+    - {{< checkbox >}} Take a picture.
+    - {{< checkbox >}} Clean the tray with 70 % EtOH.
+
+6. {{< checkbox >}} For subsequent western blotting, destain the gel in 30 % EtOH @ RT for at least 1 h or @ 4 °C overnight.
+
+{{< timer time="1:00:00" >}}
 
 ### Proceed with Suitable Protocol
 
-- [Protocol Name](Link) <!---->
+- [Western Blotting following SDS-PAGE]({{< relref "western_blotting.md" >}})
 
 {{< /tab >}}
 
@@ -124,5 +115,3 @@ j.	Clean the tray with 70% EtOH and place back to its original location.
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}
