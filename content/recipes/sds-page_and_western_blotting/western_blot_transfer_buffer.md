@@ -4,13 +4,17 @@ draft = false
 construction = false
 title = 'Western Blot Tris-Glycine(-SDS)-MeOH Towbin Transfer Buffer'
 subtitle = ''
-author = 'Spike Murphy Müller ¹'
-facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
-version = 'Version 1.0.0'
+author = [
+    'Spike Murphy Müller ¹'
+]
+affiliation = [
+    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+]
+version = 'Version 1.1.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
-updated = ''
-finished = false
-tested = false
+updated = '22.12.2025'
+finished = true
+tested = true
 +++
 
 {{< tab >}}
@@ -47,24 +51,6 @@ tested = false
 | {{< checkbox >}} | SDS | <span class="calc_recipe_x" data-default-mass="1">1 g</span> | <span class="calc_recipe_x" data-default-mol="3.47">3.47 mM (0.1 %)</span> |
 | {{< checkbox >}} | <span id="alt_westernblottransferbuffer_r_ms_dsh2omeoh">80% dsH<sub>2</sub>O & 20% MeOH</span>      <span id="alt_westernblottransferbuffer_r_ms_dsh2o" style="display:none">dsH<sub>2</sub>O</span> {{< alternative_switches/alt_westernblottransferbuffer_dsh2omeoh >}} | to <span id="alt_westernblottransferbuffer_r_vm_dsh2omeoh" class="calc_recipe_x" data-default-vol="1000">1000 mL</span>     <span id="alt_westernblottransferbuffer_r_vm_dsh2o" style="display:none" class="calc_recipe_x" data-default-vol="1000">1000 mL</span> | |
 <!-- markdownlint-enable MD033 -->
-
-
-<!-- Material Table:
-
-for switching alternatives
-into the <span>
-
-add an id="alt_pagename_m_c_reagent1" for the default
-add an id="alt_pagename_m_c_reagent2" for the alternative 
-
-m = methods table
-c = m for material, mw for molecular weight, specs for specifications, l for location
-
-add the shortcode:
-{ {< alternative_switches/alt_pagename_reagent1 >}}
-
--->
-
 
 {{< /tab >}}
 

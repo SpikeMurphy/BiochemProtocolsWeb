@@ -1,4 +1,40 @@
 <article class="elj-body">
+  
+
+
+  <div class="protocol-variant-switcher">
+    <label>Protocol variant:</label>
+    <select onchange="window.location.href=this.value">
+      
+        <option value="/BiochemProtocols/methods/bacteria/plasmid_prep_culture/"
+          >
+          Bacterial Plasmid Preparation Culture
+        </option>
+      
+        <option value="/BiochemProtocols/methods/bacteria/protein_expression_culture/"
+          selected>
+          Bacterial Protein Expression Culture
+        </option>
+      
+        <option value="/BiochemProtocols/methods/bacteria/transformation/"
+          >
+          Bacterial Transformation – for subsequent plate and liquid culturing for storadge, plasmid preparation or protein expression
+        </option>
+      
+        <option value="/BiochemProtocols/methods/bacteria/transformation_from_pcr/"
+          >
+          Bacterial Transformation Following PCR and Gel Extraction – for subsequent plate and liquid culturing for storage, plasmid preparation or protein expression
+        </option>
+      
+        <option value="/BiochemProtocols/methods/bacteria/chemically_competent_bacteria/"
+          >
+          Chemically Competent Bacteria Generation
+        </option>
+      
+    </select>
+  </div>
+
+
   <!-- NEW: finished = true, change to DONE; tested = true, delete -->
 <div class="tab">
   <h2 id="materials">Materials</h2>
@@ -1817,10 +1853,5 @@ Rotor radius in centimeters: $F_g = 1.118 \cdot 10^{-5} \cdot r_r \cdot rpm^2$</
   };
 </script>
 
-<button class="time-btn" id="label-alignment-test">
-  Print alignment test for HERMA 4390 labels.
-</button>
-
-<script src="/BiochemProtocols/js/alignment_test.js"></script>
 
 </article>

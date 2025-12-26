@@ -1,0 +1,15 @@
+{{ $section := .Page.CurrentSection }}
+
+{{ if and $section (gt (len $section.RegularPages) 1) }}
+  <div class="protocol-variant-switcher">
+    <label>Protocol variant:</label>
+    <select onchange="window.location.href=this.value">
+      {{ range $section.RegularPages }}
+        <option value="{{ .RelPermalink }}"
+          {{ if eq .RelPermalink $.Page.RelPermalink }}selected{{ end }}>
+          {{ .Title }}{{ with .Params.subtitle }} – {{ . }}{{ end }}
+        </option>
+      {{ end }}
+    </select>
+  </div>
+{{ end }}

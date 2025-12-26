@@ -4,8 +4,12 @@ draft = false
 construction = false
 title = 'Biotin Elution Buffer'
 subtitle = 'For Strep-Tactin®XT Affinity Chromatography'
-author = 'Spike Murphy Müller ¹'
-facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+author = [
+    'Spike Murphy Müller ¹'
+]
+affiliation = [
+    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+]
 version = 'Version 1.0.1'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '19.12.2025'

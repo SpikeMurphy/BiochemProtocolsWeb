@@ -5,7 +5,7 @@ construction = false
 title = 'methods Template'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
-facility = ''
+affiliation = ''
 version = 'Version 1.0.2'
 version_explanation = ''
 updated = '18.12.2025'
@@ -13,6 +13,25 @@ finished = true
 tested = true
 +++
 <!-- NEW: finished = true, change to DONE; tested = true, delete -->
+
+<!--–____________________________info_____________________________-->
+
+<!--–
+when there are multiple protocol variants:
+
+1. create a folder and an _index.md with the following content:
+
+<script>
+  window.location.replace("default/"); // replace default with the pagename of the default variant
+</script>
+
+2. add the protocols into the folder
+3. each protocol has to have the following shortcode on top of all the other content:
+
+{ {< variants >}}
+-->
+
+<!--_____________________________info_____________________________-->
 
 <!--_____________________________delete_____________________________-->
 

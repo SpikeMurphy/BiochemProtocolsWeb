@@ -2,4 +2,4 @@
 title: "Access"
 ---
 
-Gib deinen Zugangscode ein.
+Enter your access code please.

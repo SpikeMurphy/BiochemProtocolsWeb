@@ -4,8 +4,12 @@ draft = false
 construction = false
 title = 'Coomassie Brilliant Blue Staining Following SDS-PAGE'
 subtitle = ''
-author = 'Spike Murphy Müller ¹'
-facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+author = [
+    'Spike Murphy Müller ¹'
+]
+affiliation = [
+    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+]
 version = 'Version 1.0.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '23.12.2025'
@@ -85,7 +89,7 @@ tested = true
 
 4. {{< checkbox >}} Rinse the gel with dsH<sub>2</sub>O.
 
-5. {{< checkbox >}} Take pictures at an appropriate imager, such as the ImageQuant™. <!-- TODO: add alternative button to wchange between the two most used imagers. -->
+5. {{< checkbox >}} Take pictures at an appropriate imager, such as the ImageQuant™. <!-- TODO: add alternative button to change between the two most used imagers. -->
 
     - {{< checkbox >}} Place the white insert onto the black tray of the imager.
     - {{< checkbox >}} Place the gel in the middle of the white board.

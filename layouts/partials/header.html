@@ -1,15 +1,35 @@
-<header>
+<header class="protocol-header">
+  <div class="protocol-titles">
     <h1>{{ .Title }}</h1>
 
-    {{ with .Params.Subtitle }}
-        <h3>{{ . }}</h3>
+    {{ with .Params.subtitle }}
+      <h2>{{ . }}</h2>
+    {{ end }}
+  </div>
+
+  <div class="protocol-meta">
+
+    {{ with .Params.author }}
+      <h5 class="protocol-authors">
+        {{ if reflect.IsSlice . }}
+          {{ delimit . ",  " }}
+        {{ else }}
+          {{ . }}
+        {{ end }}
+      </h5>
     {{ end }}
 
-    {{ with .Params.Author }}
-        <h5>{{ . }}</h5>
+    {{ with .Params.affiliation }}
+      <div class="protocol-affiliations">
+        {{ if reflect.IsSlice . }}
+          {{ range . }}
+            <h5>{{ . }}</h5>
+          {{ end }}
+        {{ else }}
+          <h5>{{ . }}</h5>
+        {{ end }}
+      </div>
     {{ end }}
-    
-    {{ with .Params.Facility }}
-        <h5>{{ . }}</h3>
-    {{ end }}
+
+  </div>
 </header>

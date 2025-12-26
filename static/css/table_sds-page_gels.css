@@ -1,0 +1,124 @@
+/* ========== SDS PAGE TABLE (theme-aligned) ========== */
+
+.gel-table-wrapper {
+  margin: 20px 0;
+}
+
+/* Table already styled globally → just minor tweaks */
+.gel-table-wrapper table {
+  margin: 0;
+}
+
+.gel-table-wrapper th {
+  text-align: center;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.gel-table-wrapper td {
+  text-align: center;
+  padding: 4px;
+}
+
+/* Row number column */
+.gel-table-wrapper td:first-child {
+  font-weight: 500;
+  color: #2d4c7f;
+}
+
+/* Inputs */
+.gel-input {
+  width: 100%;
+  padding: 3px 4px;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #b8c8e6;
+  background: #f8fbff;
+  transition: background 0.15s ease,
+              border-color 0.15s ease;
+}
+
+.gel-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.15);
+}
+
+/* Ladder highlight */
+.gel-input.ladder {
+  font-weight: 500;
+  border-color: #60a5fa;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(59,130,246,0.15) 0%,
+      rgba(59,130,246,0.15) 12%,
+      transparent 12%,
+      transparent 20%,
+      rgba(34,197,94,0.15) 20%,
+      rgba(34,197,94,0.15) 32%,
+      transparent 32%,
+      transparent 42%,
+      rgba(234,179,8,0.18) 42%,
+      rgba(234,179,8,0.18) 55%,
+      transparent 55%,
+      transparent 68%,
+      rgba(239,68,68,0.18) 68%,
+      rgba(239,68,68,0.18) 82%,
+      transparent 82%
+    ),
+    #f8fbff;
+}
+
+
+/* Buttons row */
+.gel-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ---------- Dark mode ---------- */
+
+body.darkmode .gel-table-wrapper td:first-child {
+  color: #93c5fd;
+}
+
+body.darkmode .gel-input {
+  background: #1f2937;
+  border: 1px solid #334155;
+  color: #dce9ff;
+}
+
+body.darkmode .gel-input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96,165,250,0.25);
+}
+
+body.darkmode .gel-input.ladder {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(96,165,250,0.25) 0%,
+      rgba(96,165,250,0.25) 12%,
+      transparent 12%,
+      transparent 20%,
+      rgba(74,222,128,0.25) 20%,
+      rgba(74,222,128,0.25) 32%,
+      transparent 32%,
+      transparent 42%,
+      rgba(250,204,21,0.28) 42%,
+      rgba(250,204,21,0.28) 55%,
+      transparent 55%,
+      transparent 68%,
+      rgba(248,113,113,0.28) 68%,
+      rgba(248,113,113,0.28) 82%,
+      transparent 82%
+    ),
+    #1f2937;
+  border-color: #60a5fa;
+}
+
+
+/* ========== SDS PAGE TABLE END ========== */

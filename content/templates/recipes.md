@@ -5,7 +5,7 @@ construction = false
 title = 'Recipes Template'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
-facility = ''
+affiliation = ''
 version = 'Version 1.0.2'
 version_explanation = ''
 updated = '18.12.2025'
@@ -52,7 +52,7 @@ d = ms for material/steps, vm for volume/mass and mol for molar/%/comment
 
 -->
 
-<!-- Calc Recipe x (only use one x/vol/mol):
+<!-- Calc Recipe x (only use one x/vol/mol/amount):
 
 for factoring 1x/5x/10x buffers (default 1000mL, 1x)
 into the <span> (new or from alt_switch)
@@ -67,7 +67,7 @@ e = value
 
 -->
 
-<!-- Calc Recipe vol (only use one x/vol/mol):
+<!-- Calc Recipe vol (only use one x/vol/mol/amount):
 
 for factoring volumes (default volume 1000mL)
 into the <span>  (new or from alt_switch)
@@ -82,7 +82,7 @@ e = value
 
 -->
 
-<!-- Calc Recipe mol (only use one x/vol/mol):
+<!-- Calc Recipe mol (only use one x/vol/mol/amount):
 
 for factoring molarity (default 1000mL, 1 M)
 into the <span>  (new or from alt_switch)
@@ -92,6 +92,19 @@ add class="calc_recipe_mol"
 for masses add data-default-mass="e"
 for volumes add data-default-vol="e"
 for molarities add data-default-mol="e"
+
+e = value
+
+-->
+
+<!-- Calc Recipe amount (only use one x/vol/mol/amount):
+
+for factoring amount of gels (default 1 gel)
+into the <span>  (new or from alt_switch)
+
+add class="calc_recipe_amount" 
+
+for masses add data-default-one="e"
 
 e = value
 
@@ -134,6 +147,7 @@ e = value
 <!-- { {< calculators/calc_recipe_x >}} -->
 <!-- { {< calculators/calc_recipe_vol >}} -->
 <!-- { {< calculators/calc_recipe_mol >}} -->
+<!-- { {< calculators/calc_recipe_amount >}} -->
 
 <!-- markdownlint-disable MD033 -->
 | | Material/Step | Volume/Mass | molar/%/comment |

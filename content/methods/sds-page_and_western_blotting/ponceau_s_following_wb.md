@@ -4,8 +4,12 @@ draft = false
 construction = false
 title = 'Ponceau S Staining Following Western Blotting'
 subtitle = ''
-author = 'Spike Murphy Müller ¹'
-facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+author = [
+    'Spike Murphy Müller ¹'
+]
+affiliation = [
+    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+]
 version = 'Version 1.0.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '23.12.2025'
@@ -32,11 +36,13 @@ tested = false
 | pipetting aid and serological pipettes | | | |
 | plastic tray | 1-3/membrane | for staining, washing and destaining | |
 
+<!-- markdownlint-disable MD033 -->
 | Reagents & Solutions⠀⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
 | dsH<sub>2</sub>O | | | |
 | ponceau S | | protein staining solution | |
-| tris buffered saline or phosphate buffered saline | | | | <!-- TODO: add alternative switch -->
+| <span data-alt-group="buffer" data-alt="primary">phosphate buffered saline *PBS*</span>     <span data-alt-group="buffer" data-alt="secondary" style="display:none">tris buffered saline *TBS*</span> {{< alternative_switches/alt_methods group="buffer" primary="Use PBS" secondary="Use TBS" >}} | | | |
+<!-- markdownlint-enable MD033 -->
 
 | Biological Materials⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
@@ -82,12 +88,19 @@ tested = false
 ⚠️ Image immediately as Ponceau S fades quickly over time.
 {{< /infobox >}}
 
-6. {{< checkbox >}} Replace the dsH<sub>2</sub>O in the tray with TBST or PBST.
-9. {{< checkbox >}} Place the nitrocellulose membrane into the TBST or PBST and gently agitate for 5 minutes.
+<!-- markdownlint-disable MD033 -->
+6. {{< checkbox >}} Replace the dsH<sub>2</sub>O in the tray with <span data-alt-group="buffer" data-alt="primary">PBST</span>     <span data-alt-group="buffer" data-alt="secondary" style="display:none">TBST</span>.
+<!-- markdownlint-enable MD033 -->
+
+<!-- markdownlint-disable MD033 -->
+9. {{< checkbox >}} Place the nitrocellulose membrane into the <span data-alt-group="buffer" data-alt="primary">PBST</span>     <span data-alt-group="buffer" data-alt="secondary" style="display:none">TBST</span> and gently agitate for 5 minutes.
+<!-- markdownlint-enable MD033 -->
 
 {{< timer time="0:05:00" >}}
 
-3. {{< checkbox >}} Change the TBST or PBST and gently agitate for 5 minutes or until the nitrocellulose membrane appears completely white again.
+<!-- markdownlint-disable MD033 -->
+3. {{< checkbox >}} Change the <span data-alt-group="buffer" data-alt="primary">PBST</span>     <span data-alt-group="buffer" data-alt="secondary" style="display:none">TBST</span> and gently agitate for 5 minutes or until the nitrocellulose membrane appears completely white again.
+<!-- markdownlint-enable MD033 -->
 
 <!-- markdownlint-disable MD033 -->
 <div style="display:flex; gap:20px; align-items:center;">
@@ -99,7 +112,8 @@ tested = false
 
 ### Proceed with Suitable Protocol
 
-- [Protocol Name]({{< relref "methods.md" >}}) <!---->
+- [Primary- and Secondary Antibody incubation Following Western Blotting](Link) <!-- TODO: insert link -->
+- [Single Antibody incubation Following Western Blotting]({{< relref "single_antibody_following_wb.md" >}})
 
 {{< /tab >}}
 

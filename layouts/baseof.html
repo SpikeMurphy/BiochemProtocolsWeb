@@ -1,11 +1,17 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/navigation.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/login.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/header.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/buttons.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/dropdowns.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/calc_bacterial_growth.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/table_sds-page_gels.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/footer.css" | relURL }}">
     <title>Document</title>
 </head>
 
@@ -24,23 +30,25 @@
 <script src="{{ "js/calculators/calc_recipe_x.js" | relURL }}"></script> <!-- baseof is correct -->
 <script src="{{ "js/calculators/calc_recipe_vol.js" | relURL }}"></script> <!-- baseof is correct -->
 <script src="{{ "js/calculators/calc_recipe_mol.js" | relURL }}"></script> <!-- baseof is correct -->
+<script src="{{ "js/calculators/calc_recipe_amount.js" | relURL }}"></script> <!-- baseof is correct -->
+
 
 <script src="{{ "js/comment_box.js" | relURL }}"></script>
 
 <script src="{{ "js/save_page.js" | relURL }}"></script>
 
-{{ if .HasShortcode "table_sds-page_gels" }}
+{{ if .Page.HasShortcode "table_sds-page_gels" }}
 <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-<script src="/js/table_sds-page_gels.js"></script>
+<script src="{{ "js/table_sds-page_gels.js" | relURL }}"></script>
 {{ end }}
 
-{{ if .HasShortcode "calculators/calc_bacterial_growth" }}
+{{ if .Page.HasShortcode "calculators/calc_bacterial_growth" }}
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>  <!-- save as excel -->
   <script src="{{ "js/calculators/calc_bacterial_growth.js" | relURL }}"></script>
 {{ end }}
 
-{{ if .HasShortcode "calculators/display_current_time" }}
+{{ if .Page.HasShortcode "calculators/display_current_time" }}
 <script src="{{ "js/calculators/display_current_time.js" | relURL }}"></script>
 {{ end }}
 
@@ -57,6 +65,8 @@
 
     {{ partial "navigation" . }}
 
+    {{ partial "login" . }}
+
     {{ partial "header" . }}
     
     <main>
@@ -70,6 +80,5 @@
     {{ partial "footer" . }}
 
 </body>
-
 
 </html>

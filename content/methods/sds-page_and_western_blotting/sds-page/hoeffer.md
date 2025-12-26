@@ -3,15 +3,21 @@ date = '2025-12-07T21:00:04+01:00'
 draft = false
 construction = false
 title = 'Sodium Dodecyl Sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)'
-subtitle = ''
-author = 'Spike Murphy Müller ¹'
-facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+subtitle = 'Using the Hoeffer™ Chamber'
+author = [
+    'Spike Murphy Müller ¹'
+]
+affiliation = [
+    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+]
 version = 'Version 1.1.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '22.12.2025'
 finished = false
 tested = true
 +++
+
+{{< variants >}}
 
 {{< infobox type="danger" title="Acrylamide" >}}
 ‼️ Acrylamide is toxic and must be handled exclusively in a chemical fume hood. Although gas-stabilized material reduces user exposure, it may still release hazardous gases. Therefore, all handling, preparation, and use must be performed under a chemical fume hood with appropriate personal protective equipment.
@@ -44,10 +50,10 @@ tested = true
 | deionized sterilized water *dsH<sub>2</sub>O* | | squirt bottle | |
 | ethanol *EtOH* | | 70%, squirt bottle | |
 | propane-2-ol (= isopropanol) | 1 mL/gel | | |
-| separating gel | 15 ml/gel <br><br> **for a default 10% gel** <br> 4.100 mL/gel <br> 5.640 mL/gel <br> 5.000 mL/gel <br> 0.150 mL/gel <br> 0.010 mL/gel <br> 0.100 mL/gel | <br><br><br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 1 M (pH 8.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium persulfate *APS* 438 mM (10 %) | |
-| collecting gel | 5 ml/gel <br><br> **for a default 4% gel** <br> 2.520 mL/gel <br> 1.680 mL/gel <br> 0.670 mL/gel <br> 0.050 mL/gel <br> 0.005 mL/gel <br> 0.075 mL/gel | <br><br><br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 0,375 M (pH 6.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium persulfate *APS* 438 mM (10 %) | |
+| separating gel | 15 ml/gel <br><br> **for a default 10% gel** <br> 4.100 mL/gel <br> 5.640 mL/gel <br> 5.000 mL/gel <br> 0.150 mL/gel <br> 0.010 mL/gel <br> 0.100 mL/gel | <br><br><br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 1 M (pH 8.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium peroxodisulfate (= ammonium persulfate) *APS* 438 mM (10 %) | |
+| collecting gel | 5 ml/gel <br><br> **for a default 4% gel** <br> 2.520 mL/gel <br> 1.680 mL/gel <br> 0.670 mL/gel <br> 0.050 mL/gel <br> 0.005 mL/gel <br> 0.075 mL/gel | <br><br><br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 0,375 M (pH 6.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium peroxodisulfate (= ammonium persulfate) *APS* 438 mM (10 %) | |
 | [SDS-PAGE running buffer]({{< relref "sds-page_running_buffer.md" >}}) | 3000 mL/run | | |
-| [SDS-PAGE sample buffer]({{< relref "sds-page_sample_buffer" >}}) | | e.g. Laemmli sample buffer 2x or 4x | | <!-- TODO: add link -->
+| [SDS-PAGE sample buffer]({{< relref "sds-page_sample_buffer" >}}) | | e.g. Laemmli sample buffer 2x or 4x | |
 | dithiothreitol DTT 1M | 500 µL <br> ~500 µL | 500 µL for 1mM in cathode buffer <br> for sample preparation | |
 
 | Biological Materials⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
@@ -242,7 +248,7 @@ tested = true
 <div id="table_sds-page_gels-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
 <!-- markdownlint-enable MD033 -->
 
-{{< table_sds-page_gels >}} <!-- TODO: downloads do not work, enhance styling and move to seperate css-->
+{{< table_sds-page_gels >}} <!-- TODO: enhance table styling, enhance pdf styling, and move to separate css-->
 
 {{< comment_box >}}
 {{< save_page >}}

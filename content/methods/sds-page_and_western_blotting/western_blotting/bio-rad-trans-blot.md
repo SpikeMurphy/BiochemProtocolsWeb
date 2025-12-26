@@ -3,15 +3,21 @@ date = '2025-12-07T21:00:18+01:00'
 draft = false
 construction = false
 title = 'Western Blotting'
-subtitle = ''
-author = 'Spike Murphy Müller ¹'
-facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+subtitle = 'Using the BIO-RAD Trans-Blot® Electrophoretic Transfer Cell'
+author = [
+    'Spike Murphy Müller ¹'
+]
+affiliation = [
+    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+]
 version = 'Version 1.1.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '23.12.2025'
 finished = true
 tested = true
 +++
+
+{{< variants >}}
 
 {{< tab >}}
 
@@ -23,8 +29,8 @@ tested = true
 
 | Commercial Kits⠀⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
-| blotting cell (e.g. BIO-RAD Trans-Blot® Electrophoretic Transfer Cell [<sup>manual</sup>](https://www.bio-rad.com/sites/default/files/webroot/web/pdf/lsr/literature/M1703910D.pdf)) | 1/2-4 gels | electrode chamber <br> gel holder cassette <br> blotting sponges | |
-| power source (e.g. BIO-RAD PowerPack™ 1000 [<sup>manual</sup>](https://www.bio-rad.com/webroot/web/pdf/lsr/literature/4006213.pdf)) | | | |
+| blotting cell <br> BIO-RAD Trans-Blot® Electrophoretic Transfer Cell [<sup>manual</sup>](https://www.bio-rad.com/sites/default/files/webroot/web/pdf/lsr/literature/M1703910D.pdf) | 1/2-4 gels | electrode chamber <br> gel holder cassette <br> blotting sponges | |
+| power source <br> BIO-RAD PowerPack™ 1000 [<sup>manual</sup>](https://www.bio-rad.com/webroot/web/pdf/lsr/literature/4006213.pdf) | | | |
 
 | Containers & Consumables | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
@@ -112,21 +118,40 @@ tested = true
 3. {{< checkbox >}} Fill up the tank with the transfer buffer from the trays until the buffer level is high enough to cover where the gel is placed in the gel holder cassette.
 4. {{< checkbox >}} Place the lid onto the tank.
 5. {{< checkbox >}} Place the chamber onto a magnetic stirrer in the cold room.
-6. {{< checkbox >}} Connect the power source with the correct polarity and blot @ 65 V for 2 h.
+6. {{< checkbox >}} Connect the power source with the correct polarity and blot @ 65 V for 1-4 h (default 2 h).
 
+{{< infobox type="info" title="Blotting duration" >}}
+⚠️ Transfer duration depends on protein size.
+
+| Size | Approximate Duration |
+| :-- | :-- |
+| < 20 kDa | 1 h @ 65 V |
+| 20-50 kDa | 1-2 h @ 65 V |
+| 50-100 kDa | 2 h @ 65 V |
+| 100-200 kDa | 3-4 h @ 65 V or overnight @ 20-30 V |
+
+<!-- markdownlint-disable MD033 -->
+<div style="display:flex; gap:20px; align-items:center;">
+{{< timer time="1:00:00" >}}
 {{< timer time="2:00:00" >}}
+{{< timer time="3:00:00" >}}
+{{< timer time="4:00:00" >}}
+</div>
+<!-- markdownlint-enable MD033 -->
+
+{{< /infobox >}}
 
 ### Post-Transfer
 
-1. Remove the gel holder cassette from the blotting tank and disassemble the cassette.
-2. Mark the membrane directly after removing the gel, e.g. on the top right, to always know its orientation.
-3. Wash the membrane for 2 minutes in dsH<sub>2</sub>O.
+1. {{< checkbox >}} Remove the gel holder cassette from the blotting tank and disassemble the cassette.
+2. {{< checkbox >}} Mark the membrane directly after removing the gel, e.g. on the top right, to always know its orientation.
+3. {{< checkbox >}} Wash the membrane for 2 minutes in dsH<sub>2</sub>O.
 
 ### Proceed with Suitable Protocol
 
 - [Primary- and Secondary Antibody incubation Following Western Blotting](Link) <!-- TODO: insert link -->
-- [Single Antibody incubation Following Western Blotting](Link) <!-- TODO: insert link -->
-- [Ponceau S staining Following Western Blotting]({{< relref "ponceau_s_following_wb" >}}) <!-- TODO: insert link -->
+- [Single Antibody incubation Following Western Blotting]({{< relref "single_antibody_following_wb.md" >}})
+- [Ponceau S staining Following Western Blotting]({{< relref "ponceau_s_following_wb" >}})
 
 {{< /tab >}}
 

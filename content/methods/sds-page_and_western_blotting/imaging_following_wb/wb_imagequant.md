@@ -3,16 +3,22 @@ date = '2025-12-23T14:54:35+01:00'
 draft = false
 construction = false
 title = 'Chemiluminescence Imaging Following Western Blotting'
-subtitle = ''
-author = 'Spike Murphy Müller ¹'
-facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+subtitle = 'Using the ImageQuant™'
+author = [
+    'Spike Murphy Müller ¹'
+]
+affiliation = [
+    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+]
 version = 'Version 1.0.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '23.12.2025'
-finished = false
-tested = false
+finished = true
+tested = true
 +++
 <!-- DONE: tested = true, delete -->
+
+{{< variants >}}
 
 {{< tab >}}
 
@@ -21,7 +27,7 @@ tested = false
 <!-- markdownlint-disable MD033 -->
 | Equipment & Devices⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
-| <span data-alt-group="imager" data-alt="primary">ImageQuant™</span><span data-alt-group="imager" data-alt="secondary" style="display:none">other imager</span> {{< alternative_switches/alt_methods group="imager" primary="Use ImageQuant™" secondary="Use other imager" >}} | | | |
+| ImageQuant™ | | | |
 <!-- markdownlint-enable MD033 -->
 
 <!-- markdownlint-disable MD033 -->
@@ -52,57 +58,38 @@ tested = false
 ### Heading 1
 
 1. {{< checkbox >}} Prepare the developing solution consisting of stable peroxide and luminol/enhancer 200 µL each.
-3. {{< checkbox >}} Add the membrane to a transparent plastic wrap and remove all liquid with absorbing paper or by closing and opening the plastic and removing the liquid on the plastic.
-4. {{< checkbox >}} Pipette 400µl developing solution onto the membrane and close the plastic to ensure equal distribution.
-6. {{< checkbox >}} Incubate the developing solution on the membrane for 5 minutes.
+2. {{< checkbox >}} Add the membrane to a transparent plastic wrap and remove all liquid with absorbing paper or by closing and opening the plastic and removing the liquid on the plastic.
+3. {{< checkbox >}} Pipette 400µl developing solution onto the membrane and close the plastic to ensure equal distribution.
+4. {{< checkbox >}} Incubate the developing solution on the membrane for 5 minutes.
 
 {{< timer time="0:05:00" >}}
 
-7. {{< checkbox >}} Roll out the membrane with a roller.
-8. {{< checkbox >}} Place the membrane in the imager.
-9. {{< checkbox >}} Take pictures at the imager: {{< alternative_switches/alt_methods group="imager" primary="Use ImageQuant™" secondary="Use other imager" >}}
+5. {{< checkbox >}} Roll out the membrane with a roller.
+6. {{< checkbox >}} Place the membrane in the imager.
+7. {{< checkbox >}} Take pictures at the imager:
+    - {{< checkbox >}} Take epiillumination-picture:
+        - {{< checkbox >}} Set Method to Digitization:epi-illumination.
+        - {{< checkbox >}} Set exposure type to precision.
+        - {{< checkbox >}} Set sensitivity to standard.
+        - {{< checkbox >}} Set exposure time manually to 1/100s.
+        - {{< checkbox >}} Take a picture.
+        - {{< checkbox >}} Set exposure time manually to 1/60s.
+        - {{< checkbox >}} Take a picture.
+        - {{< checkbox >}} Set exposure time manually to 1/30s.
+        - {{< checkbox >}} Take a picture.
+    - {{< checkbox >}} Take incremental pictures:
+        - {{< checkbox >}} Set Method to Chemiluminescence.
+        - {{< checkbox >}} Set exposure type to increment.
+        - {{< checkbox >}} Set interval time as necessary, e.g. to 10s.
+        - {{< checkbox >}} Set sensitivity to standard.
+        - {{< checkbox >}} Take pictures until overexposed and save them.
 
-<!-- markdownlint-disable MD033 -->
-<span data-alt-group="imager" data-alt="primary">
-<ul>
-    <li> {{< checkbox >}} Take epiillumination-picture:
-    <ul>
-        <li> {{< checkbox >}} Set Method to Digitization:epi-illumination.
-        <li> {{< checkbox >}} Set exposure type to precision.
-        <li> {{< checkbox >}} Set exposure time manually to 1/60s.
-        <li> {{< checkbox >}} Set sensitivity to standard.
-        <li> {{< checkbox >}} Take picture.
-    </ul>
-    <li> {{< checkbox >}} Take incremental pictures:
-    <ul>
-        <li>  {{< checkbox >}} Set Method to Chemiluminescence
-        <li> {{< checkbox >}} Set exposure type to increment.
-        <li> {{< checkbox >}} Set interval time as necessary, e.g. to 10s.
-        <li> {{< checkbox >}} Set sensitivity to standard.
-        <li> {{< checkbox >}} Take pictures until overexposed and save them.
-    </ul>
-</ul>
-</span>
-<span data-alt-group="imager" data-alt="secondary" style="display:none">
-<ul>
-    <li> {{< checkbox >}} Take epiillumination-picture:
-    <ul>
-        <li>
-    </ul>
-    <li> {{< checkbox >}} Take incremental pictures:
-    <ul>
-        <li>
-    </ul>
-</ul>
-</span>
-<!-- markdownlint-enable MD033 -->
-
-10. {{< checkbox >}} Clean the tray with 70% EtOH.
+8. {{< checkbox >}} Clean the tray with 70% EtOH.
 
 {{< infobox type="info" title="Membrane Storage" >}}
 
 1. {{< checkbox >}} Place the membrane in a transparent plastic wrap.
-2. {{< checkbox >}} Add a small volume of PBST to keep the membrane moist.
+2. <!-- markdownlint-disable MD033 --> {{< checkbox >}} Add a small volume of <span data-alt-group="buffer" data-alt="primary">PBST</span><span data-alt-group="buffer" data-alt="secondary" style="display:none">TBST</span> {{< alternative_switches/alt_methods group="buffer" primary="Use PBS" secondary="Use TBS" >}} to keep the membrane moist. <!-- markdownlint-enable MD033 -->
 3. {{< checkbox >}} Store @ 4 °C for up to a week.
 
 For longer storage, dry the membrane completely and store at RT between sheets of filter paper.

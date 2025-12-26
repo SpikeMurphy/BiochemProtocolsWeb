@@ -4,8 +4,12 @@ draft = false
 construction = false
 title = 'Inoue Transformation Buffer'
 subtitle = ''
-author = 'Spike Murphy Müller ¹'
-facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+author = [
+    'Spike Murphy Müller ¹'
+]
+affiliation = [
+    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+]
 version = 'Version 1.0.2'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '17.12.2025'
@@ -70,5 +74,3 @@ tested = false
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}

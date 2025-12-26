@@ -24,6 +24,14 @@
     "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_running_buffer/"
   },
   {
+    "title": "SDS-PAGE Separating Gel",
+    "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/separating_gel/"
+  },
+  {
+    "title": "SDS-PAGE Collecting Gel",
+    "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/collecting_gel/"
+  },
+  {
     "title": "SDS-PAGE Laemmli Sample Buffer",
     "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_sample_buffer/"
   },

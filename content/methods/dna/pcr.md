@@ -4,8 +4,12 @@ draft = false
 construction = false
 title = 'Polymerase Chain Reaction (PCR) with Fusion Hot Start II DNA Polymerase'
 subtitle = ''
-author = 'Spike Murphy Müller ¹'
-facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+author = [
+    'Spike Murphy Müller ¹'
+]
+affiliation = [
+    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+]
 version = 'Version 1.0.1'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '08.12.2025'
@@ -145,5 +149,3 @@ Alternatively prepare samples individually by pipetting the following volumes in
 {{< save_page >}}
 
 {{< save_journal_label >}}
-
-{{< alignment_test >}}

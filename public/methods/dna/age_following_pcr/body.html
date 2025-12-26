@@ -1,4 +1,50 @@
 <article class="elj-body">
+  
+
+
+  <div class="protocol-variant-switcher">
+    <label>Protocol variant:</label>
+    <select onchange="window.location.href=this.value">
+      
+        <option value="/BiochemProtocols/methods/dna/nucleospin_plasmid_prep/"
+          >
+          Nucleospin® Plasmid Preperation
+        </option>
+      
+        <option value="/BiochemProtocols/methods/dna/primer_designing/"
+          >
+          Primer Designing
+        </option>
+      
+        <option value="/BiochemProtocols/methods/dna/imaging_age/"
+          >
+          Imaging following agarose gel electrophoresis (AGE)
+        </option>
+      
+        <option value="/BiochemProtocols/methods/dna/purification_age/"
+          >
+          Purification of DNA from Agarose Gel Electrophoresis (AGE)
+        </option>
+      
+        <option value="/BiochemProtocols/methods/dna/pcr/"
+          >
+          Polymerase Chain Reaction (PCR) with Fusion Hot Start II DNA Polymerase
+        </option>
+      
+        <option value="/BiochemProtocols/methods/dna/age/"
+          >
+          Agarose Gel Electrophoresis (AGE)
+        </option>
+      
+        <option value="/BiochemProtocols/methods/dna/age_following_pcr/"
+          selected>
+          Agarose Gel Electrophoresis (AGE) following polymerase chain reaction (PCR)
+        </option>
+      
+    </select>
+  </div>
+
+
   <!-- NEW: delete when finished = true + tested = true -->
 <div class="infobox danger">
   <strong></strong>
@@ -407,10 +453,5 @@
   };
 </script>
 
-<button class="time-btn" id="label-alignment-test">
-  Print alignment test for HERMA 4390 labels.
-</button>
-
-<script src="/BiochemProtocols/js/alignment_test.js"></script>
 
 </article>

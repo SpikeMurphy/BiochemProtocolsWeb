@@ -13,7 +13,7 @@
   },
   {
     "title": "Chemiluminescence Imaging Following Western Blotting",
-    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/imaging_following_wb/"
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/imaging_following_wb/wb_imagequant/"
   },
   {
     "title": "Coomassie Brilliant Blue Staining Following SDS-PAGE",
@@ -41,11 +41,11 @@
   },
   {
     "title": "Western Blotting",
-    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/western_blotting/"
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/western_blotting/bio-rad-trans-blot/"
   },
   {
     "title": "Sodium Dodecyl Sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)",
-    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/"
+    "path": "/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/hoeffer/"
   },
   {
     "title": "Bradford Assay",
