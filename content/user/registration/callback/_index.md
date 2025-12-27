@@ -1,6 +1,6 @@
----
-title: "Registration successful"
----
++++
+title = "Registration successful"
++++
 
 <div class="callback-container">
   <h1>✅ Registration successful</h1>

@@ -1,4 +1,4 @@
-// Expose a single global object (optional but clean)
+// Expose a single global object
 window.auth = {
   user: null,
   session: null,
@@ -20,7 +20,7 @@ async function initAuth() {
   window.auth.initialized = true;
 }
 
-// Keep auth state in sync (login / logout / refresh)
+// Keep auth state in sync
 supabaseClient.auth.onAuthStateChange((_event, session) => {
   window.auth.session = session;
   window.auth.user = session?.user || null;
@@ -32,33 +32,32 @@ async function getCurrentUser() {
     return window.auth.user;
   }
 
-  // Fallback (should rarely happen)
   const { data } = await supabaseClient.auth.getSession();
   return data.session?.user || null;
 }
 
-// Helper: require login (soft guard)
+// Soft guard
 async function requireAuth(redirectTo = '/login/') {
   const user = await getCurrentUser();
-
   if (!user) {
     window.location.href = redirectTo;
     return null;
   }
-
   return user;
 }
 
-// Optional helper: logout
+// Logout
 async function logout() {
   await supabaseClient.auth.signOut();
   window.location.reload();
 }
 
-// Expose helpers globally
+// Expose helpers
 window.getCurrentUser = getCurrentUser;
 window.requireAuth = requireAuth;
 window.logout = logout;
 
-// Boot immediately
-await initAuth();
+// ✅ SAFE BOOT
+document.addEventListener('DOMContentLoaded', () => {
+  initAuth().catch(console.error);
+});
