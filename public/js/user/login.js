@@ -106,8 +106,31 @@ if (registerForm) {
   });
 }
 
-//auth status debug //
-supabaseClient.auth.onAuthStateChange((event, session) => {
-  console.log('AUTH EVENT:', event);
-  console.log('SESSION:', session);
-});
+// registration callback callback //
+(async () => {
+  const hash = window.location.hash;
+
+  if (!hash || !hash.includes('access_token')) return;
+
+  const { data, error } = await supabaseClient.auth.getSession();
+
+  if (error) {
+    console.error('Session error:', error);
+    return;
+  }
+
+  if (data?.session) {
+    console.log('Signup / Magiclink callback detected');
+
+    // Tokens aus der URL entfernen (DSGVO!)
+    window.history.replaceState(
+      {},
+      document.title,
+      '/BiochemProtocols/'
+    );
+
+    // Weiterleitung
+    window.location.href =
+      '/BiochemProtocols/user/registration/callback/';
+  }
+})();
