@@ -12,8 +12,9 @@ finished = false
 tested = false
 +++
 
----
+{{< stripe_pricing_table >}}
 
+<!--
 | | 💧 Free 💧 | 🧪 Chemicals ⚗️ | 🦠 Labbench 🧫 | 📓 Office 🖥️ |
 | :-- | :--: | :--: | :--: | :--: |
 | | | | | |
@@ -87,3 +88,4 @@ See common workflows with all the neccessary recipes and methods in order.
 Included in: **Office**
 
 All plans receive continuous updates and are designed for long-term data compatibility and scientific reproducibility.
+-->
