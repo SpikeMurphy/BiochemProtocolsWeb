@@ -34,3 +34,21 @@ tested = false
   }
 })();
 </script>
+
+<script> // popup login after redirect, needs to stay in this file
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    if (
+        params.get('login') === '1' &&
+        !window.auth?.user
+    ) {
+        const wrapper = document.querySelector('.wrapper_login');
+        const overlay = document.querySelector('.login_overlay');
+        if (wrapper && overlay) {
+        wrapper.classList.add('active_popup');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        }
+    }
+});
+</script>

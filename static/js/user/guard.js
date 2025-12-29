@@ -10,17 +10,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // NOW require login
   if (!window.auth.user) {
-    // Open login modal
-    const wrapper = document.querySelector('.wrapper_login');
-    const overlay = document.querySelector('.login_overlay');
-
-    if (wrapper && overlay) {
-      wrapper.classList.add('active_popup');
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
-    return; // ⛔ stop guard here
+    window.location.replace(
+      '/BiochemProtocols/user/registration/pricing/?login=1'
+    );
+    return;
   }
 
   // wait for subscription

@@ -19,6 +19,9 @@
   font-weight: 700;
   letter-spacing: -0.01em;
 }
+body.darkmode .login-hint-heading {
+  color: black;
+}
 
 /* Lock badge */
 .login-hint-badge {
@@ -39,10 +42,14 @@
   max-width: 85%;
   line-height: 1.45;
 }
-
+body.darkmode .login-hint-text {
+  color: black;
+}
 .login-hint-text strong {
   font-weight: 600;
-  color: #000;
+}
+body.darkmode .login-hint-text strong {
+  color: black;
 }
 
 /* Arrow */

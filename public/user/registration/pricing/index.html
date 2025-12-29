@@ -157,11 +157,11 @@
 
   <div class="login-hint">
     <h2 class="login-hint-heading">
-      <span class="login-hint-badge" style="color: black">🔒</span>
+      <span class="login-hint-badge">🔒</span>
       Subscription requires an account
     </h2>
 
-    <div class="login-hint-text" style="color: black">
+    <div class="login-hint-text">
       To subscribe to any plan, please
       <strong>log in</strong> or
       <strong>create a free account</strong> first.
@@ -177,13 +177,15 @@
     <button data-billing="one-time">One-time</button>
   </div>
 
+<div class="recommended">recommended</div>
+
   <div class="pricing-grid">
 
     
     <div class="pricing-card">
       <h3>Explore</h3>
 
-      <div class="price" data-monthly="Free" data-yearly="Free" data-one-time="not available">
+      <div class="price price-free" data-monthly="Free" data-yearly="Free" data-one-time="not available">
         Free
       </div>
 
@@ -264,7 +266,7 @@
     </div>
 
     
-    <div class="pricing-card featured">
+    <div class="pricing-card">
       <h3>Document</h3>
 
       <div class="price"
@@ -320,7 +322,6 @@
         <li class="not-included"> Learning & information platform</li>
          <span></span>
         <span style="color: orange; font-size:14"> * Subscription (Document) required</span>
-
       </ul>
     </div>
 
@@ -420,8 +421,15 @@ body.darkmode .billing-toggle button {
   flex-direction: column;
 }
 
-.pricing-card.featured {
+.pricing-card.is-recommended {
   border: 2px solid #3b6fd8;
+  box-shadow: 0 0 0 3px rgba(59,111,216,0.15);
+}
+body.darkmode .pricing-card.is-recommended {
+  border-color: #7aa2ff;  
+  box-shadow:
+    0 0 0 2px rgba(122, 162, 255, 0.35),
+    0 12px 30px rgba(122, 162, 255, 0.25);
 }
 
  
@@ -506,14 +514,24 @@ body.darkmode .billing-toggle button {
   );
 }
 
-.pricing-card.featured h3::after {
-  width: 56px;
-}
-
-
 .description {
   color: #6b7c93;
   font-size: 14px;
+}
+
+.recommended {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c4c4c4;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 28px;
+  box-shadow: 0 8px 20px rgba(59, 111, 216, 0.35);
+  user-select: none;
 }
 
 .price {
@@ -535,14 +553,8 @@ body.darkmode .billing-toggle button {
   display: none;
 }
 
-
-.pricing-card.featured .price {
-  background: linear-gradient(135deg, #3b6fd8, #274bb8);
-  box-shadow: 0 12px 28px rgba(59, 111, 216, 0.45);
-}
-
-.price:contains("Free") {
-  background: #0a2540;
+.price-free {
+  background: #425466;
 }
 
 .cta {
@@ -579,23 +591,60 @@ ul li {
 <script>
   const buttons = document.querySelectorAll(".billing-toggle button");
   const prices = document.querySelectorAll(".price");
+  const cards = [...document.querySelectorAll(".pricing-card")];
+
+  const recommendedByBilling = {
+    monthly: "Execute",
+    yearly: "Document",
+    "one-time": "Learn"
+  };
+
+  
+  let recommendedBadge = document.querySelector(".recommended");
+  if (!recommendedBadge) {
+    recommendedBadge = document.createElement("div");
+    recommendedBadge.className = "recommended";
+    recommendedBadge.textContent = "Recommended";
+  }
+
+  const getCardByName = (name) =>
+    cards.find(card =>
+      card.querySelector("h3")?.textContent.trim() === name
+    );
+
+  function updateUI(billing) {
+    
+    prices.forEach(price => {
+      const value = price.dataset[billing];
+      price.innerHTML = value || "";
+    });
+
+    
+    cards.forEach(card => card.classList.remove("is-recommended"));
+
+    
+    const targetName = recommendedByBilling[billing];
+    const targetCard = getCardByName(targetName);
+
+    if (targetCard) {
+      targetCard.classList.add("is-recommended");
+      targetCard.appendChild(recommendedBadge);
+    }
+  }
 
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
       buttons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
-      const type = btn.dataset.billing;
-
-      prices.forEach(price => {
-        const value = price.dataset[type];
-        price.innerHTML = value
-          ? `${value} <span>${type === "monthly" ? "/ month" : type === "yearly" ? "/ year" : ""}</span>`
-          : "";
-      });
+      updateUI(btn.dataset.billing);
     });
   });
+
+  
+  updateUI("monthly");
 </script>
+
 <div class="pricing-logged-in" style="display:none;">
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 
@@ -623,6 +672,23 @@ ul li {
     msg.style.display = "block";
   }
 })();
+</script>
+<script> // popup login after redirect, needs to stay in this file
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    if (
+        params.get('login') === '1' &&
+        !window.auth?.user
+    ) {
+        const wrapper = document.querySelector('.wrapper_login');
+        const overlay = document.querySelector('.login_overlay');
+        if (wrapper && overlay) {
+        wrapper.classList.add('active_popup');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        }
+    }
+});
 </script>
 
         
