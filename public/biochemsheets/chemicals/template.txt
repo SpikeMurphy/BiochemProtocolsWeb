@@ -1,0 +1,118 @@
+
+Ideas for a template:
+
+1. Core Identification (always at the top)
+These help people quickly confirm they have the right chemical.
+Common name (headline)
+IUPAC name
+Other names / synonyms
+Abbreviations
+CAS number ⭐ (very important for ordering & databases)
+Chemical formula
+Molar mass
+👉 Tip: Put CAS + formula in a compact box for fast scanning.
+2. Physical & Chemical Properties (praxis-relevant)
+Focus on what affects handling, storage, and experimental design.
+Physical state (RT) (solid/liquid/gas)
+Appearance (color, crystalline, oily, hygroscopic, etc.)
+Melting point / boiling point
+Density (for liquids)
+Solubility
+In water (with temp dependence if relevant)
+In common lab solvents (EtOH, MeOH, DMSO, acetone, buffers)
+pKa / pH relevance ⭐ (critical for buffers, acids, bases)
+Stability
+Light sensitive?
+Air / moisture sensitive?
+Temperature sensitive?
+Hygroscopic / deliquescent (huge practical importance)
+3. Solvents & Preparation (very praxisnah)
+This is often what people actually search for.
+Recommended solvents
+Possible alternative solvents
+Typical stock solution concentrations
+Solubility limits
+Notes on dissolution
+Heating required?
+Sonication?
+Adjust pH?
+Compatibility with buffers (PBS, Tris, HEPES, etc.)
+👉 Example:
+Dissolves readily in water; poorly soluble in ethanol; stock solutions typically prepared at 100 mM in H₂O, pH adjusted after dissolution.
+4. Safety & Handling (keep it practical, not legalistic)
+Avoid copying full SDS text—summarize what matters at the bench.
+GHS pictograms
+Signal word (Danger / Warning)
+Most relevant hazard statements (H-phrases)
+Key safety notes (Kurzfassung) ⭐
+Toxic if inhaled?
+Corrosive?
+Neurotoxic?
+Carcinogenic?
+PPE recommendations
+Spill / exposure notes (very short)
+Waste disposal category
+🇩🇪 Since you used Sicherheitshinweise:
+You may also include Kurzfassung in German, even if the rest is English.
+5. Storage & Shelf Life (extremely useful)
+Often overlooked but highly valued.
+Recommended storage temperature
+Light protection needed?
+Moisture protection?
+Typical shelf life
+Solid
+In solution
+Freeze–thaw stability
+6. Use Cases & Applications (learning + lab)
+This is where your factsheets really shine.
+Primary lab uses
+Buffer component
+Enzyme cofactor
+Reducing agent
+Denaturant
+Fixative, stain, inhibitor, etc.
+Typical concentrations used
+Relevant techniques
+SDS-PAGE
+Western blot
+Enzyme assays
+Cell culture
+Protein purification
+Biochemical role (if applicable)
+7. Common Mistakes & Tips
+This is gold for students and early-career researchers.
+Common preparation errors
+Incompatibilities
+Degradation traps
+“Do not mix with …”
+pH-related pitfalls
+Example:
+Do not autoclave; decomposes under high temperature. Prepare fresh solutions.
+8. Learning Section (optional but powerful)
+Especially useful for subscriptions.
+Why this chemical is important in biochemistry
+Mechanism of action (short, schematic)
+Typical exam questions / misconceptions
+Comparison to similar compounds
+9. Quick Reference Box (1-glance summary) "at the top"
+Perfect for mobile users.
+At a glance:
+Formula
+Molar mass
+Solubility (H₂O)
+Storage
+Hazard level
+Main use
+Suggested Final Template Structure
+[Chemical Name]
+
+1. Identification
+10. Quick Reference
+2. Physical & Chemical Properties
+3. Solubility & Solvents
+4. Preparation & Stock Solutions
+5. Safety & Handling
+6. Storage & Stability
+7. Use Cases in Biochemical Labs
+8. Common Mistakes & Practical Tips
+9. Learning Notes (optional)

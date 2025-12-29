@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/methods/</loc>
+    <lastmod>2025-12-29T19:56:48+01:00</lastmod>
+  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/user/</loc>
     <lastmod>2025-12-27T18:37:48+01:00</lastmod>
   </url><url>
@@ -185,7 +188,13 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/</loc>
+    <lastmod>2025-12-07T13:35:59+01:00</lastmod>
+  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/</loc>
+    <lastmod>2025-12-07T13:35:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/dna/</loc>

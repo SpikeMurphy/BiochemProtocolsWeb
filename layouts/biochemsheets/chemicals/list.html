@@ -1,0 +1,46 @@
+{{ define "main" }}
+    {{ if .Params.construction }}
+        <h1>🚧 Under Construction 🚧</h1>
+        <h3>This page will be available soon.</h3>
+    {{ else }}
+        {{ if gt (len .Sections) 0 }}
+            <ul>
+            {{ range sort .Sections "Title" }}
+                <li>
+                    <h2><a href="{{ .RelPermalink }}">
+                        {{ .Title }}
+                    </a></h2>
+                    <ul>
+                        {{ range sort .Pages "Title" }}
+                            <li>
+                                <a href="{{ .RelPermalink }}">
+                                    {{- if .Params.construction -}}🚧 
+                                    {{- else if .Params.tested -}}⭐️ 
+                                    {{- else -}}✅ 
+                                    {{- end -}}
+                                    {{ .Title }}
+                                </a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </li>
+            {{ end }}
+            </ul>
+        {{ else }}
+            <ul>
+            {{ range sort .Pages "Title" }}
+                <li><a href="{{ .RelPermalink }}">
+                    {{- if .Params.construction -}}🚧 
+                    {{- else if .Params.tested -}}⭐️ 
+                    {{- else -}}✅ 
+                    {{- end -}}
+                    {{ .Title }}
+                </a></li>
+            {{ end }}
+            </ul>
+        {{ end }}
+        {{ with .Content }}
+        {{ . }}
+        {{ end }}
+    {{ end }}
+{{ end }}

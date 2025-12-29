@@ -205,7 +205,7 @@
 
 </div>
 
-
+<!-- SHORTCODE_TODO: move styling to the css after stramlining -->
 <style>
   .pricing-page {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -257,7 +257,25 @@ body.darkmode .billing-toggle button {
 }
 
 /* Cards */
+.recommended {
+  position: absolute;
+  top: 14px;
+  left: -42px;
+  width: 160px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 6px 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  pointer-events: none;
+  user-select: none;
+  z-index: 5;
+}
 .pricing-card {
+  position: relative;
+  overflow: hidden;
   background: #fff;
   border-radius: 16px;
   padding: 32px;
@@ -265,17 +283,11 @@ body.darkmode .billing-toggle button {
   display: flex;
   flex-direction: column;
 }
-
 .pricing-card.is-recommended {
-  border: 2px solid #3b6fd8;
-  box-shadow: 0 0 0 3px rgba(59,111,216,0.15);
+  background: #e1f0ff;
+  box-shadow: 0 0 0 2px #3b6fd8;
 }
-body.darkmode .pricing-card.is-recommended {
-  border-color: #7aa2ff; /* lighter blue */
-  box-shadow:
-    0 0 0 2px rgba(122, 162, 255, 0.35),
-    0 12px 30px rgba(122, 162, 255, 0.25);
-}
+
 
 /* ============================= */
 /* Pricing feature availability */
