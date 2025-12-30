@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/acids/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/bases/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/buffers/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/chaotropes/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/chelators/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/detergants/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/indicators/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/inhibitors/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/metals/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/preservatives/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/redox-agents/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/salts/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/solvents/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/stabilizers/</loc>
+    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/</loc>
+    <lastmod>2025-12-29T19:56:48+01:00</lastmod>
+  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/methods/</loc>
     <lastmod>2025-12-29T19:56:48+01:00</lastmod>
   </url><url>
@@ -71,7 +116,10 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/contact/</loc>
     <lastmod>2025-12-11T19:35:41+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/contact/submission/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/contact/contact_thanks/</loc>
+    <lastmod>2025-12-11T19:35:41+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/contact/contact/</loc>
     <lastmod>2025-12-11T19:31:10+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/primer_designing/</loc>
@@ -192,9 +240,6 @@
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/</loc>
-    <lastmod>2025-12-07T13:35:59+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/dna/</loc>

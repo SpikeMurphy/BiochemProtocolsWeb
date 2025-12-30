@@ -1,0 +1,363 @@
+<section class="biochemsheets-hero">
+
+  <input
+    type="search"
+    name="q"
+    autocomplete="off"
+    class="global-search"
+    placeholder="Search chemicals, CAS numbers, abbreviations, or methods…"
+  />
+
+  <div class="entry-grid">
+
+    <a href="{{ "/BiochemProtocols/biochemsheets/chemicals/" | relURL }}" class="entry-card page-link">
+      <h3>Chemicals</h3>
+      <p>Factsheets for common biochemical reagents and buffers</p>
+    </a>
+
+    <a href="{{ "/BiochemProtocols/biochemsheets/methods/" | relURL }}" class="entry-card page-link">
+      <h3>Methods</h3>
+      <p>Practical descriptions of biochemical and molecular biology methods</p>
+    </a>
+
+  </div>
+
+</section>
+
+<style>
+/* ============================= */
+/* Page container                */
+/* ============================= */
+.biochemsheets-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+  animation: page-enter 260ms ease-out;
+  transform-origin: top center;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.985) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* ============================= */
+/* Search input                  */
+/* ============================= */
+.global-search {
+  width: 100%;
+  height: 64px;
+  padding: 0 24px;
+
+  font-size: 18px;
+  font-family: ui-serif, Georgia, Cambria, serif;
+  color: #111827;
+
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.02),
+    0 8px 24px rgba(0,0,0,0.06);
+
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.global-search:focus {
+  outline: none;
+  border-color: #9ca3af;
+  box-shadow:
+    0 12px 32px rgba(0,0,0,0.1);
+}
+
+.global-search::placeholder {
+  color: #9ca3af;
+}
+
+/* ============================= */
+/* Entry grid                    */
+/* ============================= */
+.entry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  margin-top: 48px;
+}
+
+/* ============================= */
+/* Entry cards (book style)      */
+/* ============================= */
+.entry-card {
+  position: relative;
+  display: block;
+  padding: 44px 42px;
+  min-height: 220px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.02),
+    0 14px 36px rgba(0,0,0,0.08);
+
+  text-decoration: none;
+  color: #111827;
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+/* Book spine hint */
+.entry-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+  width: 4px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.08),
+    rgba(0,0,0,0.02)
+  );
+  border-radius: 2px;
+}
+
+/* Typography */
+.entry-card h3 {
+  font-family: ui-sans-serif, system-ui;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+
+.entry-card p {
+  font-family: ui-serif, Georgia, Cambria, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+  max-width: 420px;
+}
+
+/* Hover */
+.entry-card:hover,
+.entry-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.03),
+    0 22px 48px rgba(0,0,0,0.12);
+}
+
+/* ============================= */
+/* Page leave animation          */
+/* ============================= */
+body.is-leaving .biochemsheets-hero {
+  animation: page-leave 180ms ease-in forwards;
+}
+
+@keyframes page-leave {
+  to {
+    opacity: 0;
+    transform: scale(1.01) translateY(-6px);
+  }
+}
+
+/* ============================= */
+/* Mobile                        */
+/* ============================= */
+@media (max-width: 800px) {
+  .entry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-card {
+    min-height: 180px;
+    padding: 32px;
+  }
+
+  .global-search {
+    height: 56px;
+    font-size: 16px;
+  }
+}
+</style>
+
+<script>
+/* Professional page-turn effect */
+document.querySelectorAll(".page-link").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    document.body.classList.add("is-leaving");
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 160);
+  });
+});
+</script>
+
+<!-- SHORTCODE_TODO: move styling to a css file -->
+<style>
+
+/* Search container */
+.biochemsheets-search {
+  max-width: 1100px; /* same as cards */
+  margin: 0 auto 36px;
+}
+
+/* Search input */
+.global-search {
+  width: 100%;
+  height: 64px;                /* taller */
+  padding: 0 24px;
+  border-radius: 18px;
+
+  font-size: 18px;
+  color: #0a2540;
+
+  background: #ffffff;
+  border: 1px solid #dbe3f0;
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.06);
+
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Focus state */
+.global-search:focus {
+  outline: none;
+  border-color: #3b6fd8;
+  box-shadow:
+    0 10px 26px rgba(59,111,216,0.18);
+}
+
+/* Placeholder */
+.global-search::placeholder {
+  color: #9aa4b2;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .global-search {
+    height: 56px;
+    font-size: 16px;
+    border-radius: 14px;
+  }
+}
+
+
+.biochemsheets-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+/* Grid */
+.entry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+/* Card */
+.entry-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 220px;
+  padding: 40px;
+  border-radius: 18px;
+
+  background:
+    linear-gradient(135deg, #ffffff 0%, #f7f9fc 100%);
+
+  box-shadow:
+    inset 1px 0 0 rgba(255,255,255,0.9),
+    0 10px 30px rgba(0,0,0,0.08);
+
+  text-decoration: none;
+  color: #0a2540;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Open-book spine effect */
+.entry-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  bottom: 18px;
+  width: 6px;
+  border-radius: 6px 0 0 6px;
+  background: linear-gradient(
+    to bottom,
+    #dbeafe,
+    #93c5fd
+  );
+  opacity: 0.8;
+}
+
+/* Headings */
+.entry-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 0.01em;
+}
+
+/* Description */
+.entry-card p {
+  font-size: 16px;
+  color: #425466;
+  line-height: 1.5;
+  max-width: 420px;
+}
+
+/* Hover / focus */
+.entry-card:hover,
+.entry-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow:
+    inset 1px 0 0 rgba(255,255,255,0.9),
+    0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .entry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-card {
+    min-height: 180px;
+    padding: 32px;
+  }
+}
+
+.entry-card:nth-child(1)::before {
+  background: #84abff;
+}
+.entry-card:nth-child(2)::before {
+  background: #2268ff;
+}
+
+</style>

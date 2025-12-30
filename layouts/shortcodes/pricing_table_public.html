@@ -166,7 +166,7 @@
         <li class="included"> SOP conversion service</li>
         <li class="not-included"> Learning & information platform</li>
          <span></span>
-        <span style="color: orange; font-size:14"> * Subscription (Document) required</span>
+          <div class="prerequisite-ribbon">* prerequisite</div>
       </ul>
     </div>
 
@@ -202,6 +202,8 @@
     </div>
 
   </div>
+
+  <div class="prerequisite">* The <strong>SOP conversion service</strong> may be purchased as a one-time fee per SOP, provided an active <strong>Execute</strong> or <strong>Document</strong> subscription is in place.</div>
 
 </div>
 
@@ -259,19 +261,27 @@ body.darkmode .billing-toggle button {
 /* Cards */
 .recommended {
   position: absolute;
-  top: 14px;
+  top: 8px;
   left: -42px;
   width: 160px;
   text-align: center;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.04em;
   padding: 6px 0;
   transform: rotate(-45deg);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   pointer-events: none;
   user-select: none;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c4c4c4;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+  margin: 20px 0 28px;
+  box-shadow: 0 8px 20px rgba(59, 111, 216, 0.35);
 }
 .pricing-card {
   position: relative;
@@ -287,7 +297,43 @@ body.darkmode .billing-toggle button {
   background: #e1f0ff;
   box-shadow: 0 0 0 2px #3b6fd8;
 }
+.prerequisite-ribbon {
+  position: absolute;
+  bottom: 3px;
+  right: -40px;
+  width: 160px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 6px 0;
+  transform: rotate(-45deg);
+  pointer-events: none;
+  user-select: none;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+  margin: 20px 0 28px;
+  box-shadow: 0 8px 20px rgba(59, 111, 216, 0.35);
+}
 
+.prerequisite {
+  max-width: 1200px;
+  margin: 32px auto 0;
+  padding: 14px 18px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #92400e;
+  background: #fff7ed;
+  border-left: 4px solid #f59e0b;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
 
 /* ============================= */
 /* Pricing feature availability */
@@ -376,21 +422,6 @@ body.darkmode .billing-toggle button {
   font-size: 14px;
 }
 
-.recommended {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #c4c4c4;
-  color: #ffffff;
-  border-radius: 12px;
-  padding: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  margin: 20px 0 28px;
-  box-shadow: 0 8px 20px rgba(59, 111, 216, 0.35);
-  user-select: none;
-}
-
 .price {
   display: flex;
   align-items: center;
@@ -449,6 +480,7 @@ ul li {
   const buttons = document.querySelectorAll(".billing-toggle button");
   const prices = document.querySelectorAll(".price");
   const cards = [...document.querySelectorAll(".pricing-card")];
+  const prerequisiteNote = document.querySelector(".prerequisite");
 
   const recommendedByBilling = {
     monthly: "Execute",
@@ -456,7 +488,6 @@ ul li {
     "one-time": "Learn"
   };
 
-  // Create badge once if not present
   let recommendedBadge = document.querySelector(".recommended");
   if (!recommendedBadge) {
     recommendedBadge = document.createElement("div");
@@ -470,16 +501,15 @@ ul li {
     );
 
   function updateUI(billing) {
-    // Update prices
+    /* ------------------ prices ------------------ */
     prices.forEach(price => {
       const value = price.dataset[billing];
       price.innerHTML = value || "";
     });
 
-    // Clear previous recommendation
+    /* -------------- recommended badge ----------- */
     cards.forEach(card => card.classList.remove("is-recommended"));
 
-    // Apply new recommendation
     const targetName = recommendedByBilling[billing];
     const targetCard = getCardByName(targetName);
 
@@ -487,13 +517,34 @@ ul li {
       targetCard.classList.add("is-recommended");
       targetCard.appendChild(recommendedBadge);
     }
+
+    /* -------- Optimize one-time purchase note ---- */
+    let showPrerequisite = false;
+
+    cards.forEach(card => {
+      const title = card.querySelector("h3")?.textContent.trim();
+      const prerequisite_ribbon = card.querySelector(".prerequisite-ribbon");
+
+      if (!prerequisite_ribbon) return;
+
+      if (title === "Optimize" && billing === "one-time") {
+        prerequisite_ribbon.style.display = "block";
+        showPrerequisite = true;
+      } else {
+        prerequisite_ribbon.style.display = "none";
+      }
+    });
+
+    /* -------- prerequisite explanation block ----- */
+    if (prerequisiteNote) {
+      prerequisiteNote.style.display = showPrerequisite ? "block" : "none";
+    }
   }
 
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
       buttons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-
       updateUI(btn.dataset.billing);
     });
   });

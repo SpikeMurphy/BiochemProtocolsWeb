@@ -14,4 +14,4 @@ outputs = ["html", "Body"]
 required_plan = ['Learn', 'Admin']
 +++
 
-{{< biochemsheets >}}
+{{< biochemsheets/biochemsheets >}}

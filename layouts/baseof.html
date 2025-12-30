@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="{{ "css/calc_bacterial_growth.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/table_sds-page_gels.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/footer.css" | relURL }}">
-    
+    <!-- biochemsheets -->
+    <link rel="stylesheet" href="{{ "css/biochemsheets/chapters.css" | relURL }}">
+    <!-- biochemsheets -->
     <!-- math -->
     {{ if .Params.math }}
       {{ partial "math.html" . }}
@@ -29,7 +31,9 @@
 
     {{ partial "login" . }}
 
-    {{ partial "header" . }}
+    {{ if not .Params.noheader }}
+      {{ partial "header" . }}
+    {{ end }}
     
     <main>
 

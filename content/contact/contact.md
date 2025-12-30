@@ -4,7 +4,7 @@ draft = false
 construction = false
 title = 'Contact'
 subtitle = ''
-author = 'Spike Murphy Müller'
+author = ''
 updated = ''
 +++
 

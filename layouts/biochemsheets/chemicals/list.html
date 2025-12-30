@@ -1,46 +1,55 @@
 {{ define "main" }}
-    {{ if .Params.construction }}
-        <h1>🚧 Under Construction 🚧</h1>
-        <h3>This page will be available soon.</h3>
-    {{ else }}
-        {{ if gt (len .Sections) 0 }}
-            <ul>
-            {{ range sort .Sections "Title" }}
-                <li>
-                    <h2><a href="{{ .RelPermalink }}">
-                        {{ .Title }}
-                    </a></h2>
-                    <ul>
-                        {{ range sort .Pages "Title" }}
-                            <li>
-                                <a href="{{ .RelPermalink }}">
-                                    {{- if .Params.construction -}}🚧 
-                                    {{- else if .Params.tested -}}⭐️ 
-                                    {{- else -}}✅ 
-                                    {{- end -}}
-                                    {{ .Title }}
-                                </a>
-                            </li>
-                        {{ end }}
-                    </ul>
-                </li>
-            {{ end }}
-            </ul>
-        {{ else }}
-            <ul>
-            {{ range sort .Pages "Title" }}
-                <li><a href="{{ .RelPermalink }}">
-                    {{- if .Params.construction -}}🚧 
-                    {{- else if .Params.tested -}}⭐️ 
-                    {{- else -}}✅ 
-                    {{- end -}}
-                    {{ .Title }}
-                </a></li>
-            {{ end }}
-            </ul>
-        {{ end }}
-        {{ with .Content }}
-        {{ . }}
-        {{ end }}
+
+<section class="sheets-book">
+
+  <header class="sheets-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}
+      <p class="sheets-intro">{{ . }}</p>
     {{ end }}
+  </header>
+
+  {{ if eq .RelPermalink "/biochemsheets/chemicals/" }}
+
+    <ul class="chapter-list">
+      {{ range .Sections.ByTitle }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+  {{ else }}
+
+    <ul class="sheets-list">
+      {{ range .Pages.ByTitle }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+
+            <span class="sheets-left">
+              <span class="sheets-name">{{ .Title }}</span>
+              {{ with .Params.formula }}
+                <span class="sheets-formula">({{ . }})</span>
+              {{ end }}
+            </span>
+
+            <span class="sheets-leader"></span>
+
+            <span class="sheets-right">
+              {{ with .Params.cas }}
+                {{ . }}
+              {{ end }}
+            </span>
+
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+  {{ end }}
+
+</section>
+
 {{ end }}

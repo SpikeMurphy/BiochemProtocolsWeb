@@ -1,8 +1,9 @@
 +++
-date = '2025-12-07T13:35:59+01:00'
+date = '2025-12-29T19:56:48+01:00'
 draft = false
 construction = false
 title = 'Chemicals'
+noheader = true
 subtitle = ''
 author = ''
 version = ''

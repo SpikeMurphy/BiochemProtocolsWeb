@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/BiochemProtocols/css/table_sds-page_gels.css">
     <link rel="stylesheet" href="/BiochemProtocols/css/footer.css">
     
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/chapters.css">
+    
     
     
     
@@ -118,6 +120,7 @@
 
 
     
+      
 
 <header class="protocol-header">
   <div class="protocol-titles">
@@ -136,6 +139,7 @@
 </header>
 
     
+    
     <main>
 
             
@@ -152,12 +156,12 @@
 
   <div class="entry-grid">
 
-    <a href="/BiochemProtocols/biochemsheets/chemicals/" class="entry-card">
+    <a href="/BiochemProtocols/biochemsheets/chemicals/" class="entry-card page-link">
       <h3>Chemicals</h3>
       <p>Factsheets for common biochemical reagents and buffers</p>
     </a>
 
-    <a href="/BiochemProtocols/biochemsheets/methods/" class="entry-card">
+    <a href="/BiochemProtocols/biochemsheets/methods/" class="entry-card page-link">
       <h3>Methods</h3>
       <p>Practical descriptions of biochemical and molecular biology methods</p>
     </a>
@@ -166,7 +170,188 @@
 
 </section>
 
+<style>
+ 
+ 
+ 
+.biochemsheets-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+  animation: page-enter 260ms ease-out;
+  transform-origin: top center;
+}
 
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.985) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+ 
+ 
+ 
+.global-search {
+  width: 100%;
+  height: 64px;
+  padding: 0 24px;
+
+  font-size: 18px;
+  font-family: ui-serif, Georgia, Cambria, serif;
+  color: #111827;
+
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.02),
+    0 8px 24px rgba(0,0,0,0.06);
+
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.global-search:focus {
+  outline: none;
+  border-color: #9ca3af;
+  box-shadow:
+    0 12px 32px rgba(0,0,0,0.1);
+}
+
+.global-search::placeholder {
+  color: #9ca3af;
+}
+
+ 
+ 
+ 
+.entry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  margin-top: 48px;
+}
+
+ 
+ 
+ 
+.entry-card {
+  position: relative;
+  display: block;
+  padding: 44px 42px;
+  min-height: 220px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.02),
+    0 14px 36px rgba(0,0,0,0.08);
+
+  text-decoration: none;
+  color: #111827;
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+ 
+.entry-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+  width: 4px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.08),
+    rgba(0,0,0,0.02)
+  );
+  border-radius: 2px;
+}
+
+ 
+.entry-card h3 {
+  font-family: ui-sans-serif, system-ui;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+
+.entry-card p {
+  font-family: ui-serif, Georgia, Cambria, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+  max-width: 420px;
+}
+
+ 
+.entry-card:hover,
+.entry-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.03),
+    0 22px 48px rgba(0,0,0,0.12);
+}
+
+ 
+ 
+ 
+body.is-leaving .biochemsheets-hero {
+  animation: page-leave 180ms ease-in forwards;
+}
+
+@keyframes page-leave {
+  to {
+    opacity: 0;
+    transform: scale(1.01) translateY(-6px);
+  }
+}
+
+ 
+ 
+ 
+@media (max-width: 800px) {
+  .entry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-card {
+    min-height: 180px;
+    padding: 32px;
+  }
+
+  .global-search {
+    height: 56px;
+    font-size: 16px;
+  }
+}
+</style>
+
+<script>
+ 
+document.querySelectorAll(".page-link").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    document.body.classList.add("is-leaving");
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 160);
+  });
+});
+</script>
 
 
 <style>
@@ -221,7 +406,7 @@
 }
 
 
-    .biochemsheets-hero {
+.biochemsheets-hero {
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 20px 60px;
@@ -315,10 +500,10 @@
 }
 
 .entry-card:nth-child(1)::before {
-  background: linear-gradient(to bottom, #bbf7d0, #4ade80);
+  background: #84abff;
 }
 .entry-card:nth-child(2)::before {
-  background: linear-gradient(to bottom, #fde68a, #f59e0b);
+  background: #2268ff;
 }
 
 </style>
@@ -333,7 +518,7 @@
 <footer class="footer">
     <div class="footer_rights">  </div>
     <ul class="footer_navigation">
-        <li class="footer_navigation"><a href="/BiochemProtocols/contact/submission">Contact</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/contact/contact">Contact</a></li>
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/privacy_policy">Privacy Policy</a></li>
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/terms_of_use">Terms of Use</a></li>

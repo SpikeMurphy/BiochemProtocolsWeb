@@ -4,7 +4,7 @@
   
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next" value="https://spikemurphy.github.io/Laboratory/contact/thanks_for_submission">
+  <input type="hidden" name="_next" value="https://spikemurphy.github.io/Laboratory/contact/contact_thanks">
 
   <label for="name">Name</label>
   <input type="text" id="name" name="name" required>
@@ -24,17 +24,15 @@
   <label for="topic">Current position</label>
   <select id="topic" name="topic" required>
     <option value="" disabled selected>Select your current position</option>
-    <option value="other">Technical Assistant</option>
+    <option value="other">Technical Lab Assistant</option>
     <option value="general_request">B. Sc. Student</option>
-    <option value="general_request">Bachelor of Science</option>
     <option value="general_request">M. Sc. Student</option>
-    <option value="general_request">Master of Science</option>
     <option value="collaboration">Doctoral Candidate</option>
     <option value="data_request">Postdoctoral Researcher</option>
-    <option value="data_request">Working Group Leader</option>
+    <option value="data_request">Group Leader</option>
     <option value="data_request">Professor</option>
-    <option value="data_request">Head of Institute</option>
-    <option value="data_request">Head of Center</option>
+    <option value="data_request">Institute Director</option>
+    <option value="data_request">Other</option>
   </select>
 
   <label for="topic">Topic</label>
@@ -61,7 +59,10 @@
 
   <label>
     <input type="checkbox" name="agree_terms" required>
-    I agree to the Terms of Use.
+      I agree to the
+      <a href="/BiochemProtocols/legal/privacy_policy/" target="_blank">Privacy Policy</a>
+      and
+      <a href="/BiochemProtocols/legal/terms_of_use/" target="_blank">Terms of Use</a>
   </label>
   
 </form>
