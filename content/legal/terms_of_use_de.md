@@ -10,7 +10,7 @@ updated = '12.12.2025'
 +++
 
 # NUTZUNGSBEDINGUNGEN  
-*Zuletzt aktualisiert: December 2025*
+*Zuletzt aktualisiert: {{< updated >}}*
 
 Durch den Zugriff auf diese Website („Seite“) oder deren Nutzung schließen Sie einen verbindlichen Vertrag mit  
 **Murphy Biochemistry UG (haftungsbeschränkt)** („wir“, „uns“, „unser“) ab.  

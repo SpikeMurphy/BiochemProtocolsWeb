@@ -1,0 +1,19 @@
+===== Bookmark: =====
+command + option + K
+
+===== HTML Comment: =====
+command + shift + 7
+e.g. (<!-- COMMENT -->)
+
+===== MD Comment: =====
+e.g. [//]: # (COMMENT)
+
+===== anchor: =====
+[](#name-anchor)
+<!-- markdownlint-disable MD033 -->
+<div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
+<!-- markdownlint-enable MD033 -->
+
+===== References: =====
+[^1]
+[^1]:

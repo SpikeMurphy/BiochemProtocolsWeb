@@ -92,4 +92,4 @@ Official regulations, safety data sheets (SDS), local work instructions, legal r
 Some content on this website requires an access code.  
 Only technically necessary cookies are used to ensure access security in accordance with Art. 6(1)(f) GDPR.
 
-[🇩🇪 Deutsche Version (Impressum)]({{< relref "/legal/impressum.md" >}})
+[🇩🇪 Deutsche Version (Impressum)]({{< relref "/legal/legal_notice_de.md" >}})

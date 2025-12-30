@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- backbone -->
+    <link rel="stylesheet" href="{{ "css/backbone/home_content_block.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/backbone/navigation.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/backbone/login.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/backbone/header.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/backbone/footer.css" | relURL }}">
+    <!-- backbone -->
+    <!-- unorganized styling -->
     <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/navigation.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/login.css" | relURL }}">
+
     <link rel="stylesheet" href="{{ "css/pricing_table_public.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/header.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/buttons.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/dropdowns.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/calc_bacterial_growth.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/table_sds-page_gels.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/footer.css" | relURL }}">
+
+    <!-- /unorganized styling -->
     <!-- biochemsheets -->
-    <link rel="stylesheet" href="{{ "css/biochemsheets/chapters.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/biochemsheets/backbone.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/biochemsheets/table_of_contents.css" | relURL }}">
     <!-- biochemsheets -->
     <!-- math -->
     {{ if .Params.math }}

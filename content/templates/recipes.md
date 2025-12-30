@@ -1,116 +1,125 @@
 +++
 date = '2025-12-07T20:19:41+01:00'
 draft = false
-construction = false
+construction = true
 title = 'Recipes Template'
 subtitle = ''
-author = 'Spike Murphy Müller ¹'
-affiliation = ''
-version = 'Version 1.0.2'
-version_explanation = ''
-updated = '18.12.2025'
-finished = true
-tested = true
+author = ['Spike Murphy Müller ¹']
+affiliation = ['']
+version = 'Version 1.0.0'
+version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
+updated = ''
+finished = false
+tested = false
 +++
+
 <!-- CONTENT_NEW: finished = true, change to CONTENT_DONE; tested = true, delete -->
 
-<!--_____________________________delete_____________________________-->
+<!-- markdownlint-disable MD025 MD024 -->
+# <!-------------------- anchor -------------------->
 
-Bookmark: command + option + K
-Comment: command + shift + 7 <!-- -->
+[](#anchor_name)
 
-anchor (jump to position on site):
-referral: [](#name-anchor)
-landing: <div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
+<!-- markdownlint-disable MD033 -->
+<div id="anchor_name" style="position: relative; top: -80px; visibility: hidden;"></div>
+<!-- markdownlint-enable MD033 -->
 
-<!-- Material Table:
+<!-------------------- /anchor -------------------->
+#
 
-for switching alternatives <!-- CONTENT_TODO: combine switches to one universal switch (see alt methods) -- >
-into the <span>
+# <!-------------------- alternative switch -------------------->
 
-add an id="alt_pagename_m_c_reagent1" for the default
-add an id="alt_pagename_m_c_reagent2" for the alternative 
+<!-- CONTENT_TODO: combine switches to one universal switch (see alt methods) -->
 
-m = methods table
-c = m for material, mw for molecular weight, specs for specifications, l for location
-
-add the shortcode:
+Table 1:
+Column 1:
+<span id="alt_pagename_m_m_reagent1"></span>
+<span id="alt_pagename_m_m_reagent2" style="display:none">CONTENT</span>
 { {< alternative_switches/alt_pagename_reagent1 >}}
 
--->
+Column 2:
+<span id="alt_pagename_m_mw_reagent1">CONTENT</span>
+<span id="alt_pagename_m_mw_reagent2" style="display:none">CONTENT</span>
 
-<!-- Recipe Table:
+Column 3:
+<span id="alt_pagename_m_specs_reagent1"></span>
+<span id="alt_pagename_m_specs_reagent2" style="display:none">CONTENT</span>
 
-for switching alternatives 
-into the <span>
+Column 4:
+<span id="alt_pagename_m_l_reagent1">{{< chemical_location chemical="chemicalname_spec" >}}</span>
+<span id="alt_pagename_m_l_reagent2" style="display:none">{{< chemical_location chemical="chemicalname_spec" >}}</span>
 
-add an id="alt_pagename_r_d_reagent1" for the default
-add an id="alt_pagename_r_d_reagent2" for the alternative 
+Table 2:
+Column 1:
+<span id="alt_pagename_r_ms_reagent1">CONTENT</span>
+<span id="alt_pagename_r_ms_reagent2" style="display:none">CONTENT</span>
 
-r = recipe table
-d = ms for material/steps, vm for volume/mass and mol for molar/%/comment
+<span id="alt_pagename_r_vm_reagent1"></span>
+<span id="alt_pagename_r_vm_reagent2" style="display:none">CONTENT</span>
 
--->
+<span id="alt_pagename_r_mol_reagent1">CONTENT</span>
+<span id="alt_pagename_r_mol_reagent2" style="display:none">CONTENT</span>
 
-<!-- Calc Recipe x (only use one x/vol/mol/amount):
+<!-------------------- /alternative switch -------------------->
+#
 
-for factoring 1x/5x/10x buffers (default 1000mL, 1x)
-into the <span> (new or from alt_switch)
+# <!-------------------- calculator recipe x -------------------->
 
-add class="calc_recipe_x" 
+1. Default volume 1000 mL.
+2. Default concentration1x.
 
-for masses add data-default-mass="e"
-for volumes add data-default-vol="e"
-for molarities add data-default-mol="e" //CONTENT_TODO: should be calculated automatically from molecular mass...
+<spanclass="calc_recipe_x" data-default-mass="MASS"></span>
+<spanclass="calc_recipe_x" data-default-vol="VOLUME"></span>
+<spanclass="calc_recipe_x" data-default-mol="MOLARITY"></span>
 
-e = value
+[i]: span can be from alternative switch
+[i]: only use one calculator x/vol/mol/amount
 
--->
+<!-------------------- calculator recipe x -------------------->
+#
 
-<!-- Calc Recipe vol (only use one x/vol/mol/amount):
+# <!-------------------- calculator recipe volume -------------------->
 
-for factoring volumes (default volume 1000mL)
-into the <span>  (new or from alt_switch)
+1. Default volume 1000 mL.
 
-add class="calc_recipe_vol" 
+<spanclass="calc_recipe_vol" data-default-mass="MASS"></span>
+<spanclass="calc_recipe_vol" data-default-vol="VOLUME"></span>
+<spanclass="calc_recipe_vol" data-default-mol="MOLARITY"></span> 
 
-for masses add data-default-mass="e"
-for volumes add data-default-vol="e"
-for molarities add data-default-mol="e"
+[i]: span can be from alternative switch
+[i]: only use one calculator x/vol/mol/amount
 
-e = value
+<!-------------------- calculator recipe volume -------------------->
+#
 
--->
+# <!-------------------- calculator recipe mol -------------------->
 
-<!-- Calc Recipe mol (only use one x/vol/mol/amount):
+1. Default volume 1000 mL.
+2. Default molarity 1 M.
 
-for factoring molarity (default 1000mL, 1 M)
-into the <span>  (new or from alt_switch)
+<spanclass="calc_recipe_mol" data-default-mass="MASS"></span>
+<spanclass="calc_recipe_mol" data-default-vol="VOLUME"></span>
+<spanclass="calc_recipe_mol" data-default-mol="MOLARITY"></span> 
 
-add class="calc_recipe_mol" 
+[i]: span can be from alternative switch
+[i]: only use one calculator x/vol/mol/amount
 
-for masses add data-default-mass="e"
-for volumes add data-default-vol="e"
-for molarities add data-default-mol="e"
+<!-------------------- /calculator recipe mol -------------------->
+#
 
-e = value
+# <!-------------------- calculator recipe amount -------------------->
 
--->
+1. Default volume 1000 mL.
+2. Default molarity 1 M.
 
-<!-- Calc Recipe amount (only use one x/vol/mol/amount):
+<spanclass="calc_recipe_amount" data-default-one="MASS/VOLUME"></span>
 
-for factoring amount of gels (default 1 gel)
-into the <span>  (new or from alt_switch)
+[i]: span can be from alternative switch
+[i]: only use one calculator x/vol/mol/amount
 
-add class="calc_recipe_amount" 
-
-for masses add data-default-one="e"
-
-e = value
-
--->
-
-<!--_____________________________delete_____________________________-->
+<!-------------------- /calculator recipe amount -------------------->
+#
+<!-- markdownlint-enable MD025 MD024 -->
 
 {{< infobox type="info" title="" >}}
 ⚠️ Info
@@ -133,9 +142,8 @@ e = value
 | :-- | :-- | :-- | :-- |
 | ChemicalName *ChemicalFormula* [<sup>SDS</sup>](https://www.carlroth.com/.../) | g/mol | | {{< chemical_location chemical="chemicalname_spec" >}} |
 | | g/mol | | {{< chemical_location chemical="chemicalname_spec" >}} |
-| | g/mol | | {{< chemical_location chemical="chemicalname_spec" >}} |
 | deionized sterilized Water *dsH<sub>2</sub>O* | 18.015 g/mol | liquid | |
-| <span id="alt_pagename_m_m_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_m_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_m_mw_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_mw_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_m_specs_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_specs_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_m_l_reagent1">{{< chemical_location chemical="chemicalname_spec" >}}</span>     <span id="alt_pagename_m_l_reagent2" style="display:none">{{< chemical_location chemical="chemicalname_spec" >}}</span> |
+| <span id="alt_pagename_m_m_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_m_reagent2" style="display:none">XXXXXXXXXX</span> { {< alternative_switches/alt_pagename_reagent1 >}} | <span id="alt_pagename_m_mw_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_mw_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_m_specs_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_specs_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_m_l_reagent1">{{< chemical_location chemical="chemicalname_spec" >}}</span>     <span id="alt_pagename_m_l_reagent2" style="display:none">{{< chemical_location chemical="chemicalname_spec" >}}</span> |
 <!-- markdownlint-enable MD033 -->
 
 {{< /tab >}}
@@ -154,8 +162,6 @@ e = value
 | :-- | :-- | :-- | :-- |
 | {{< checkbox >}} | <span id="alt_pagename_r_ms_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_ms_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_r_vm_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_vm_reagent2" style="display:none">XXXXXXXXXX</span> | <span id="alt_pagename_r_mol_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_r_mol_reagent2" style="display:none">XXXXXXXXXX</span> |
 | {{< checkbox >}} | | | |
-| {{< checkbox >}} | | | |
-| {{< checkbox >}} | | | |
 | {{< checkbox >}} | store in xx µL aliquots @ xx °C | | |
 <!-- markdownlint-enable MD033 -->
 
@@ -163,7 +169,7 @@ e = value
 
 {{< tab >}}
 
-## Use Cases
+## Use Cases <!-- insert links -->
 
 | Use Case | Specifications |
 | :-- | :-- |

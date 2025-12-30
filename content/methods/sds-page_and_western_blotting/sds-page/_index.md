@@ -14,5 +14,5 @@ tested = true
 +++
 
 <script>
-  window.location.replace("hoeffer/"); // default
+  window.location.replace("hoeffer/");
 </script>

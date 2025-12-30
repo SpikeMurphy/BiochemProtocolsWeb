@@ -220,4 +220,4 @@ We reserve the right to update this privacy policy if necessary.
 **Spike Murphy Müller**  
 E-mail: [Email Address]
 
-[🇩🇪 Datenschutzerklärung ]({{< relref "/legal/datenschutz.md" >}})
+[🇩🇪 Datenschutzerklärung ]({{< relref "/legal/privacy_policy_de.md" >}})

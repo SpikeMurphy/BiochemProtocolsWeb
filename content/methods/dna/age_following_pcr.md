@@ -4,12 +4,8 @@ draft = false
 construction = false
 title = 'Agarose Gel Electrophoresis (AGE) following polymerase chain reaction (PCR)'
 subtitle = ''
-author = [
-    'Spike Murphy Müller ¹'
-]
-affiliation = [
-    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
-]
+author = ['Spike Murphy Müller ¹']
+affiliation = ['¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer']
 version = 'Version 1.0.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '09.12.2025'

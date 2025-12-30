@@ -4,12 +4,8 @@ draft = false
 construction = false
 title = 'Bacterial Transformation'
 subtitle = 'for subsequent plate and liquid culturing for storadge, plasmid preparation or protein expression'
-author = [
-    'Spike Murphy Müller ¹'
-]
-affiliation = [
-    '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
-]
+author = ['Spike Murphy Müller ¹']
+affiliation = ['¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer']
 version = 'Version 1.0.1'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '20.12.2025'

@@ -4,15 +4,10 @@ draft = false
 construction = false
 title = 'Western Blotting'
 subtitle = ''
-author = 'Spike Murphy Müller ¹'
-affiliation = ''
-version = ''
-version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
-updated = ''
 finished = true
 tested = true
 +++
 
 <script>
-  window.location.replace("bio-rad-trans-blot/"); // default
+  window.location.replace("bio-rad-trans-blot/");
 </script>

@@ -1,0 +1,25 @@
+/* =============================== */
+/* Book container                  */
+/* =============================== */
+
+.sheets-book {
+  max-width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+/* =============================== */
+/* Header                          */
+/* =============================== */
+
+.sheets-header h1 {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.sheets-intro {
+  font-size: 16px;
+  color: #4b5563;
+  max-width: 640px;
+}

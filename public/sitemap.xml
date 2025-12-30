@@ -122,16 +122,16 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/nucleospin_plasmid_prep/</loc>
     <lastmod>2025-12-12T10:33:04+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/legal/datenschutz/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/legal/privacy_policy_de/</loc>
     <lastmod>2025-12-11T21:35:01+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/legal/</loc>
     <lastmod>2025-12-11T21:35:01+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/legal/nutzungsbedingungen/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/legal/terms_of_use_de/</loc>
     <lastmod>2025-12-11T21:34:47+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/legal/impressum/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/legal/legal_notice_de/</loc>
     <lastmod>2025-12-11T21:26:41+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/contact/</loc>
@@ -157,12 +157,6 @@
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/pcr/</loc>
     <lastmod>2025-12-08T15:42:59+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/templates/chemicals/</loc>
-    <lastmod>2025-12-08T01:50:35+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/templates/</loc>
-    <lastmod>2025-12-08T01:50:35+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/legal/terms_of_use/</loc>
     <lastmod>2025-12-07T21:33:38+01:00</lastmod>
@@ -230,11 +224,20 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/transformation_buffer/</loc>
     <lastmod>2025-12-07T20:23:37+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/templates/recipes/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/templates/biochemsheets_chemicals/</loc>
+    <lastmod>2025-12-07T20:19:41+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/templates/biochemsheets_methods/</loc>
     <lastmod>2025-12-07T20:19:41+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/templates/methodes/</loc>
-    <lastmod>2025-12-07T20:19:30+01:00</lastmod>
+    <lastmod>2025-12-07T20:19:41+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/templates/recipes/</loc>
+    <lastmod>2025-12-07T20:19:41+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/templates/</loc>
+    <lastmod>2025-12-07T20:19:41+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/pmsf/</loc>
     <lastmod>2025-12-07T19:00:29+01:00</lastmod>
@@ -316,6 +319,8 @@
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/</loc>
     <lastmod>2025-12-07T12:53:56+01:00</lastmod>
+  </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/test/</loc>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/categories/</loc>
   </url><url>

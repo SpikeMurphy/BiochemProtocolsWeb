@@ -1,16 +1,16 @@
 +++
 date = '2025-12-07T21:33:38+01:00'
 draft = false
-construction = true
+construction = false
 title = 'Terms of Use'
 subtitle = ''
 author = 'Spike Murphy Müller'
 version = 'Version 1.0.0'
-updated = '12.12.2025'
+updated = '12 December 2025'
 +++
 
 ## TERMS OF USE  
-*Last updated: December 2025*
+*Last updated: {{< updated >}}*
 
 By accessing or using this website (“Site”), you enter into a binding agreement with  
 **Murphy Biochemistry UG (haftungsbeschränkt)** (“we”, “us”, “our”).  
@@ -178,4 +178,4 @@ We may:
 ### Legal Compliance
 You are responsible for ensuring your Submission complies with applicable laws, safety standards, and institutional policies.
 
-[🇩🇪 Nutzungsbedingungen]({{< relref "/legal/Nutzungsbedingungen.md" >}})
+[🇩🇪 Nutzungsbedingungen]({{< relref "/legal/terms_of_use_de.md" >}})
