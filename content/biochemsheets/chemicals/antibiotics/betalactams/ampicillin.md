@@ -33,8 +33,9 @@ fume_hood = ['not required']
 appearance = ['white to off-white powder']
 melting_point = ['215 °C', 'decomposes at ≥ 215 °C']
 boiling_point = []
-solubility = ['~50 g/L in water', 'mostly insoluble in most organic solvents']
+solubility = ['~40 g/L in water', 'mostly insoluble in most organic solvents']
 pKa = ['pKa₁ ≈ 2.5 (carboxyl)', 'pKa₂ ≈ 7.2 (amine)']
+ph_value = ['6,8 – 7,2 in aqueous solution at 40 g/l, and 25 °C']
 ph_range_effective = ['5.5–7.5']
 acid_base_properties = ['weak acid and weak base with buffering near pH 7']
 net_charge = ['neutral at pH 7', 'negatively charged above pH x.x', 'positively charged below pH x.x']
@@ -46,7 +47,7 @@ shelf_life = ['2–3 years under proper storage conditions']
 common_use_cases = ['bacterial selection marker']
 incompatibilities = ['strong acids', 'strong bases', 'oxidizing agents', 'β-lactamase enzymes']
 typical_stock_concentrations = ['50 mg/mL', '100 mg/mL', 'in Water']
-recipe = ['/recipes/bacteria/ampicillin.md']
+recipe = ['recipes/bacteria/ampicillin.md']
 
 example_SDS = ['https://www.carlroth.com/medias/SDB-K029-CH-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNjAzNzd8YXBwbGljYXRpb24vcGRmfGFEYzJMMmcxTVM4NU1qRXdNRGsxTlRrNU5qUTJMMU5FUWw5TE1ESTVYME5JWDBWT0xuQmtaZ3xlM2VjMWE1NjlkNTVjOTQ2MDgyN2NmZDM5MTFmNDY4MWZlZmE2MGRmZmY5YWY4YzIzYjZmZmY5NWNlNWZmNzU0']
 
@@ -57,17 +58,17 @@ references = [
     ]
 +++
 
-{{< infobox type="info" title="METADATA" >}}
+{{< biochemsheets/chemicals/biochemsheetbox type="info" title="METADATA" >}}
 {{< biochemsheets/chemicals/chemicals_metadata >}}
-{{< /infobox >}}
+{{< /biochemsheets/chemicals/biochemsheetbox >}}
 
-{{< infobox type="danger" title="SAFETY" >}}
+{{< biochemsheets/chemicals/biochemsheetbox type="danger" title="SAFETY" >}}
 {{< biochemsheets/chemicals/chemicals_safety >}}
-{{< /infobox >}}
+{{< /biochemsheets/chemicals/biochemsheetbox >}}
 
-{{< infobox type="warning" title="HANDLING" >}}
+{{< biochemsheets/chemicals/biochemsheetbox type="warning" title="HANDLING" >}}
 {{< biochemsheets/chemicals/chemicals_handling >}}
-{{< /infobox >}}
+{{< /biochemsheets/chemicals/biochemsheetbox >}}
 
 {{< biochemsheets/chemicals/chemicals_references >}}
 

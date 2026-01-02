@@ -61,11 +61,12 @@ tested = false
 
 ## Storage
 
-| Conditions | Duration |
+| Conditions | Duration |
 | :---- | :----- |
-|@ 4 °C (light-sensitive) | 3 month|
-|@ -20 °C (light-sensitive) | 1 year|
-|@ –80 °C (light-sensitive) | 2 years|
+| @ 4 °C (light-sensitive) | 7 days |
+| @ -20 °C (light-sensitive) | 6 month |
+| @ –80 °C (light-sensitive) | 2 years |
+
 {{< /tab >}}
 
 {{< comment_box >}}

@@ -35,6 +35,7 @@ melting_point = ['not determined']
 boiling_point = ['not determined']
 solubility = ['x g/L in water', 'mostly insoluble in most organic solvents']
 pKa = ['pKa₁ x.xx', 'pKa₂ x.xx', 'pKa₃ x.xx']
+ph_value = ['x.x – x.x in aqueous solution at xx g/l, and 25 °C']
 ph_range_effective = ['x.x-x.x']
 acid_base_properties = ['weak/strong acid/base with an effective buffering range pH x.x-x.x']
 net_charge = ['neutral at pH 7', 'negatively charged above pH x.x', 'positively charged below pH x.x']
@@ -56,17 +57,17 @@ references = [
 +++
 <!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
-{{< infobox type="info" title="METADATA" >}}
+{{< biochemsheets/chemicals/biochemsheetbox type="info" title="METADATA" >}}
 {{< biochemsheets/chemicals/chemicals_metadata >}}
-{{< /infobox >}}
+{{< /biochemsheets/chemicals/biochemsheetbox >}}
 
-{{< infobox type="danger" title="SAFETY" >}}
+{{< biochemsheets/chemicals/biochemsheetbox type="danger" title="SAFETY" >}}
 {{< biochemsheets/chemicals/chemicals_safety >}}
-{{< /infobox >}}
+{{< /biochemsheets/chemicals/biochemsheetbox >}}
 
-{{< infobox type="warning" title="HANDLING" >}}
+{{< biochemsheets/chemicals/biochemsheetbox type="warning" title="HANDLING" >}}
 {{< biochemsheets/chemicals/chemicals_handling >}}
-{{< /infobox >}}
+{{< /biochemsheets/chemicals/biochemsheetbox >}}
 
 {{< biochemsheets/chemicals/chemicals_references >}}
 

@@ -35,6 +35,7 @@ melting_point = ['801 °C']
 boiling_point = ['1,413 °C']
 solubility = ['360 g/L in water', 'mostly insoluble in most organic solvents']
 pKa = []
+ph_value = []
 ph_range_effective = []
 acid_base_properties = []
 net_charge = []
@@ -56,17 +57,17 @@ references = [
     ]
 +++
 
-{{< infobox type="info" title="METADATA" >}}
+{{< biochemsheets/chemicals/biochemsheetbox type="info" title="METADATA" >}}
 {{< biochemsheets/chemicals/chemicals_metadata >}}
-{{< /infobox >}}
+{{< /biochemsheets/chemicals/biochemsheetbox >}}
 
-{{< infobox type="danger" title="SAFETY" >}}
+{{< biochemsheets/chemicals/biochemsheetbox type="danger" title="SAFETY" >}}
 {{< biochemsheets/chemicals/chemicals_safety >}}
-{{< /infobox >}}
+{{< /biochemsheets/chemicals/biochemsheetbox >}}
 
-{{< infobox type="warning" title="HANDLING" >}}
+{{< biochemsheets/chemicals/biochemsheetbox type="warning" title="HANDLING" >}}
 {{< biochemsheets/chemicals/chemicals_handling >}}
-{{< /infobox >}}
+{{< /biochemsheets/chemicals/biochemsheetbox >}}
 
 {{< biochemsheets/chemicals/chemicals_references >}}
 

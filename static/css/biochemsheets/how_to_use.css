@@ -1,0 +1,32 @@
+/* ========== How to use BiochemSheets ========== */
+.how-to-use {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 1.2rem 0;
+}
+.how-to-use-step {
+  padding: 0.55rem 0.8rem;
+  background: #f2f2f2;
+  border-left: 4px solid #9a9a9a;
+  font-size: 0.9rem;
+  color: #333;
+}
+.how-to-use-arrow {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #999;
+  line-height: 1;
+}
+.how-to-use-final {
+  background: #eaeaea;
+  border-left-color: #666;
+  font-weight: 600;
+}
+/* Responsive */
+@media (max-width: 600px) {
+  .how-to-use-step {
+    font-size: 0.85rem;
+  }
+}
+/* ========== /How to use BiochemSheets ========== */

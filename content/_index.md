@@ -32,7 +32,7 @@ This website provides an organized collection of Standard Operating Procedures (
 <br>
 
 Those pages were created within the last thirty days.
-{{< /infobox >}}
+{{% /infobox %}}
 
 {{< infobox type="danger" title="Important Disclaimer" >}}
 Please note that all information on this site is intended for trained personnel who already understand the principles of laboratory safety, risk assessment, and proper handling of chemicals and equipment.  
@@ -44,4 +44,4 @@ It is the responsibility of each user to verify procedures, consult official saf
 Use of any information on this site is entirely at your own risk.  
 The authors and maintainers of this website assume no liability for any damages, injuries, or consequences that may arise from the use or misuse of the information provided.  
 *If you are unsure about any procedure or safety requirement, always seek guidance from qualified professionals or your institution’s safety officers.*
-{{< /infobox >}}
+{{% /infobox %}}

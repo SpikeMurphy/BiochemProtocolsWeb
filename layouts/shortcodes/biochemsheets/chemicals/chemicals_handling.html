@@ -97,11 +97,18 @@
 {{ with .Page.Params.recipe }}
   <dt>Preparation</dt>
   <dd>
+    Full preparation and storage instructions:
     {{ range $i, $p := . }}
-      {{ if $i }}, {{ end }}
-      <a href="{{ relref $.Page $p }}">
-        {{ path.Base $p | strings.TrimSuffix ".md" | humanize }}
-      </a>
+      {{ $page := $.Page.GetPage $p }}
+      {{ if $page }}
+        {{ if $i }}, {{ end }}
+        <a href="{{ $page.RelPermalink }}">
+          {{ $page.Title }}
+        </a>
+      {{ else }}
+        {{ if $i }}, {{ end }}
+        <span class="missing-link">{{ $p }}</span>
+      {{ end }}
     {{ end }}
   </dd>
 {{ end }}

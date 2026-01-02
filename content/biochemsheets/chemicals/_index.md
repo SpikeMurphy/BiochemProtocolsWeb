@@ -12,3 +12,5 @@ updated = ''
 [cascade]
 outputs = ["html", "Body"]
 +++
+
+{{< biochemsheets/chemicals/how_to_use >}}

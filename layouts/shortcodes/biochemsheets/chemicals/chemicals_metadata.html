@@ -30,10 +30,14 @@
 <dd>{{ delimit . ", " }}</dd>
 {{ end }}
 
+{{ with .Page.Params.cas_number }}
+<dt>CAS number</dt>
+<dd>{{ delimit . ", " }}</dd>
+{{ end }}
+
 {{- if or 
     .Page.Params.formula 
     .Page.Params.molecular_weight 
-    .Page.Params.cas_number 
 }}
 <dt class="section">Composition & structure</dt>
 {{ end }}
@@ -45,11 +49,6 @@
 
 {{ with .Page.Params.molecular_weight }}
 <dt>Molecular weight</dt>
-<dd>{{ delimit . ", " }}</dd>
-{{ end }}
-
-{{ with .Page.Params.cas_number }}
-<dt>CAS number</dt>
 <dd>{{ delimit . ", " }}</dd>
 {{ end }}
 
