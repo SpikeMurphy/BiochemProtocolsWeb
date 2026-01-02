@@ -1,32 +1,130 @@
-/* ========== How to use BiochemSheets ========== */
-.how-to-use {
+/* ========== How to use – wrapper ========== */
+.how_to_use_wrapper {
+  margin: 2.5rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff, #eaf5ff);
+  box-shadow: 0 2px 6px rgb(116, 136, 162);
+}
+
+/* heading */
+.how_to_use_heading {
+  margin: 0 0 1.6rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.how_to_use_heading span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #4b5563;
+}
+/* ========== /How to use wrapper ========== */
+body.darkmode .how_to_use_wrapper {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  box-shadow: 0 2px 6px rgb(29, 47, 68);
+}
+
+body.darkmode .how_to_use_heading {
+  color: #e2eeff;
+}
+
+body.darkmode .how_to_use_heading span {
+  color: #93c5fd;
+}
+
+
+
+/* ========== how_to_use (workflow) ========== */
+.how_to_use {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 56px;
+  border-left: 3px solid #3b82f6;
+}
+
+.how_to_use_step {
+  position: relative;
+  padding: 0.7rem 0 1.8rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #1f2937;
+}
+
+/* numbered marker */
+.how_to_use_marker {
+  position: absolute;
+  left: -64px;
+  top: 0.35rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #eaf2ff;
+  border: 2px solid #3b82f6;
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin: 1.2rem 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1e40af;
+  counter-increment: step;
 }
-.how-to-use-step {
-  padding: 0.55rem 0.8rem;
-  background: #f2f2f2;
-  border-left: 4px solid #9a9a9a;
-  font-size: 0.9rem;
-  color: #333;
+
+.how_to_use {
+  counter-reset: step;
 }
-.how-to-use-arrow {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #999;
-  line-height: 1;
+
+.how_to_use_marker::before {
+  content: counter(step);
 }
-.how-to-use-final {
-  background: #eaeaea;
-  border-left-color: #666;
+
+/* arrow between steps */
+.how_to_use_step::after {
+  content: "↓";
+  position: absolute;
+  left: -51px;
+  bottom: 4px;
+  font-size: 1.2rem;
+  color: #3b82f6;
+}
+
+/* last step */
+.how_to_use_step:last-child::after {
+  content: "";
+}
+
+/* final emphasis */
+.how_to_use_final {
   font-weight: 600;
 }
-/* Responsive */
-@media (max-width: 600px) {
-  .how-to-use-step {
-    font-size: 0.85rem;
-  }
+
+.how_to_use_final .how_to_use_marker {
+  background: #3b82f6;
+  color: #ffffff;
 }
-/* ========== /How to use BiochemSheets ========== */
+/* ========== /how_to_use ========== */
+body.darkmode .how_to_use {
+  border-left-color: #60a5fa;
+}
+
+body.darkmode .how_to_use_step {
+  color: #e2eeff;
+}
+
+body.darkmode .how_to_use_marker {
+  background: #0f172a;
+  border-color: #60a5fa;
+  color: #bfdbfe;
+}
+
+body.darkmode .how_to_use_step::after {
+  color: #60a5fa;
+}
+
+body.darkmode .how_to_use_final .how_to_use_marker {
+  background: #60a5fa;
+  color: #0f172a;
+}

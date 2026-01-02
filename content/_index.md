@@ -17,6 +17,8 @@ This website provides an organized collection of Standard Operating Procedures (
 
 {{< home_content_block >}}
 
+{{< biochemsheets/chemicals/how_to_use >}}
+
 {{< infobox type="info" title="📄 NEW PAGES" >}}
 
 <br>
