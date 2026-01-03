@@ -39,6 +39,11 @@
 <dd>{{ delimit . ", " }}</dd>
 {{ end }}
 
+{{- with .Page.Params.eye_protection }}
+<dt>Eye protection</dt> 
+<dd>{{ delimit . ", " }}</dd>
+{{ end }}
+
 {{- with .Page.Params.mask }}
 <dt>Mask</dt> 
 <dd>{{ delimit . ", " }}</dd>

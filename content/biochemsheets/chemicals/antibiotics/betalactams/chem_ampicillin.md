@@ -8,7 +8,7 @@ author = ['Spike Murphy Müller ¹']
 affiliation = ['¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer']
 version = 'Version 1.0.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
-updated = ''
+updated = '03.01.2026'
 finished = true
 tested = false
 
@@ -27,7 +27,7 @@ health_hazard_classes = ['respiratory sensitization', 'skin sensitization']
 environmental_hazard_classes = []
 
 gloves = ['nitrile gloves, EN ISO 374-1 type B']
-eye_protection = []
+eye_protection = ['not normally required']
 mask = ['not normally required; use dust mask if powder handling generates aerosols']
 fume_hood = ['not required']
 

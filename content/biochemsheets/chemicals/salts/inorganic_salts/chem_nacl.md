@@ -8,8 +8,8 @@ author = ['Spike Murphy Müller ¹']
 affiliation = ['¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer']
 version = 'Version 1.0.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
-updated = ''
-finished = false
+updated = '03.01.2026'
+finished = true
 tested = false
 
 common_name = ['sodium chloride']
@@ -27,6 +27,7 @@ health_hazard_classes = []
 environmental_hazard_classes = []
 
 gloves = ['not required']
+eye_protection = ['not required']
 mask = ['not required']
 fume_hood = ['not required']
 
