@@ -20,19 +20,34 @@ body.darkmode nav.navigation {
 }
 
 .logo {
+    position: absolute;
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
     height: 80px;
     width: auto;
     padding: 2px;
-    background: linear-gradient(135deg, #e8f4ff, #d2e9ff);
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.logo-link {
+    height: 80px;
+    width: auto;
+}
 .logo:hover {
-    transform: scale(1.08);
-    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.35);
+    transform: scale(1.10);
     transition: transform 0.3s ease-in-out;
+}
+.logo-dark {
+    display: none;
+}
+body.darkmode .logo-light {
+    display: none;
+}
+body.darkmode .logo-dark {
+    display: inline-block;
 }
 
 ul.navigation{

@@ -1,7 +1,14 @@
 <!-- SHORTCODE_DONE -->
 
 <nav class="navigation">
-    <a href="{{ "" | relURL }}"><img class="logo" src="{{ "images/3biochem_white.png" | relURL }}" alt="Logo"></a>
+    <a href="{{ "" | relURL }}" class="logo-link">
+        <img class="logo logo-light"
+            src="{{ "images/logos/Logo_Murphy_Biochemistry_Cropped_Light.png" | relURL }}"
+            alt="Logo Light">
+        <img class="logo logo-dark"
+            src="{{ "images/logos/Logo_Murphy_Biochemistry_Cropped_Dark.png" | relURL }}"
+            alt="Logo Dark">
+    </a>
     <ul class="navigation">
         <li class="navigation"><a href="{{ "" | relURL }}">{{"Home"}}</a></li>
         <li class="navigation"><a href="{{ "biochemsheets" | relURL }}">{{"BiochemSheets"}}</a></li>
